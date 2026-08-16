@@ -1,0 +1,13 @@
+/*
+ * Sorta Design System — Global Entry Stylesheet
+ * =========================================================
+ * Single entry point for consumers. Link this one file:
+ *   <link rel="stylesheet" href="styles.css" />
+ *
+ * It pulls in the full Sorta token set + @font-face declarations.
+ * `colors_and_type.css` is the canonical source (fonts, colors,
+ * type scale, radii, shadows, spacing, semantic classes).
+ * =========================================================
+ */
+
+@import url('colors_and_type.css');
