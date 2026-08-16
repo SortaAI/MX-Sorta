@@ -272,3 +272,121 @@ p, .body {
 .display-lg strong {
   font-weight: var(--fw-bold);
 }
+
+/* Human editorial photography on the home page. */
+.human-story {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 104px 24px 0;
+}
+.human-story__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.human-story__eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-teal);
+  font-family: var(--font-primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.human-story h2 {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-primary);
+  font-size: clamp(28px, 3.6vw, 40px);
+  font-weight: 300;
+  letter-spacing: -.03em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.human-story h2 strong { font-weight: 700; }
+.human-story__intro p {
+  margin: 0;
+  color: var(--color-gray-700);
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.human-story__photos {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr);
+  gap: 18px;
+}
+.human-photo {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 24px;
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+.human-photo picture {
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--color-gray-100);
+}
+.human-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+.human-photo:hover img { transform: scale(1.018); }
+.human-photo figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 16px 18px 17px;
+  color: var(--color-navy);
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.human-photo figcaption a {
+  color: var(--color-gray-400);
+  font-size: 10.5px;
+  font-weight: 400;
+}
+.human-photo figcaption a:hover { color: var(--color-blue); }
+
+@media (max-width: 720px) {
+  html,
+  body { overflow-x: clip; }
+  .site-nav { flex-wrap: nowrap !important; padding: 11px 14px !important; }
+  .site-nav__links { flex-wrap: nowrap !important; gap: 8px !important; }
+  .site-nav__link { display: none; }
+  .site-switcher { padding: 8px 10px; }
+  .site-nav__cta { padding: 10px 14px !important; font-size: 12px !important; }
+  .product-preview { margin-top: 44px !important; border-radius: 18px !important; }
+  .product-preview__bar { align-items: flex-start !important; padding: 12px 14px !important; }
+  .product-preview__bar > div:first-child { flex-wrap: wrap; }
+  .product-preview__clinic,
+  .product-preview__patients,
+  .product-preview__package { display: none !important; }
+  .product-preview__grid { grid-template-columns: minmax(0, 1fr) !important; min-height: 0 !important; }
+  .product-preview__details { padding: 18px 16px !important; border-right: 0 !important; }
+  .product-preview__fields { grid-template-columns: 1fr !important; }
+  .human-story { padding: 76px 20px 0; }
+  .human-story__intro,
+  .human-story__photos { grid-template-columns: 1fr; }
+  .human-story__intro { gap: 18px; margin-bottom: 24px; }
+  .human-story__photos { gap: 16px; }
+  .human-photo { border-radius: 18px; }
+  .human-photo figcaption { align-items: flex-start; flex-direction: column; padding: 14px 15px 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .human-photo img { transition: none; }
+  .human-photo:hover img { transform: none; }
+}

@@ -22,6 +22,8 @@
 :root{--band:#eaf4ff}
 html{scroll-behavior:smooth}
 body{margin:0;background:#fff;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+x-dc{display:block;width:100%;min-width:0}
+sc-if{display:contents}
 a{color:#2740fc;text-decoration:none}
 a:hover{color:#2886f9}
 @keyframes sortaRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -30,16 +32,16 @@ a:hover{color:#2886f9}
 
 <div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#334155">
 
-  <div style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0">
-    <div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <div class="site-header" style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0">
+    <div class="site-nav" style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
       <a href="#top" style="display:flex;align-items:center;gap:10px"><img src="/assets/sorta-logo.svg" alt="Sorta" style="height:24px;width:auto"></a>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px">
-        <a href="/como-funciona" style="font-size:14px;font-weight:500;color:#334155">Cómo funciona</a>
-        <a href="/seguridad" style="font-size:14px;font-weight:500;color:#334155">Seguridad y registros</a>
-        <a href="/preguntas-frecuentes" style="font-size:14px;font-weight:500;color:#334155">Preguntas frecuentes</a>
-        <a href="/nosotros" style="font-size:14px;font-weight:500;color:#334155">Quién lo hace</a>
+      <div class="site-nav__links" style="display:flex;flex-wrap:wrap;align-items:center;gap:22px">
+        <a class="site-nav__link" href="/como-funciona" style="font-size:14px;font-weight:500;color:#334155">Cómo funciona</a>
+        <a class="site-nav__link" href="/seguridad" style="font-size:14px;font-weight:500;color:#334155">Seguridad y registros</a>
+        <a class="site-nav__link" href="/preguntas-frecuentes" style="font-size:14px;font-weight:500;color:#334155">Preguntas frecuentes</a>
+        <a class="site-nav__link" href="/nosotros" style="font-size:14px;font-weight:500;color:#334155">Quién lo hace</a>
         <a href="https://getsorta.io/" class="site-switcher" lang="en" hreflang="en-US" aria-label="View the United States site in English" title="United States — English"><span class="site-switcher-flag" aria-hidden="true">🇺🇸</span><span>EN</span></a>
-        <a href="/contacto" style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;color:#fff;background:#2740fc;padding:10px 18px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3)" style-hover="background:#2886f9">Solicita acceso →</a>
+        <a class="site-nav__cta" href="/contacto" style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;color:#fff;background:#2740fc;padding:10px 18px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3)" style-hover="background:#2886f9">Solicita acceso →</a>
       </div>
     </div>
   </div>
@@ -67,17 +69,17 @@ a:hover{color:#2886f9}
       <div style="font-size:13px;color:#94a3b8">Sin instalar nada. Sin cambiar tu sistema. Sin capacitación.</div>
     </div>
 
-    <div style="margin-top:60px;border:1px solid #e2e8f0;border-radius:24px;background:#fff;box-shadow:0 20px 25px -5px rgba(0,0,84,.08),0 8px 10px -6px rgba(0,0,84,.05);overflow:hidden">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 20px;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.94)">
+    <div class="product-preview" style="margin-top:60px;border:1px solid #e2e8f0;border-radius:24px;background:#fff;box-shadow:0 20px 25px -5px rgba(0,0,84,.08),0 8px 10px -6px rgba(0,0,84,.05);overflow:hidden">
+      <div class="product-preview__bar" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 20px;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.94)">
         <div style="display:flex;align-items:center;gap:12px">
           <div style="width:20px;height:20px;border-radius:6px;background:#2740fc"></div>
           <div style="font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#000054">Visita · 15 ago 2026 · 11:20</div>
           <div style="display:flex;align-items:center;gap:7px;padding:4px 10px;border-radius:9999px;background:#ccf9f6"><span style="width:6px;height:6px;border-radius:9999px;background:#02e3d3"></span><span style="font-size:11px;font-weight:600;color:#065f46">42 campos sincronizados</span></div>
         </div>
-        <div style="font-size:12px;color:#94a3b8">Consultorio Santa Fe · Recepción</div>
+        <div class="product-preview__clinic" style="font-size:12px;color:#94a3b8">Consultorio Santa Fe · Recepción</div>
       </div>
-      <div style="display:grid;grid-template-columns:236px minmax(0,1fr) 268px;min-height:392px">
-        <div style="border-right:1px solid #e2e8f0;padding:18px 16px;display:flex;flex-direction:column;gap:8px;background:#f8fafc">
+      <div class="product-preview__grid" style="display:grid;grid-template-columns:236px minmax(0,1fr) 268px;min-height:392px">
+        <div class="product-preview__patients" style="border-right:1px solid #e2e8f0;padding:18px 16px;display:flex;flex-direction:column;gap:8px;background:#f8fafc">
           <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:2px">Pacientes de hoy</div>
           <div style="padding:11px 12px;border-radius:12px;background:#d1e4ff;border:1px solid rgba(39,64,252,.35)">
             <div style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;color:#000054">María G. Sánchez Ríos</div>
@@ -94,12 +96,12 @@ a:hover{color:#2886f9}
           <div style="margin-top:auto;padding-top:14px;font-size:11.5px;color:#94a3b8">Llegaron por WhatsApp · 3 de 7</div>
         </div>
 
-        <div style="padding:22px 24px;min-width:0;display:flex;flex-direction:column;gap:16px;border-right:1px solid #e2e8f0">
+        <div class="product-preview__details" style="padding:22px 24px;min-width:0;display:flex;flex-direction:column;gap:16px;border-right:1px solid #e2e8f0">
           <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px">
             <div style="font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:#000054">Datos del paciente</div>
             <div style="font-size:11.5px;color:#94a3b8">Se capturan una vez</div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div class="product-preview__fields" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
             <div style="display:flex;flex-direction:column;gap:6px"><div style="font-size:11.5px;font-weight:600;color:#334155">Nombre completo</div><div style="padding:9px 11px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#000054;background:#fff;overflow-wrap:anywhere"><span>María Guadalupe Sánchez Ríos</span></div></div>
             <div style="display:flex;flex-direction:column;gap:6px"><div style="font-size:11.5px;font-weight:600;color:#334155">Fecha de nacimiento</div><div style="padding:9px 11px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#000054;background:#fff">04/03/1992</div></div>
             <div style="display:flex;flex-direction:column;gap:6px"><div style="font-size:11.5px;font-weight:600;color:#334155">CURP</div><div style="padding:9px 11px;border:2px solid #2740fc;border-radius:8px;font-size:13px;color:#000054;background:#fff;box-shadow:0 0 0 3px rgba(39,64,252,.15);overflow-wrap:anywhere">SARM920304MCHNS08</div></div>
@@ -113,7 +115,7 @@ a:hover{color:#2886f9}
           </div>
         </div>
 
-        <div style="padding:22px 20px;display:flex;flex-direction:column;gap:10px;background:#f8fafc">
+        <div class="product-preview__package" style="padding:22px 20px;display:flex;flex-direction:column;gap:10px;background:#f8fafc">
           <div style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:700;color:#000054">Paquete de la visita</div>
           <div style="display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;background:#fff;border:1px solid #e2e8f0"><span style="width:16px;height:16px;border-radius:9999px;background:#02e3d3;flex:none"></span><span style="font-size:12.5px;color:#000054">Historia clínica · 4 pág.</span></div>
           <div style="display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;background:#fff;border:1px solid #e2e8f0"><span style="width:16px;height:16px;border-radius:9999px;background:#02e3d3;flex:none"></span><span style="font-size:12.5px;color:#000054">Consentimiento informado</span></div>
@@ -127,6 +129,38 @@ a:hover{color:#2886f9}
       </div>
     </div>
   </div>
+
+  <section class="human-story" aria-labelledby="human-story-title">
+    <div class="human-story__intro">
+      <div>
+        <div class="human-story__eyebrow">El lado humano del consultorio</div>
+        <h2 id="human-story-title">Menos tiempo copiando. <strong>Más tiempo cuidando.</strong></h2>
+      </div>
+      <p>La tecnología funciona mejor cuando deja de estorbar. Sorta mantiene la información en orden para que recepción y el equipo clínico puedan concentrarse en la persona que tienen enfrente.</p>
+    </div>
+    <div class="human-story__photos">
+      <figure class="human-photo human-photo--team">
+        <picture>
+          <source srcset="/assets/clinic-team-640.jpg 640w, /assets/clinic-team-1200.jpg 1200w" sizes="(max-width: 720px) 100vw, 58vw">
+          <img src="/assets/clinic-team-1200.jpg" alt="Personal clínico revisando información en una tableta" width="1200" height="800" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>
+          <span>La información correcta, lista para el equipo.</span>
+          <a href="https://unsplash.com/photos/J5UTvRgse7Q" target="_blank" rel="noopener noreferrer">Foto: Nappy / Unsplash</a>
+        </figcaption>
+      </figure>
+      <figure class="human-photo human-photo--care">
+        <picture>
+          <source srcset="/assets/patient-care-640.jpg 640w, /assets/patient-care-1200.jpg 1200w" sizes="(max-width: 720px) 100vw, 38vw">
+          <img src="/assets/patient-care-1200.jpg" alt="Manos acompañando a una persona durante un momento de atención" width="1200" height="800" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>
+          <span>El paciente sigue siendo el centro.</span>
+          <a href="https://unsplash.com/photos/BxXgTQEw1M4" target="_blank" rel="noopener noreferrer">Foto: NCI / Unsplash</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
   <div id="como" style="max-width:1200px;margin:0 auto;padding:104px 40px 0">
     <div style="max-width:660px">
