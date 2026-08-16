@@ -9,6 +9,7 @@
 <x-dc>
 <helmet>
 <title>Sorta | La capa de papeleo para consultorios en México</title>
+<link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
 <meta name="description" content="Captura los datos del paciente una vez y Sorta llena todos los formatos de la visita: PDFs idénticos a los tuyos y un registro fechado. Por WhatsApp, sin cambiar tu sistema.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/">
@@ -245,7 +246,10 @@ a:hover{color:#2886f9}
     <div style="border-top:1px solid #e2e8f0;padding-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:20px">
         <div style="display:flex;align-items:center;gap:16px">
-          <div style="width:72px;height:72px;border-radius:9999px;border:1.5px dashed #cbd5e1;background:repeating-linear-gradient(45deg,#f8fafc 0 6px,#fff 6px 12px);display:flex;align-items:center;justify-content:center;font-size:10px;color:#94a3b8;text-align:center;line-height:1.2;flex:none">foto<br>fundador</div>
+          <picture style="width:72px;height:72px;border-radius:9999px;overflow:hidden;border:1px solid #cbd5e1;box-shadow:0 2px 8px rgba(0,0,84,.12);display:block;flex:none;background:#f8fafc">
+            <source srcset="/assets/emiliano-rodriguez-320.jpg 320w, /assets/emiliano-rodriguez-800.jpg 800w" sizes="72px">
+            <img src="/assets/emiliano-rodriguez-320.jpg" alt="Retrato de Emiliano Rodríguez, fundador de Sorta" width="320" height="320" loading="lazy" decoding="async" style="width:100%;height:100%;display:block;object-fit:cover;object-position:center 34%">
+          </picture>
           <div style="display:flex;flex-direction:column;gap:3px">
             <div style="font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:#000054">Emiliano Rodríguez</div>
             <div style="font-size:13.5px;color:#64748b">Fundador · El Paso / Ciudad Juárez</div>
