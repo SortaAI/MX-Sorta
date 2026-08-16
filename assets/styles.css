@@ -154,6 +154,31 @@
   --tracking-widest: 0.12em;
 }
 
+/* Region switcher shared by every public page. */
+.site-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 9999px;
+  background: #fff;
+  color: var(--color-navy);
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  transition: border-color .15s, color .15s, transform .15s;
+}
+.site-switcher:hover {
+  border-color: var(--color-periwinkle);
+  color: var(--color-blue);
+  transform: translateY(-1px);
+}
+.site-switcher-flag { font-size: 16px; line-height: 1; }
+
 /* =========================================================
    SEMANTIC TYPOGRAPHY CLASSES
    ========================================================= */
