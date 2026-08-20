@@ -490,40 +490,16 @@ section { width: var(--page); margin: 0 auto; }
 .team-section__heading { max-width: 760px; margin-bottom: 54px; }
 .team-section__heading h2 { margin: 0; font-size: clamp(38px, 4.8vw, 62px); font-weight: 600; letter-spacing: -.045em; line-height: 1.02; text-wrap: balance; }
 .team-section__heading h2 em { color: var(--blue); font-family: var(--serif); font-weight: 400; font-style: italic; letter-spacing: -.025em; }
-.team-grid { display: flex; gap: 16px; height: clamp(560px, 46vw, 640px); }
-.team-card { position: relative; overflow: hidden; min-width: 0; flex: 1 1 0; border: 1px solid rgba(0,0,84,.08); border-radius: 24px; background: var(--white); transition: flex-grow .72s cubic-bezier(.22,.61,.36,1), box-shadow .45s ease; }
-.team-card:first-child { flex-grow: 3.2; }
-.team-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
-.team-grid:has(.team-card:is(:hover, :focus-within)) .team-card:first-child { flex-grow: 1; }
-.team-grid .team-card:is(:hover, :focus-within) { flex-grow: 3.2; box-shadow: 0 16px 38px rgba(0,0,84,.08); }
+.team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+.team-card { overflow: hidden; display: grid; grid-template-rows: auto 1fr; min-width: 0; border: 1px solid rgba(0,0,84,.08); border-radius: 24px; background: var(--white); }
 .team-card:nth-child(2) { background: #f1f6ff; }
 .team-card:nth-child(3) { background: #eefbf9; }
 .team-card:nth-child(4) { background: #f4f2ff; }
-.team-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: object-position .3s ease; }
-.team-card__body { position: absolute; inset: auto 0 0; z-index: 1; min-height: 178px; padding: 26px 24px 30px; background: rgba(255,255,255,.96); transition: min-height .3s ease, padding .3s ease, background .3s ease; }
+.team-card img { display: block; width: 100%; height: clamp(250px, 20vw, 310px); object-fit: contain; object-position: center; background: #f4f8ff; }
+.team-card__body { min-height: 260px; padding: 26px 24px 30px; background: rgba(255,255,255,.92); }
 .team-card h3 { margin: 0; font-size: 21px; font-weight: 650; letter-spacing: -.025em; line-height: 1.2; }
 .team-card__role { min-height: 38px; margin: 8px 0 20px; color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: .08em; line-height: 1.4; text-transform: uppercase; }
 .team-card__bio { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-
-.team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__body,
-.team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__body {
-  min-height: 0;
-  padding: 22px 13px;
-  background: linear-gradient(180deg, transparent, rgba(0,0,84,.88));
-}
-.team-card:not(:first-child):not(:hover):not(:focus-within) h3,
-.team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child h3 {
-  color: var(--white);
-  font-size: 16px;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-.team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__role,
-.team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__bio,
-.team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__role,
-.team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__bio { display: none; }
-
-.team-card:first-child img { object-fit: contain; background: #f4f8ff; }
 
 .cta-panel { width: min(1320px, calc(100vw - 32px)); margin-top: 32px; display: flex; justify-content: space-between; align-items: end; gap: 48px; padding: clamp(54px, 7vw, 86px); border-radius: 28px; background: linear-gradient(135deg, var(--blue), #2886f9 62%, #08bdb1 130%); color: var(--white); }
 .cta-panel h2 { max-width: 760px; }
@@ -641,24 +617,8 @@ section { width: var(--page); margin: 0 auto; }
   .split-section { grid-template-columns: 1fr; }
   .split-section--reverse .split-section__copy { order: initial; }
   .founder-profile { grid-template-columns: 1fr 1fr; gap: 52px; }
-  .team-grid { display: grid; grid-template-columns: 1fr 1fr; height: auto; }
-  .team-card,
-  .team-card:first-child,
-  .team-grid:has(.team-card:is(:hover, :focus-within)) .team-card:first-child,
-  .team-grid .team-card:is(:hover, :focus-within) { min-height: 0; flex: none; box-shadow: none; }
-  .team-card img,
-  .team-card:first-child img,
-  .team-card:is(:hover, :focus-within) img,
-  .team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child img { position: static; aspect-ratio: 1; object-fit: contain; background: #f4f8ff; }
-  .team-card__body,
-  .team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__body,
-  .team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__body { position: static; min-height: 178px; padding: 26px 24px 30px; background: rgba(255,255,255,.96); }
-  .team-card:not(:first-child):not(:hover):not(:focus-within) h3,
-  .team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child h3 { color: var(--ink); font-size: 21px; writing-mode: initial; transform: none; }
-  .team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__role,
-  .team-card:not(:first-child):not(:hover):not(:focus-within) .team-card__bio,
-  .team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__role,
-  .team-grid:has(.team-card:not(:first-child):is(:hover, :focus-within)) .team-card:first-child .team-card__bio { display: block; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-card img { height: min(42vw, 400px); }
   .site-footer { grid-template-columns: auto 1fr auto; }
   .site-footer nav { grid-column: 1 / -1; grid-row: 2; padding-bottom: 30px; }
 }
@@ -733,6 +693,7 @@ section { width: var(--page); margin: 0 auto; }
   .team-section { padding-top: 76px; padding-bottom: 82px; }
   .team-section__heading { margin-bottom: 40px; }
   .team-grid { grid-template-columns: 1fr; }
+  .team-card img { height: min(calc(100vw - 32px), 400px); }
   .team-card__role { min-height: 0; }
   .cta-panel { width: calc(100% - 16px); margin-top: 16px; align-items: flex-start; flex-direction: column; padding: 58px 26px; border-radius: 22px; }
   .contact-layout { grid-template-columns: 1fr; gap: 52px; }
