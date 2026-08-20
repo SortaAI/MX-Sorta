@@ -65,8 +65,8 @@ button, input, textarea, select { font: inherit; }
   gap: 32px;
   border-bottom: 1px solid var(--line);
 }
-.brand { justify-self: start; }
-.brand img { width: 46px; height: auto; }
+.brand { justify-self: start; display: inline-flex; align-items: center; text-decoration: none; }
+.brand img { width: 104px; height: auto; }
 .site-nav { display: flex; gap: 30px; align-items: center; }
 .site-nav a,
 .site-footer a {
@@ -630,7 +630,7 @@ section { width: var(--page); margin: 0 auto; }
   .preview-notice { justify-content: flex-start; }
   .site-header { min-height: 66px; grid-template-columns: 1fr auto; gap: 15px; }
   .site-nav { display: none; }
-  .brand img { width: 42px; }
+  .brand img { width: 92px; }
   .button--small { min-height: 38px; padding: 9px 12px; }
   .hero { width: calc(100% - 16px); min-height: 0; gap: 62px; padding: 64px 24px 98px; border-radius: 22px; }
   .hero h1 { font-size: clamp(42px, 13vw, 60px); }
