@@ -1,188 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-MX">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="/support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recepción envía los datos por WhatsApp y Sorta prepara los formatos existentes del consultorio en un paquete PDF listo para revisar.">
+  <title>Cómo funciona Sorta | Del mensaje al PDF de la visita</title>
+  <link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/como-funciona">
+  <link rel="alternate" hreflang="en" href="https://getsorta.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/home-preview.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-<title>Cómo funciona Sorta | Llena los formatos de tu consultorio una sola vez</title>
-<link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
-<meta name="description" content="Captura los datos del paciente una vez y Sorta llena la historia clínica, consentimientos y avisos de tu consultorio. PDFs limpios y registro fechado, por WhatsApp.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/como-funciona">
-<link rel="alternate" hreflang="en" href="https://getsorta.io">
-<link rel="stylesheet" href="/assets/styles.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#2740fc;text-decoration:none}
-a:hover{color:#2886f9}
-</style>
-</helmet>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Sorta — inicio"><img src="/assets/sorta-logo.svg" alt="Sorta" width="92" height="25"></a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="/como-funciona" aria-current="page">Cómo funciona</a>
+      <a href="/seguridad">Seguridad</a>
+      <a href="/preguntas-frecuentes">Preguntas</a>
+      <a href="/nosotros">Quién lo hace</a>
+      <a class="language-link" href="https://getsorta.io/" lang="en" hreflang="en-US" aria-label="View the United States site in English"><span aria-hidden="true">🇺🇸</span> EN</a>
+    </nav>
+    <a class="button button--small" href="/contacto">Solicita acceso</a>
+  </header>
 
-<div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#334155">
-
-  <div style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0">
-    <div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
-      <a href="/" style="display:flex;align-items:center;gap:10px"><img src="/assets/sorta-logo.svg" alt="Sorta" style="height:24px;width:auto"></a>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px">
-        <a href="/como-funciona" style="font-size:14px;font-weight:600;color:#2740fc">Cómo funciona</a>
-        <a href="/seguridad" style="font-size:14px;font-weight:500;color:#334155">Seguridad y registros</a>
-        <a href="/preguntas-frecuentes" style="font-size:14px;font-weight:500;color:#334155">Preguntas frecuentes</a>
-        <a href="/nosotros" style="font-size:14px;font-weight:500;color:#334155">Quién lo hace</a>
-        <a href="https://getsorta.io/" class="site-switcher" lang="en" hreflang="en-US" aria-label="View the United States site in English" title="United States — English"><span class="site-switcher-flag" aria-hidden="true">🇺🇸</span><span>EN</span></a>
-        <a href="/contacto" style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;color:#fff;background:#2740fc;padding:10px 18px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3)" style-hover="background:#2886f9">Solicita acceso →</a>
+  <main class="page-main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__copy">
+        <p class="section-label">Cómo funciona</p>
+        <h1 id="page-title">Un mensaje entra. <em>La visita sale lista.</em></h1>
+        <p class="page-hero__lead">Recepción manda la información del paciente por WhatsApp. Sorta coloca esos datos en los documentos que el consultorio ya usa y devuelve un paquete PDF para revisar, firmar y guardar.</p>
       </div>
-    </div>
-  </div>
+      <aside class="page-hero__aside">
+        <p class="section-label">La idea completa</p>
+        <strong>Una sola captura alimenta cada hoja de la visita.</strong>
+        <p>Sin migrar el sistema actual, cambiar de formatos o instalar otra aplicación en recepción.</p>
+      </aside>
+    </section>
 
-  <div style="max-width:1200px;margin:0 auto;padding:80px 24px 0">
-    <div style="max-width:760px;display:flex;flex-direction:column;gap:20px">
-      <div style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#02e3d3">Cómo funciona</div>
-      <h1 style="font-family:'Poppins',sans-serif;font-size:clamp(34px,5vw,52px);font-weight:300;line-height:1.1;letter-spacing:-.035em;color:#000054;margin:0;text-wrap:balance">Un dato escrito una vez, <strong style="font-weight:700">viaja a todas las hojas de la visita.</strong></h1>
-      <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:62ch;font-size:18px;line-height:1.6;color:#475569;text-wrap:pretty">Así se ve el proceso completo, del momento en que llega el paciente hasta el registro que queda guardado. Sin cambiar tus formatos y sin migrar tu sistema.</p>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:0 auto;padding:56px 24px 0;display:flex;flex-direction:column;gap:24px">
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;border-top:2px solid #2740fc;padding-top:28px">
-      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:#94a3b8">PASO 01</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">La recepción captura una vez</h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16px;line-height:1.62;color:#475569;text-wrap:pretty">Nombre, fecha de nacimiento, CURP, teléfono y motivo de consulta. Se escribe en una sola pantalla, en la computadora que ya está en el mostrador, o llega por WhatsApp desde el celular del consultorio.</p>
+    <section class="content-section" aria-labelledby="steps-title">
+      <div class="content-section__heading">
+        <p class="section-label">Del paciente al archivo</p>
+        <h2 id="steps-title">Cuatro momentos. <em>Un solo flujo.</em></h2>
       </div>
-      <div style="min-width:0;border:1px solid #e2e8f0;border-radius:16px;background:#fff;box-shadow:0 2px 16px rgba(0,0,84,.06);padding:20px;display:flex;flex-direction:column;gap:12px">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><span style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:700;color:#000054">Datos del paciente</span><span style="font-size:11.5px;color:#94a3b8">6 campos</span></div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px">
-          <div style="display:flex;flex-direction:column;gap:5px"><span style="font-size:11px;font-weight:600;color:#334155">Nombre completo</span><span style="padding:8px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:12.5px;color:#000054;overflow-wrap:anywhere">María G. Sánchez Ríos</span></div>
-          <div style="display:flex;flex-direction:column;gap:5px"><span style="font-size:11px;font-weight:600;color:#334155">Nacimiento</span><span style="padding:8px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:12.5px;color:#000054">04/03/1992</span></div>
-          <div style="display:flex;flex-direction:column;gap:5px"><span style="font-size:11px;font-weight:600;color:#334155">CURP</span><span style="padding:8px 10px;border:2px solid #2740fc;border-radius:8px;font-size:12.5px;color:#000054;box-shadow:0 0 0 3px rgba(39,64,252,.15);overflow-wrap:anywhere">SARM920304MCHNS08</span></div>
-          <div style="display:flex;flex-direction:column;gap:5px"><span style="font-size:11px;font-weight:600;color:#334155">Teléfono</span><span style="padding:8px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:12.5px;color:#000054">656 214 8890</span></div>
+      <div class="step-stack">
+        <article class="step-row">
+          <span class="step-row__number">01</span>
+          <h2>Recepción envía los datos.</h2>
+          <p>Nombre, fecha de nacimiento, teléfono y motivo de consulta llegan por mensaje desde el celular o la computadora que el equipo ya utiliza.</p>
+        </article>
+        <article class="step-row">
+          <span class="step-row__number">02</span>
+          <h2>Sorta prepara cada formato.</h2>
+          <p>La misma información se coloca en la historia clínica, consentimientos, avisos y demás PDFs configurados para ese consultorio.</p>
+        </article>
+        <article class="step-row">
+          <span class="step-row__number">03</span>
+          <h2>El paquete vuelve por WhatsApp.</h2>
+          <p>Recepción recibe un PDF organizado para revisar. Si un dato necesita corrección, se actualiza antes de continuar con la operación habitual.</p>
+        </article>
+        <article class="step-row">
+          <span class="step-row__number">04</span>
+          <h2>El consultorio revisa y resguarda.</h2>
+          <p>El equipo firma, imprime o archiva según su proceso. Sorta conserva el paquete fechado de esa visita dentro del alcance acordado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section--tint split-section" aria-labelledby="message-title">
+      <div class="split-section__copy">
+        <p class="section-label">El mismo flujo, por mensaje</p>
+        <h2 id="message-title">Si el consultorio vive en WhatsApp, <em>no tiene que abrir nada más.</em></h2>
+        <p>Sorta se adapta al canal que recepción ya revisa durante el día. El mensaje inicia el trabajo y el documento terminado vuelve al mismo lugar.</p>
+      </div>
+      <div class="chat-window" aria-label="Ejemplo ilustrativo del flujo por WhatsApp">
+        <div class="chat-window__bar"><span class="chat-window__avatar" aria-hidden="true">S</span><div><strong>Sorta</strong><span>Datos ficticios</span></div></div>
+        <div class="chat-window__body">
+          <div class="message message--sent">Nueva paciente: María Sánchez, 04/03/1992. Consulta general.<small>11:20</small></div>
+          <div class="message">Preparé los tres documentos de la visita.<small>11:20</small></div>
+          <div class="message message--file"><i aria-hidden="true">PDF</i><div><strong>Visita_Maria_Sanchez.pdf</strong><span>6 páginas · listo para revisión</span></div></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;border-top:2px solid #2886f9;padding-top:28px">
-      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:#94a3b8">PASO 02</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">El dato se copia a cada formato</h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16px;line-height:1.62;color:#475569;text-wrap:pretty">Subes una vez los PDFs que tu consultorio ya usa y Sorta aprende dónde va cada dato. De ahí en adelante, un solo nombre llena todas las hojas donde ese nombre aparece. Si corriges un dato, se corrige en todas.</p>
+    <section class="content-section" aria-labelledby="scope-title">
+      <div class="content-section__heading">
+        <p class="section-label">Alcance claro</p>
+        <h2 id="scope-title">Lo que resuelve. <em>Y lo que deja en paz.</em></h2>
       </div>
-      <div style="min-width:0;border:1px solid #e2e8f0;border-radius:16px;background:#f8fafc;padding:22px;display:flex;flex-direction:column;gap:14px">
-        <div style="display:flex;align-items:center;gap:10px"><span style="width:9px;height:9px;border-radius:9999px;background:#2740fc;box-shadow:0 0 0 4px rgba(39,64,252,.15)"></span><span style="font-size:12.5px;font-weight:600;color:#000054">6 datos capturados</span></div>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:10px"><span style="flex:1;min-width:0;font-size:13px;color:#000054">Historia clínica</span><span style="font-size:12px;font-weight:600;color:#02e3d3">18 campos ✓</span></div>
-          <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:10px"><span style="flex:1;min-width:0;font-size:13px;color:#000054">Consentimiento informado</span><span style="font-size:12px;font-weight:600;color:#02e3d3">9 campos ✓</span></div>
-          <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:10px"><span style="flex:1;min-width:0;font-size:13px;color:#000054">Aviso de privacidad</span><span style="font-size:12px;font-weight:600;color:#02e3d3">7 campos ✓</span></div>
-          <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:10px"><span style="flex:1;min-width:0;font-size:13px;color:#000054">Hoja de referencia</span><span style="font-size:12px;font-weight:600;color:#02e3d3">8 campos ✓</span></div>
-        </div>
-        <div style="font-size:12.5px;color:#64748b">Total: <strong style="color:#000054">42 campos</strong> que nadie volvió a teclear.</div>
+      <div class="feature-grid">
+        <article class="feature-card"><p class="feature-card__tag">Sí hace</p><h3>Prepara el papeleo de la visita.</h3><p>Trabaja sobre los formatos existentes y reduce los datos que recepción vuelve a escribir.</p></article>
+        <article class="feature-card"><p class="feature-card__tag">No cambia</p><h3>Tu sistema y tus formatos.</h3><p>No exige una migración ni sustituye las herramientas que ya funcionan en el consultorio.</p></article>
+        <article class="feature-card"><p class="feature-card__tag">No pretende</p><h3>Ser agenda o expediente clínico.</h3><p>Sorta se concentra en el papeleo alrededor de la visita y explica sus límites por escrito.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;border-top:2px solid #99bdff;padding-top:28px">
-      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:#94a3b8">PASO 03</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">Sale el PDF, idéntico al tuyo</h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16px;line-height:1.62;color:#475569;text-wrap:pretty">El paquete de la visita conserva el diseño, el logo y el orden de hojas de tu consultorio. Lo imprimes para firma de puño y letra, o lo firman en pantalla. El paciente no nota ningún cambio; la recepción sí.</p>
-      </div>
-      <div style="min-width:0;display:flex;gap:12px;flex-wrap:wrap">
-        <div style="flex:1 1 150px;min-width:0;border:1px solid #e2e8f0;border-radius:12px;background:#fff;box-shadow:0 2px 16px rgba(0,0,84,.06);padding:16px;display:flex;flex-direction:column;gap:7px">
-          <span style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;color:#000054">Historia clínica</span>
-          <span style="height:1px;background:#e2e8f0"></span>
-          <span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#94a3b8">Paciente</span>
-          <span style="font-size:11.5px;color:#000054;border-bottom:1px solid #e2e8f0;padding-bottom:3px;overflow-wrap:anywhere">María G. Sánchez Ríos</span>
-          <span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#94a3b8;margin-top:4px">CURP</span>
-          <span style="font-size:11.5px;color:#000054;border-bottom:1px solid #e2e8f0;padding-bottom:3px;overflow-wrap:anywhere">SARM920304MCHNS08</span>
-        </div>
-        <div style="flex:1 1 150px;min-width:0;border:1px solid #e2e8f0;border-radius:12px;background:#fff;padding:16px;display:flex;flex-direction:column;gap:7px;opacity:.75">
-          <span style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;color:#000054">Consentimiento</span>
-          <span style="height:1px;background:#e2e8f0"></span>
-          <span style="height:8px;background:#f1f5f9;border-radius:2px"></span>
-          <span style="height:8px;background:#f1f5f9;border-radius:2px;width:82%"></span>
-          <span style="height:8px;background:#f1f5f9;border-radius:2px;width:64%"></span>
-          <span style="margin-top:auto;font-size:11px;font-weight:600;color:#065f46;background:#ccf9f6;border-radius:6px;padding:5px 8px">Firmado ✓</span>
-        </div>
-      </div>
-    </div>
+    <section class="cta-panel" aria-labelledby="cta-title">
+      <div><p class="section-label">Pruébalo con tus formatos</p><h2 id="cta-title">Muéstranos una visita real. <em>Nosotros empezamos por ahí.</em></h2><p>Una conversación breve por WhatsApp para entender cómo trabaja tu recepción hoy.</p></div>
+      <a class="button button--light" href="/contacto">Platicar por WhatsApp</a>
+    </section>
+  </main>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;border-top:2px solid #02e3d3;padding-top:28px">
-      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:#94a3b8">PASO 04</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">La visita queda como registro fechado</h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16px;line-height:1.62;color:#475569;text-wrap:pretty">Al cerrar la visita se guarda una copia limpia con hora exacta de lo que se llenó y se firmó. Queda bloqueada: se puede consultar y descargar, no editar por debajo. <a href="/seguridad">Cómo se resguarda →</a></p>
-      </div>
-      <div style="min-width:0;border:1px solid #e2e8f0;border-radius:16px;background:#fff;box-shadow:0 2px 16px rgba(0,0,84,.06);overflow:hidden">
-        <div style="padding:14px 18px;border-bottom:1px solid #e2e8f0;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;color:#000054">Registro de la visita</div>
-        <div style="padding:16px 18px;display:flex;flex-direction:column;gap:11px">
-          <div style="display:flex;justify-content:space-between;gap:14px"><span style="font-size:13px;color:#64748b">Paciente</span><span style="font-size:13px;font-weight:600;color:#000054;text-align:right;overflow-wrap:anywhere">María G. Sánchez Ríos</span></div>
-          <div style="display:flex;justify-content:space-between;gap:14px"><span style="font-size:13px;color:#64748b">Fecha y hora</span><span style="font-size:13px;font-weight:600;color:#000054">15 ago 2026, 11:24</span></div>
-          <div style="display:flex;justify-content:space-between;gap:14px"><span style="font-size:13px;color:#64748b">Documentos</span><span style="font-size:13px;font-weight:600;color:#000054">4 firmados · 6 págs.</span></div>
-          <div style="display:flex;justify-content:space-between;gap:14px;align-items:center"><span style="font-size:13px;color:#64748b">Estado</span><span style="font-size:12px;font-weight:600;color:#065f46;background:#ccf9f6;border-radius:9999px;padding:5px 11px">Bloqueado ✓</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-top:88px;background:#eaf4ff;border-top:1px solid #d8e8fb;border-bottom:1px solid #d8e8fb">
-    <div style="max-width:1200px;margin:0 auto;padding:72px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center">
-      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
-        <div style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2740fc">El mismo flujo, por mensaje</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(28px,3.4vw,36px);font-weight:300;line-height:1.15;letter-spacing:-.03em;color:#000054;margin:0;text-wrap:balance">Si tu consultorio trabaja en WhatsApp, <strong style="font-weight:700">no tienes que abrir nada más.</strong></h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16.5px;line-height:1.6;color:#334155;text-wrap:pretty">Los cuatro pasos son los mismos. La diferencia es dónde ocurren: la recepción manda los datos por mensaje y recibe de vuelta el paquete en PDF, ya listo para imprimir o firmar.</p>
-      </div>
-      <div style="min-width:0;background:#fff;border:1px solid #cfe2fb;border-radius:20px;box-shadow:0 20px 25px -5px rgba(0,0,84,.08);overflow:hidden">
-        <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;border-bottom:1px solid #eef2f7">
-          <div style="width:30px;height:30px;border-radius:9999px;background:#2740fc;flex:none"></div>
-          <div style="display:flex;flex-direction:column"><span style="font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#000054">Sorta</span><span style="font-size:11px;color:#02e3d3">en línea</span></div>
-        </div>
-        <div style="padding:16px;display:flex;flex-direction:column;gap:10px;background:#fbfdff">
-          <div style="align-self:flex-end;max-width:86%;background:#d1e4ff;border-radius:14px 14px 4px 14px;padding:10px 13px;font-size:13.5px;line-height:1.5;color:#0b1e50">Jorge Luis Medina, 51 años, seguimiento. Mismos datos del mes pasado.</div>
-          <div style="align-self:flex-start;max-width:86%;background:#fff;border:1px solid #e2e8f0;border-radius:14px 14px 14px 4px;padding:10px 13px;font-size:13.5px;line-height:1.5;color:#334155">Reusé su expediente. Actualicé fecha de visita en los 4 formatos.</div>
-          <div style="align-self:flex-start;display:flex;align-items:center;gap:8px;background:#ccf9f6;border-radius:9999px;padding:7px 13px"><span style="font-size:12px;font-weight:600;color:#065f46">Guardado con fecha y hora ✓</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:0 auto;padding:80px 24px 0">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:start">
-      <div style="min-width:0;display:flex;flex-direction:column;gap:14px">
-        <div style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#02e3d3">Los límites, claros</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(28px,3.4vw,36px);font-weight:300;line-height:1.15;letter-spacing:-.03em;color:#000054;margin:0;text-wrap:balance">Lo que Sorta <strong style="font-weight:700">no hace.</strong></h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:50ch;font-size:16px;line-height:1.6;color:#475569;text-wrap:pretty">Preferimos decirlo antes de que lo preguntes. Sorta es una capa de papeleo: hace bien una sola cosa y no pretende reemplazar tu operación clínica.</p>
-      </div>
-      <div style="min-width:0;display:flex;flex-direction:column">
-        <div style="display:flex;gap:16px;padding:16px 0;border-top:1px solid #e2e8f0"><span style="font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:700;color:#000054;flex:0 0 42%">No es expediente certificado</span><span style="font-size:14.5px;line-height:1.55;color:#475569;flex:1;min-width:0">Organizamos y resguardamos tu papeleo; no sustituimos un expediente clínico certificado.</span></div>
-        <div style="display:flex;gap:16px;padding:16px 0;border-top:1px solid #e2e8f0"><span style="font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:700;color:#000054;flex:0 0 42%">No es agenda ni citas</span><span style="font-size:14.5px;line-height:1.55;color:#475569;flex:1;min-width:0">No programamos consultas ni mandamos recordatorios de cita.</span></div>
-        <div style="display:flex;gap:16px;padding:16px 0;border-top:1px solid #e2e8f0"><span style="font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:700;color:#000054;flex:0 0 42%">No es software clínico</span><span style="font-size:14.5px;line-height:1.55;color:#475569;flex:1;min-width:0">No damos diagnósticos, recetas ni interpretaciones. Eso lo hace el médico.</span></div>
-        <div style="display:flex;gap:16px;padding:16px 0;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0"><span style="font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:700;color:#000054;flex:0 0 42%">No te pide migrar</span><span style="font-size:14.5px;line-height:1.55;color:#475569;flex:1;min-width:0">Tu sistema actual se queda donde está. Sorta trabaja encima de él.</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:80px auto 0;padding:0 24px">
-    <div style="border:1px solid #e2e8f0;border-radius:20px;background:#f8fafc;padding:40px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
-      <div style="min-width:0;display:flex;flex-direction:column;gap:10px;max-width:52ch">
-        <h2 style="font-family:'Poppins',sans-serif;font-size:26px;font-weight:300;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">¿Así llenas tus formatos hoy? <strong style="font-weight:700">Cuéntanos cómo lo haces.</strong></h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;font-size:15.5px;line-height:1.6;color:#475569">Quince minutos por WhatsApp, sin compromiso y sin demo de ventas.</p>
-      </div>
-      <a href="/contacto" style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#fff;background:#2740fc;padding:14px 26px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3);white-space:nowrap" style-hover="background:#2886f9">Solicita acceso →</a>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:72px auto 0;padding:26px 24px 44px;border-top:1px solid #e2e8f0;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
-    <img src="/assets/sorta-logo.svg" alt="Sorta" style="height:20px;width:auto;opacity:.9">
-    <div style="display:flex;flex-wrap:wrap;gap:18px;font-size:13px"><a href="/" style="color:#64748b">Inicio</a><a href="/seguridad" style="color:#64748b">Seguridad y registros</a><a href="/preguntas-frecuentes" style="color:#64748b">Preguntas frecuentes</a><a href="/nosotros" style="color:#64748b">Quién lo hace</a><a href="/contacto" style="color:#64748b">Contacto</a></div>
-    <div style="font-size:12.5px;color:#94a3b8">© 2026 Sorta</div>
-  </div>
-</div>
-</x-dc>
+  <footer class="site-footer">
+    <img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22"><p>La capa de papeleo para consultorios independientes.</p>
+    <nav aria-label="Navegación del pie"><a href="/">Inicio</a><a href="/seguridad">Seguridad</a><a href="/preguntas-frecuentes">Preguntas</a><a href="/nosotros">Quién lo hace</a></nav><small>© 2026 Sorta</small>
+  </footer>
 </body>
 </html>

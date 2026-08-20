@@ -20,9 +20,11 @@
       <img src="/assets/sorta-logo.svg" alt="Sorta" width="92" height="25">
     </a>
     <nav class="site-nav" aria-label="Navegación principal">
-      <a href="#proceso">Cómo funciona</a>
-      <a href="#seguridad">Seguridad</a>
+      <a href="/como-funciona">Cómo funciona</a>
+      <a href="/seguridad">Seguridad</a>
       <a href="/preguntas-frecuentes">Preguntas</a>
+      <a href="/nosotros">Quién lo hace</a>
+      <a class="language-link" href="https://getsorta.io/" lang="en" hreflang="en-US" aria-label="View the United States site in English"><span aria-hidden="true">🇺🇸</span> EN</a>
     </nav>
     <a class="button button--small" href="/contacto">Solicita acceso</a>
   </header>
@@ -30,9 +32,9 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__copy">
-        <p class="section-label">Papeleo clínico, resuelto</p>
-        <h1 id="hero-title">Los datos se escriben una vez. <em>Los formatos quedan listos.</em></h1>
-        <p class="hero__lead">Sorta trabaja con los documentos que tu consultorio ya usa. Recepción captura la información del paciente una sola vez y recibe cada PDF listo para revisar, firmar y guardar.</p>
+        <p class="section-label">Papeleo clínico por WhatsApp</p>
+        <h1 id="hero-title">Manda los datos una vez. <em>Recibe los formatos listos.</em></h1>
+        <p class="hero__lead">Recepción envía la información del paciente por WhatsApp. Sorta llena los documentos que el consultorio ya usa y devuelve el paquete PDF listo para revisar, firmar y guardar.</p>
         <div class="hero__actions">
           <a class="button" href="/contacto">Platicar por WhatsApp</a>
           <a class="text-link" href="#proceso">Ver el proceso <span aria-hidden="true">↓</span></a>
@@ -43,7 +45,7 @@
       <div class="workspace" aria-label="Ejemplo ilustrativo de una visita en Sorta">
         <div class="workspace__topbar">
           <div>
-            <span class="workspace__eyebrow">Visita abierta</span>
+            <span class="workspace__eyebrow">Visita recibida por WhatsApp</span>
             <strong>María S. · Consulta general</strong>
           </div>
           <span class="workspace__status"><i aria-hidden="true"></i> Datos revisados</span>
@@ -152,6 +154,35 @@
           <div class="paper__lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
           <footer><span>Consultorio Santa Fe</span><span>Documento ilustrativo</span></footer>
         </article>
+      </div>
+    </section>
+
+    <section class="whatsapp-flow" aria-labelledby="whatsapp-title">
+      <div class="whatsapp-flow__copy">
+        <p class="section-label">Todo por WhatsApp</p>
+        <h2 id="whatsapp-title">Tu recepción ya trabaja ahí. <em>Sorta también.</em></h2>
+        <p>El equipo manda los datos del paciente como manda cualquier otro mensaje. Sorta devuelve el paquete de la visita en PDF, usando los formatos del consultorio.</p>
+        <ul class="whatsapp-flow__points">
+          <li>Funciona desde el celular o la computadora de recepción</li>
+          <li>No requiere instalar otra aplicación</li>
+          <li>El PDF vuelve listo para revisar, imprimir o firmar</li>
+        </ul>
+        <a class="button" href="/como-funciona">Ver el flujo completo</a>
+      </div>
+      <div class="chat-window" aria-label="Conversación ilustrativa entre recepción y Sorta">
+        <div class="chat-window__bar">
+          <span class="chat-window__avatar" aria-hidden="true">S</span>
+          <div><strong>Sorta</strong><span>Flujo ilustrativo · datos ficticios</span></div>
+        </div>
+        <div class="chat-window__body">
+          <div class="message message--sent">Nueva paciente: María Guadalupe Sánchez, 04/03/1992, consulta general.<small>11:20</small></div>
+          <div class="message">Listo. Preparé los formatos de esta visita con esos datos.<small>11:20</small></div>
+          <div class="message message--file">
+            <i aria-hidden="true">PDF</i>
+            <div><strong>Paquete_Maria_Sanchez.pdf</strong><span>Historia clínica · consentimiento · aviso</span></div>
+          </div>
+          <div class="message message--sent">Recibido. Lo revisamos y firmamos aquí.<small>11:22</small></div>
+        </div>
       </div>
     </section>
 

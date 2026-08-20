@@ -1,120 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-MX">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="/support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qué información procesa Sorta, cómo se organiza por visita y cuáles son los límites del producto para consultorios en México.">
+  <title>Seguridad y límites del producto | Sorta México</title>
+  <link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/seguridad">
+  <link rel="alternate" hreflang="en" href="https://getsorta.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/home-preview.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-<title>Seguridad y registros | Cómo Sorta protege los datos de tu consultorio</title>
-<link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
-<meta name="description" content="Qué guarda Sorta, dónde vive, quién lo ve y por cuánto tiempo. Registros fechados y bloqueados de cada visita. No somos un expediente clínico certificado.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/seguridad">
-<link rel="alternate" hreflang="en" href="https://getsorta.io">
-<link rel="stylesheet" href="/assets/styles.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#2740fc;text-decoration:none}
-a:hover{color:#2886f9}
-</style>
-</helmet>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Sorta — inicio"><img src="/assets/sorta-logo.svg" alt="Sorta" width="92" height="25"></a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="/como-funciona">Cómo funciona</a><a href="/seguridad" aria-current="page">Seguridad</a><a href="/preguntas-frecuentes">Preguntas</a><a href="/nosotros">Quién lo hace</a>
+      <a class="language-link" href="https://getsorta.io/" lang="en" hreflang="en-US" aria-label="View the United States site in English"><span aria-hidden="true">🇺🇸</span> EN</a>
+    </nav>
+    <a class="button button--small" href="/contacto">Solicita acceso</a>
+  </header>
 
-<div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#334155">
+  <main class="page-main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__copy">
+        <p class="section-label">Seguridad y registros</p>
+        <h1 id="page-title">Los datos del paciente <em>no son nuestros.</em></h1>
+        <p class="page-hero__lead">Sorta usa la información que recibe para preparar y organizar el papeleo del consultorio. Explicamos qué se procesa, qué queda registrado y dónde termina el alcance del producto.</p>
+      </div>
+      <aside class="page-hero__aside"><p class="section-label">Principio de producto</p><strong>La confianza empieza diciendo exactamente qué hacemos.</strong><p>También implica decir con claridad lo que Sorta todavía no es.</p></aside>
+    </section>
 
-  <div style="position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0">
-    <div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
-      <a href="/" style="display:flex;align-items:center;gap:10px"><img src="/assets/sorta-logo.svg" alt="Sorta" style="height:24px;width:auto"></a>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px">
-        <a href="/como-funciona" style="font-size:14px;font-weight:500;color:#334155">Cómo funciona</a>
-        <a href="/seguridad" style="font-size:14px;font-weight:600;color:#2740fc">Seguridad y registros</a>
-        <a href="/preguntas-frecuentes" style="font-size:14px;font-weight:500;color:#334155">Preguntas frecuentes</a>
-        <a href="/nosotros" style="font-size:14px;font-weight:500;color:#334155">Quién lo hace</a>
-        <a href="https://getsorta.io/" class="site-switcher" lang="en" hreflang="en-US" aria-label="View the United States site in English" title="United States — English"><span class="site-switcher-flag" aria-hidden="true">🇺🇸</span><span>EN</span></a>
-        <a href="/contacto" style="font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:600;color:#fff;background:#2740fc;padding:10px 18px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3)" style-hover="background:#2886f9">Solicita acceso →</a>
+    <section class="content-section--tint" aria-labelledby="ledger-title">
+      <div class="content-section__heading"><p class="section-label">Punto por punto</p><h2 id="ledger-title">Qué ocurre con la información <em>durante una visita.</em></h2></div>
+      <div class="ledger">
+        <article class="ledger-row"><p class="ledger-row__label">Entrada</p><h3>Recepción envía los datos necesarios.</h3><span>La información llega por el canal acordado, incluido WhatsApp cuando ese es el flujo del consultorio.</span></article>
+        <article class="ledger-row"><p class="ledger-row__label">Proceso</p><h3>Los datos llenan los formatos configurados.</h3><span>Sorta los coloca en los documentos que el consultorio proporcionó para preparar el paquete de la visita.</span></article>
+        <article class="ledger-row"><p class="ledger-row__label">Registro</p><h3>El paquete queda asociado a esa visita.</h3><span>La versión terminada se identifica con fecha y hora para conservar qué documento se preparó en ese momento.</span></article>
+        <article class="ledger-row"><p class="ledger-row__label">Propiedad</p><h3>La información pertenece al consultorio.</h3><span>Sorta no la vende ni la utiliza para publicidad de terceros.</span></article>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div style="max-width:1200px;margin:0 auto;padding:80px 24px 0">
-    <div style="max-width:760px;display:flex;flex-direction:column;gap:20px">
-      <div style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#02e3d3">Seguridad y registros</div>
-      <h1 style="font-family:'Poppins',sans-serif;font-size:clamp(34px,5vw,52px);font-weight:300;line-height:1.1;letter-spacing:-.035em;color:#000054;margin:0;text-wrap:balance">Los datos de tus pacientes <strong style="font-weight:700">no son nuestros. Son tuyos.</strong></h1>
-      <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:62ch;font-size:18px;line-height:1.6;color:#475569;text-wrap:pretty">Esta página dice exactamente qué guarda Sorta, dónde vive, quién puede verlo y qué no somos. Sin sellos ni promesas que no podamos sostener.</p>
-    </div>
-  </div>
+    <section class="split-section" aria-labelledby="limits-title">
+      <div class="split-section__copy"><p class="section-label">Sin letra pequeña</p><h2 id="limits-title">Papeleo digital no significa <em>prometerlo todo.</em></h2><p>Sorta organiza documentos alrededor de la visita. El consultorio sigue siendo responsable de revisar el paquete, firmar cuando corresponda y decidir cómo integrarlo a su operación clínica.</p></div>
+      <aside class="boundary-box">
+        <h3>Sorta no sustituye:</h3>
+        <ul><li>El expediente clínico electrónico del consultorio</li><li>La agenda o los recordatorios de citas</li><li>El criterio clínico o la revisión humana</li><li>Las responsabilidades legales del prestador de salud</li></ul>
+      </aside>
+    </section>
 
-  <div style="max-width:1200px;margin:0 auto;padding:48px 24px 0">
-    <div style="border:1px solid #cfe2fb;border-radius:20px;background:#eaf4ff;padding:34px 36px;display:flex;flex-direction:column;gap:14px;max-width:900px">
-      <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:9999px;background:#02e3d3"></span><span style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#000054">Resguardo</span></div>
-      <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;font-size:clamp(17px,2.2vw,20px);line-height:1.6;color:#0b1e50;text-wrap:pretty">Cada visita se guarda como un registro fechado y bloqueado: una copia limpia con hora exacta de lo que se llenó y firmó, en la nube y guardada a largo plazo. No somos un expediente clínico certificado — organizamos y resguardamos tu papeleo, sin reemplazar tu sistema.</p>
-    </div>
-  </div>
+    <section class="content-section content-section--tight" aria-labelledby="questions-title">
+      <div class="content-section__heading"><p class="section-label">Preguntas que sí importan</p><h2 id="questions-title">Antes de usar Sorta, <em>pregunta esto.</em></h2></div>
+      <div class="feature-grid">
+        <article class="feature-card"><p class="feature-card__tag">01</p><h3>¿Qué datos necesita mi flujo?</h3><p>Revisamos los campos de tus formatos y evitamos pedir información que no haga falta para prepararlos.</p></article>
+        <article class="feature-card"><p class="feature-card__tag">02</p><h3>¿Quién puede ver los documentos?</h3><p>El acceso y las responsabilidades se definen con el consultorio antes de trabajar con visitas reales.</p></article>
+        <article class="feature-card"><p class="feature-card__tag">03</p><h3>¿Qué ocurre si algo cambia?</h3><p>Te explicamos el proceso de corrección, resguardo y salida de información aplicable a tu implementación.</p></article>
+      </div>
+    </section>
 
-  <div style="max-width:1200px;margin:0 auto;padding:72px 24px 0">
-    <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(28px,3.4vw,36px);font-weight:300;line-height:1.15;letter-spacing:-.03em;color:#000054;margin:0 0 28px;text-wrap:balance">Qué guardamos, <strong style="font-weight:700">punto por punto.</strong></h2>
-    <div style="display:flex;flex-direction:column">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 40px;padding:20px 0;border-top:1px solid #e2e8f0">
-        <div style="min-width:0;display:flex;flex-direction:column;gap:5px"><span style="font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:#000054">Registro fechado y bloqueado</span><span style="font-size:13px;color:#94a3b8">Qué queda de cada visita</span></div>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;grid-column:span 2;min-width:0;font-size:15.5px;line-height:1.6;color:#475569;text-wrap:pretty">Al cerrar la visita se guarda una copia limpia con la hora exacta de lo que se llenó y se firmó. Esa copia se consulta y se descarga, pero no se edita por debajo: si algo cambia, se genera un registro nuevo y el anterior sigue ahí.</p>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 40px;padding:20px 0;border-top:1px solid #e2e8f0">
-        <div style="min-width:0;display:flex;flex-direction:column;gap:5px"><span style="font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:#000054">Dónde vive</span><span style="font-size:13px;color:#94a3b8">Almacenamiento</span></div>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;grid-column:span 2;min-width:0;font-size:15.5px;line-height:1.6;color:#475569;text-wrap:pretty">En la nube, con almacenamiento seguro y resguardo a largo plazo. No dejamos los documentos en la computadora del consultorio ni dependemos de una USB que se pierde.</p>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 40px;padding:20px 0;border-top:1px solid #e2e8f0">
-        <div style="min-width:0;display:flex;flex-direction:column;gap:5px"><span style="font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:#000054">De quién son los datos</span><span style="font-size:13px;color:#94a3b8">Propiedad y salida</span></div>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;grid-column:span 2;min-width:0;font-size:15.5px;line-height:1.6;color:#475569;text-wrap:pretty">Del consultorio. Nosotros los procesamos para llenar y resguardar tu papeleo. No vendemos información de pacientes ni la compartimos con terceros con fines comerciales.</p>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 40px;padding:20px 0;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-        <div style="min-width:0;display:flex;flex-direction:column;gap:5px"><span style="font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:#000054">Qué no somos</span><span style="font-size:13px;color:#94a3b8">El límite, por escrito</span></div>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;grid-column:span 2;min-width:0;font-size:15.5px;line-height:1.6;color:#475569;text-wrap:pretty">No somos un expediente clínico electrónico certificado, ni un sistema de citas, ni software clínico. Si alguien te ofrece las cuatro cosas en un solo producto por el precio de una, vale la pena preguntar cuál hace bien.</p>
-      </div>
-    </div>
-  </div>
+    <section class="cta-panel" aria-labelledby="cta-title"><div><p class="section-label">Pregúntanos directo</p><h2 id="cta-title">Si no podemos sostener una respuesta, <em>te lo decimos así.</em></h2><p>Cuéntanos tu caso por WhatsApp y revisamos contigo el flujo, los datos y los límites.</p></div><a class="button button--light" href="/contacto">Hablar con nosotros</a></section>
+  </main>
 
-  <div style="max-width:1200px;margin:0 auto;padding:72px 24px 0">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:start">
-      <div style="min-width:0;display:flex;flex-direction:column;gap:14px">
-        <div style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#02e3d3">Por qué importa hoy</div>
-        <h2 style="font-family:'Poppins',sans-serif;font-size:clamp(28px,3.4vw,36px);font-weight:300;line-height:1.15;letter-spacing:-.03em;color:#000054;margin:0;text-wrap:balance">El expediente se volvió digital. <strong style="font-weight:700">El papeleo sigue en papel.</strong></h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16.5px;line-height:1.6;color:#475569;text-wrap:pretty">Desde enero de 2026 el registro clínico digital es obligatorio en México y la mayoría de los consultorios independientes sigue con hojas impresas y datos que se vuelven a escribir a mano en cada formato.</p>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;max-width:52ch;font-size:16.5px;line-height:1.6;color:#475569;text-wrap:pretty">Sorta ayuda del lado del papeleo: que lo que se llena y se firma quede ordenado, legible y guardado con fecha. La certificación del expediente clínico es otra cosa, y no la sustituimos. <a href="/preguntas-frecuentes">Más sobre la digitalización 2026 →</a></p>
-      </div>
-      <div style="min-width:0;border:1px solid #e2e8f0;border-radius:16px;background:#f8fafc;padding:28px;display:flex;flex-direction:column;gap:14px">
-        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;color:#000054">Lo que sí podemos decir</div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:18px;height:18px;border-radius:9999px;background:#ccf9f6;flex:none;margin-top:2px"></span><span style="font-size:15px;line-height:1.55;color:#334155">Copia fechada y bloqueada de cada visita</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:18px;height:18px;border-radius:9999px;background:#ccf9f6;flex:none;margin-top:2px"></span><span style="font-size:15px;line-height:1.55;color:#334155">Almacenamiento seguro en la nube, a largo plazo</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:18px;height:18px;border-radius:9999px;background:#ccf9f6;flex:none;margin-top:2px"></span><span style="font-size:15px;line-height:1.55;color:#334155">Los datos son del consultorio; no se venden</span></div>
-        <div style="height:1px;background:#e2e8f0;margin:4px 0"></div>
-        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;color:#000054">Lo que no vamos a decir</div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:18px;height:18px;border-radius:9999px;background:#fee2e2;flex:none;margin-top:2px"></span><span style="font-size:15px;line-height:1.55;color:#334155">Que somos expediente clínico certificado</span></div>
-        <div style="display:flex;gap:11px;align-items:flex-start"><span style="width:18px;height:18px;border-radius:9999px;background:#fee2e2;flex:none;margin-top:2px"></span><span style="font-size:15px;line-height:1.55;color:#334155">Que te dejamos en cumplimiento por sí solo</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:80px auto 0;padding:0 24px">
-    <div style="border:1px solid #e2e8f0;border-radius:20px;background:#f8fafc;padding:40px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
-      <div style="min-width:0;display:flex;flex-direction:column;gap:10px;max-width:52ch">
-        <h2 style="font-family:'Poppins',sans-serif;font-size:26px;font-weight:300;line-height:1.2;letter-spacing:-.02em;color:#000054;margin:0">¿Tienes dudas sobre el manejo de datos? <strong style="font-weight:700">Pregúntanos directo.</strong></h2>
-        <p style="font-family:'Instrument Sans',system-ui,sans-serif;margin:0;font-size:15.5px;line-height:1.6;color:#475569">Contestamos por WhatsApp lo que podamos sostener, y te decimos cuando algo todavía no existe.</p>
-      </div>
-      <a href="/contacto" style="font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;color:#fff;background:#2740fc;padding:14px 26px;border-radius:9999px;box-shadow:0 2px 8px rgba(39,64,252,.3);white-space:nowrap" style-hover="background:#2886f9">Escríbenos →</a>
-    </div>
-  </div>
-
-  <div style="max-width:1200px;margin:72px auto 0;padding:26px 24px 44px;border-top:1px solid #e2e8f0;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
-    <img src="/assets/sorta-logo.svg" alt="Sorta" style="height:20px;width:auto;opacity:.9">
-    <div style="display:flex;flex-wrap:wrap;gap:18px;font-size:13px"><a href="/" style="color:#64748b">Inicio</a><a href="/como-funciona" style="color:#64748b">Cómo funciona</a><a href="/preguntas-frecuentes" style="color:#64748b">Preguntas frecuentes</a><a href="/nosotros" style="color:#64748b">Quién lo hace</a><a href="/contacto" style="color:#64748b">Contacto</a></div>
-    <div style="font-size:12.5px;color:#94a3b8">© 2026 Sorta</div>
-  </div>
-</div>
-</x-dc>
+  <footer class="site-footer"><img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22"><p>La capa de papeleo para consultorios independientes.</p><nav aria-label="Navegación del pie"><a href="/">Inicio</a><a href="/como-funciona">Cómo funciona</a><a href="/preguntas-frecuentes">Preguntas</a><a href="/nosotros">Quién lo hace</a></nav><small>© 2026 Sorta</small></footer>
 </body>
 </html>
