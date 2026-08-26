@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Datos una vez. Formatos médicos listos por WhatsApp.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/home-preview.css">
   <script type="application/ld+json">
   {
@@ -89,37 +89,71 @@
         <p class="hero__note">Sin migrar tu sistema. Sin cambiar tus formatos.</p>
       </div>
 
-      <div class="workspace" aria-label="Ejemplo ilustrativo de una visita en Sorta">
-        <div class="workspace__topbar">
-          <div>
-            <span class="workspace__eyebrow">Visita recibida por WhatsApp</span>
-            <strong>María S. · Consulta general</strong>
+      <div class="product-shot" aria-label="Captura real del panel de Sorta">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="floater floater--autosave">
+          <div class="floater__icon floater__icon--teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
           </div>
-          <span class="workspace__status"><i aria-hidden="true"></i> Datos revisados</span>
+          <div><strong>Guardado automático</strong><span>Cada campo, al instante</span></div>
         </div>
-        <div class="workspace__body">
-          <div class="workspace__patient">
-            <span class="workspace__eyebrow">Datos del paciente</span>
-            <dl class="patient-fields">
-              <div><dt>Nombre completo</dt><dd>María Guadalupe Sánchez</dd></div>
-              <div><dt>Fecha de nacimiento</dt><dd>04 / 03 / 1992</dd></div>
-              <div><dt>Teléfono</dt><dd>656 000 0000</dd></div>
-              <div><dt>Motivo de consulta</dt><dd>Consulta general</dd></div>
-            </dl>
-            <p class="workspace__annotation"><span aria-hidden="true">↳</span> Una captura alimenta cada documento de la visita.</p>
+        <div class="floater floater--hipaa">
+          <div class="floater__icon floater__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.97-3.3 8.5-8 9-4.7-.5-8-4.03-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
-          <div class="workspace__documents">
-            <span class="workspace__eyebrow">Documentos</span>
-            <ul>
-              <li><span>Historia clínica</span><b>Lista</b></li>
-              <li><span>Consentimiento</span><b>Listo</b></li>
-              <li><span>Aviso de privacidad</span><b>Listo</b></li>
-            </ul>
-            <div class="workspace__action">Revisar paquete <span aria-hidden="true">→</span></div>
-          </div>
+          <div><strong>Listo para tu consultorio</strong><span>Formatos que ya conoces</span></div>
         </div>
-        <p class="workspace__caption">Vista ilustrativa · Los datos son ficticios</p>
+        <div class="floater floater--queue">
+          <div class="floater__icon floater__icon--amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div><strong>Paciente registrado</strong><span>Rivera · hace 2 min</span></div>
+        </div>
+        <div class="product-shot__frame">
+          <div class="product-shot__bar">
+            <div class="product-shot__dots"><span></span><span></span><span></span></div>
+            <div class="product-shot__url"><span>app.getsorta.io/resumen</span></div>
+          </div>
+          <img src="/assets/product/overview-full-es.png" alt="Panel de resumen de Sorta con pacientes del día, formatos en proceso y plantillas listas" width="1600" height="1000" loading="eager" decoding="async">
+        </div>
+        <p class="workspace__caption">Captura real del producto · Datos de ejemplo</p>
       </div>
+    </section>
+
+    <section class="mini-features" aria-label="Lo que resuelve Sorta en cada visita">
+      <div class="mini-feature">
+        <div class="mini-feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>Captura por WhatsApp</h3>
+        <p>Recepción manda los datos como manda cualquier mensaje.</p>
+      </div>
+      <div class="mini-feature">
+        <div class="mini-feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
+        </div>
+        <h3>Formatos que ya usas</h3>
+        <p>Cada PDF conserva el logo y el orden del consultorio.</p>
+      </div>
+      <div class="mini-feature">
+        <div class="mini-feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+        </div>
+        <h3>Listo para firmar</h3>
+        <p>El paquete vuelve armado para revisar y firmar.</p>
+      </div>
+      <div class="mini-feature">
+        <div class="mini-feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        </div>
+        <h3>Resguardo por visita</h3>
+        <p>Cada paquete queda fechado y organizado.</p>
+      </div>
+    </section>
+
+    <section class="compliance-strip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.97-3.3 8.5-8 9-4.7-.5-8-4.03-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+      <p><strong>Pensado para datos clínicos.</strong> Tus documentos se procesan para preparar y resguardar el papeleo; nunca se venden con fines comerciales.</p>
     </section>
 
     <section class="comparison" aria-labelledby="comparison-title">
@@ -133,21 +167,20 @@
           <p class="comparison-column__label">Hoy</p>
           <h3>El mismo dato pasa de hoja en hoja.</h3>
           <ol>
-            <li><span>01</span> Recepción recibe los datos.</li>
-            <li><span>02</span> Vuelve a escribirlos en cada formato.</li>
-            <li><span>03</span> Corrige a mano cuando algo cambia.</li>
-            <li><span>04</span> Reúne y archiva el paquete.</li>
+            <li><span aria-hidden="true"></span> Recepción recibe los datos.</li>
+            <li><span aria-hidden="true"></span> Vuelve a escribirlos en cada formato.</li>
+            <li><span aria-hidden="true"></span> Corrige a mano cuando algo cambia.</li>
+            <li><span aria-hidden="true"></span> Reúne y archiva el paquete.</li>
           </ol>
         </div>
-        <div class="comparison-divider" aria-hidden="true"><span>→</span></div>
         <div class="comparison-column comparison-column--after">
           <p class="comparison-column__label">Con Sorta</p>
           <h3>Una captura prepara toda la visita.</h3>
           <ol>
-            <li><span>01</span> Recepción confirma los datos una vez.</li>
-            <li><span>02</span> Sorta completa los formatos existentes.</li>
-            <li><span>03</span> El equipo revisa un solo paquete.</li>
-            <li><span>04</span> La visita queda ordenada y fechada.</li>
+            <li><span aria-hidden="true"></span> Recepción confirma los datos una vez.</li>
+            <li><span aria-hidden="true"></span> Sorta completa los formatos existentes.</li>
+            <li><span aria-hidden="true"></span> El equipo revisa un solo paquete.</li>
+            <li><span aria-hidden="true"></span> La visita queda ordenada y fechada.</li>
           </ol>
         </div>
       </div>
@@ -186,21 +219,22 @@
           <li>PDF listo para la revisión habitual</li>
         </ul>
       </div>
-      <div class="document-stage" aria-label="Ejemplo ilustrativo de documentos clínicos existentes">
-        <article class="paper paper--back" aria-hidden="true"></article>
-        <article class="paper paper--middle" aria-hidden="true"></article>
-        <article class="paper paper--front">
-          <header><strong>Historia clínica</strong><span>Página 1 / 4</span></header>
-          <div class="paper__rule"></div>
-          <div class="paper__field paper__field--mapped"><small>Nombre del paciente</small><span>María Guadalupe Sánchez</span><i>Dato vinculado</i></div>
-          <div class="paper__columns">
-            <div class="paper__field"><small>Fecha de nacimiento</small><span>04 / 03 / 1992</span></div>
-            <div class="paper__field"><small>Fecha de visita</small><span>15 / 08 / 2026</span></div>
+      <div class="document-stage product-shot" aria-label="Captura real del resumen diario en Sorta">
+        <div class="floater floater--activity">
+          <div class="floater__icon floater__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
           </div>
-          <div class="paper__field"><small>Motivo de consulta</small><span>Consulta general</span></div>
-          <div class="paper__lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-          <footer><span>Consultorio Santa Fe</span><span>Documento ilustrativo</span></footer>
-        </article>
+          <div><strong>Paciente registrado</strong><span>Rivera · hoy, 9:41 a.m.</span></div>
+        </div>
+        <div class="floater floater--templates">
+          <div class="floater__icon floater__icon--teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>
+          </div>
+          <div><strong>5 plantillas listas</strong><span>En espera de aprobación</span></div>
+        </div>
+        <div class="product-shot__frame">
+          <img src="/assets/product/overview-stats-es.png" alt="Resumen diario de Sorta con pacientes, formatos en proceso y plantillas listas" width="1332" height="473" loading="lazy" decoding="async">
+        </div>
       </div>
     </section>
 
@@ -233,29 +267,22 @@
       </div>
     </section>
 
-    <section class="outcomes" aria-labelledby="outcomes-title">
-      <div class="outcomes__intro">
+    <section class="platform" aria-labelledby="platform-title">
+      <div class="platform__intro">
         <p class="section-label">Una operación, dos perspectivas</p>
-        <h2 id="outcomes-title">Menos fricción para quien administra. <em>Más claridad para quien decide.</em></h2>
+        <h2 id="platform-title">Menos fricción para quien administra.<br>Más claridad para quien decide.</h2>
+        <a class="text-link" href="/nosotros">Quién lo hace <span aria-hidden="true">→</span></a>
       </div>
-      <div class="outcomes__groups">
-        <article>
-          <p class="outcomes__role">Para recepción</p>
+      <div class="platform__cards">
+        <article class="platform-card">
+          <p class="platform-card__role">Para recepción</p>
           <h3>Una forma más directa de terminar el papeleo.</h3>
-          <ul class="plain-list">
-            <li>Una sola captura por paciente</li>
-            <li>Menos correcciones entre documentos</li>
-            <li>Los formatos conocidos, listos para revisar</li>
-          </ul>
+          <p>Una sola captura por paciente, menos correcciones entre documentos y los formatos conocidos, listos para revisar.</p>
         </article>
-        <article>
-          <p class="outcomes__role">Para el consultorio</p>
+        <article class="platform-card">
+          <p class="platform-card__role">Para el consultorio</p>
           <h3>Un proceso consistente sin reemplazar el sistema actual.</h3>
-          <ul class="plain-list">
-            <li>Implementación sobre la operación existente</li>
-            <li>Documentos organizados por visita</li>
-            <li>Límites y responsabilidades por escrito</li>
-          </ul>
+          <p>Se implementa sobre la operación existente, organiza los documentos por visita y deja límites y responsabilidades por escrito.</p>
         </article>
       </div>
     </section>
@@ -309,7 +336,7 @@
         <p class="section-label">Primeros consultorios en México</p>
         <h2 id="closing-title">Enséñanos <em>cómo llenan sus formatos hoy.</em></h2>
         <p>Una conversación breve por WhatsApp para entender tu operación real. Sin compromiso y sin una presentación de ventas.</p>
-        <a class="button button--light" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+        <a class="button" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
       </div>
       <div class="founder-note">
         <div class="founder-note__people" aria-hidden="true">
@@ -325,16 +352,42 @@
   </main>
 
   <footer class="site-footer">
-    <img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22">
-    <p>La capa de papeleo para consultorios independientes.</p>
-    <nav aria-label="Navegación del pie">
-      <a href="/como-funciona">Cómo funciona</a>
-      <a href="/seguridad">Seguridad</a>
-      <a href="/nosotros">Quién lo hace</a>
-      <a href="/recursos">Recursos</a>
-      <a href="/contacto">Contacto</a>
-    </nav>
-    <small>© 2026 Sorta</small>
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22">
+        <p>La capa de papeleo para consultorios independientes en México.</p>
+      </div>
+      <div class="site-footer__col">
+        <p>Producto</p>
+        <nav aria-label="Producto">
+          <a href="/como-funciona">Cómo funciona</a>
+          <a href="/seguridad">Seguridad</a>
+          <a href="/preguntas-frecuentes">Preguntas</a>
+        </nav>
+      </div>
+      <div class="site-footer__col">
+        <p>Compañía</p>
+        <nav aria-label="Compañía">
+          <a href="/nosotros">Quién lo hace</a>
+          <a href="/recursos">Recursos</a>
+          <a href="/contacto">Contacto</a>
+        </nav>
+      </div>
+      <div class="site-footer__col">
+        <p>Síguenos</p>
+        <nav aria-label="Redes sociales">
+          <a href="https://www.linkedin.com/company/getsorta" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://getsorta.io/" lang="en" hreflang="en-US">🇺🇸 English site</a>
+        </nav>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <small>© 2026 Sorta</small>
+      <nav aria-label="Navegación legal del pie">
+        <a href="/seguridad">Privacidad</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
