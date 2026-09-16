@@ -145,6 +145,7 @@
     <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
     <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
     <symbol id="people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 4v3"/></symbol>
+      <symbol id="calendar" viewBox="0 0 24 24"><path d="M3 4h18v18H3V4zm2 2v14h14V6H5z"/></symbol>
   </defs></svg>
 
   <div class="announcement"><span class="status-dot"></span> Papeleo clínico, con menos vueltas. <a href="/#proceso">Conoce Sorta <span aria-hidden="true">↗</span></a></div>
@@ -206,6 +207,7 @@
         <button id="tab-workspace" role="tab" aria-selected="false" aria-controls="panel-workspace" tabindex="-1"><svg><use href="#people"/></svg> Recepción</button>
         <button id="tab-templates" role="tab" aria-selected="false" aria-controls="panel-templates" tabindex="-1"><svg><use href="#document"/></svg> Tus formatos</button>
         <button id="tab-messages" role="tab" aria-selected="false" aria-controls="panel-messages" tabindex="-1"><svg><use href="#chat"/></svg> WhatsApp</button>
+        <button id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar" tabindex="-1"><svg><use href="#calendar"/></svg> Agenda</button>
       </div>
       <div class="product-panel" id="panel-dashboard" role="tabpanel" aria-labelledby="tab-dashboard" tabindex="0">
         <div class="panel-copy"><span class="panel-number">01 / 04</span><h3>El día de tu consultorio,<br>en una sola vista.</h3><p>Pacientes del día, formatos en proceso y pendientes. El punto de partida para organizar la recepción.</p><a class="text-link" href="/contacto">Conócelo con nosotros <svg><use href="#arrow"/></svg></a></div>
@@ -223,6 +225,10 @@
         <div class="panel-copy"><span class="panel-number">04 / 04</span><h3>Las conversaciones,<br>también en orden.</h3><p>La bandeja de WhatsApp reúne los mensajes que necesitan respuesta para que el equipo pueda darles seguimiento.</p><a class="text-link" href="/como-funciona">Ver el flujo completo <svg><use href="#arrow"/></svg></a></div>
         <button class="screenshot-button" data-image="messages" aria-label="Ampliar ejemplo de conversación en la bandeja de WhatsApp"><img src="/assets/homepage/messages-demo.png" alt="Interfaz real de la bandeja de WhatsApp de Sorta con una conversación ficticia en español sobre la preparación de formatos para una consulta" width="1440" height="960" loading="lazy"><span class="expand-label">Ver pantalla completa ↗</span></button>
       </div>
+      <div class="product-panel" id="panel-calendar" data-caption="Vista ilustrativa de la agenda · Datos ficticios" role="tabpanel" aria-labelledby="tab-calendar" tabindex="0" hidden>
+        <div class="panel-copy"><span class="panel-number">05 / 05</span><h3>Una agenda que recepción<br>sí abre.</h3><p>Ve la semana completa, distingue lo pendiente de lo confirmado y vuelve a abrir un espacio cuando una cita se cancela.</p><a class="text-link" href="#agenda-title">Conocer la agenda <svg><use href="#arrow"/></svg></a></div>
+        <div class="agenda-selector-preview" role="img" aria-label="Vista ilustrativa de la agenda de Sorta con citas confirmadas y solicitudes pendientes"><div class="agenda-selector-preview__header"><strong>Agenda</strong><span>martes, 15 de septiembre, 2026</span><b>Semana</b></div><div class="agenda-selector-preview__content"><div class="agenda-selector-preview__grid"><i class="confirmed" style="top:30%">10:00 a.m.<small>Emilio Duarte Salinas</small></i><i class="pending" style="top:48%">12:30 p.m.<small>Ximena Beltrán Rico</small></i><i class="confirmed" style="top:68%">2:30 p.m.<small>Andrés Villalobos Peña</small></i><i class="confirmed" style="top:83%">4:30 p.m.<small>Valentina Ríos Aguilar</small></i></div><aside><strong>Por confirmar <b>6</b></strong><small>Solicitudes recibidas por WhatsApp</small><div>Lucía Márquez Ontiveros<br><span>14 Sep · 3:30 p.m.</span></div><div>Ximena Beltrán Rico<br><span>15 Sep · 12:30 p.m.</span></div></aside></div><small class="agenda-selector-preview__caption">Vista ilustrativa · datos ficticios</small></div>
+      </div>
       <p class="product-caption" aria-live="polite">Capturas reales de la cuenta demo · Interfaz en inglés · Sin visitas ni plantillas cargadas</p>
     </section>
 
@@ -239,6 +245,11 @@
         </div>
         <div class="whatsapp-copy"><p class="eyebrow">EN EL CANAL QUE YA CONOCES</p><h2 id="whatsapp-title">Tu recepción<br>ya trabaja ahí.<br><em>Sorta también.</em></h2><p>El equipo manda los datos del paciente como manda cualquier otro mensaje. Sorta devuelve el paquete de la visita en PDF, usando los formatos del consultorio.</p><ul class="check-list"><li><svg><use href="#check"/></svg> Desde el celular o la computadora de recepción</li><li><svg><use href="#check"/></svg> Sin instalar otra aplicación para el flujo por WhatsApp</li><li><svg><use href="#check"/></svg> PDFs listos para revisar, imprimir o firmar</li></ul><a class="button" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer" data-track="primary_cta">Hablemos por WhatsApp <svg><use href="#arrow"/></svg></a></div>
       </div>
+    </section>
+
+    <section class="agenda-section wrap" aria-labelledby="agenda-title">
+      <div class="agenda-copy"><p class="eyebrow">PARA QUIEN LLEVA LA RECEPCIÓN</p><h2 id="agenda-title">Una agenda que recepción <em>sí abre.</em></h2><p>El día, la semana y el mes viven en el mismo calendario. Los espacios abiertos se distinguen de las solicitudes que todavía necesitan confirmación.</p><ul class="check-list"><li><svg><use href="#check"/></svg> Mira la semana completa en bloques de tiempo</li><li><svg><use href="#check"/></svg> Confirma o rechaza solicitudes desde una sola cola</li><li><svg><use href="#check"/></svg> Cancela una cita y libera el espacio de inmediato</li></ul></div>
+      <div class="agenda-preview" role="img" aria-label="Vista ilustrativa de la agenda de Sorta con citas confirmadas y solicitudes pendientes"><div class="agenda-preview__top"><strong>Agenda</strong><span>martes, 15 de septiembre, 2026</span><i>Semana</i></div><div class="agenda-preview__body"><div class="agenda-hours"><span>8 a.m.</span><span>10 a.m.</span><span>12 p.m.</span><span>2 p.m.</span><span>4 p.m.</span><span>6 p.m.</span></div><div class="agenda-grid"><div class="agenda-event agenda-event--confirmed" style="top:32%;height:8%"><strong>10:00 a.m.</strong><span>Emilio Duarte Salinas</span></div><div class="agenda-event agenda-event--pending" style="top:48%;height:8%"><strong>12:30 p.m.</strong><span>Ximena Beltrán Rico</span></div><div class="agenda-event agenda-event--confirmed" style="top:63%;height:8%"><strong>2:30 p.m.</strong><span>Andrés Villalobos Peña</span></div><div class="agenda-event agenda-event--confirmed" style="top:80%;height:8%"><strong>4:30 p.m.</strong><span>Valentina Ríos Aguilar</span></div></div><aside class="agenda-queue"><strong>Por confirmar <b>6</b></strong><small>Pacientes que eligieron día y hora por WhatsApp.</small><div><strong>Lucía Márquez Ontiveros</strong><span>14 Sep · 3:30 p.m.</span><button>Confirmar</button></div><div><strong>Ximena Beltrán Rico</strong><span>15 Sep · 12:30 p.m.</span><button>Confirmar</button></div><div><strong>Isabel Franco Ríos</strong><span>15 Sep · 6:00 p.m.</span><button>Confirmar</button></div></aside></div><small class="agenda-caption">Vista ilustrativa · datos ficticios</small></div>
     </section>
 
     <section class="trust-section wrap" id="seguridad" aria-labelledby="trust-title">
