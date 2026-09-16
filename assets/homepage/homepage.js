@@ -37,7 +37,9 @@ document.querySelectorAll('.screenshot-button').forEach(button => {
     dialog.querySelector('h2').textContent = illustrated ? 'Conversación ilustrativa en Sorta' : 'Captura real de Sorta';
     dialog.querySelector('p').textContent = illustrated
       ? 'Interfaz real del producto · Historial de mensajes ficticio para mostrar el flujo de recepción'
-      : 'Cuenta demo · Interfaz en inglés';
+      : button.dataset.image === 'calendar'
+        ? 'Agenda semanal · Interfaz en español · Datos ficticios'
+        : 'Cuenta demo · Interfaz en inglés';
     dialog.showModal();
     document.body.classList.add('dialog-open');
   });
