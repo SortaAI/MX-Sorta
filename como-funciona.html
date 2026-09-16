@@ -3,37 +3,180 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
   <script src="/assets/cookie-consent.js" defer></script>
-  <meta name="description" content="Conoce cómo automatizar formularios de pacientes por WhatsApp, desde una sola captura en recepción hasta el paquete PDF listo para revisar.">
-  <meta name="robots" content="index, follow"><meta name="theme-color" content="#000054">
-  <title>Automatizar formularios de pacientes | Sorta México</title>
+  <script src="/assets/analytics.js" defer></script><meta name="theme-color" content="#000054">
   <link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://mx.getsorta.io/como-funciona">
-  <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/como-funciona">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Sorta México"><meta property="og:locale" content="es_MX">
-  <meta property="og:url" content="https://mx.getsorta.io/como-funciona"><meta property="og:title" content="Automatizar formularios de pacientes | Sorta México"><meta property="og:description" content="Del mensaje de WhatsApp al paquete PDF de la visita, usando los formatos que tu consultorio ya conoce.">
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Cómo funciona Sorta México"><meta name="twitter:description" content="Automatiza el papeleo de la visita sin cambiar tus formatos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/home-preview.css">
-  <script src="/assets/nav.js" defer></script>
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/interior.css">
+  <script src="/assets/site.js" defer></script>
+  <title>Formatos médicos por WhatsApp: cómo funciona | Sorta</title>
+  <meta name="description" content="Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mx.getsorta.io/como-funciona">
+  <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/como-funciona">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sorta México">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:url" content="https://mx.getsorta.io/como-funciona">
+  <meta property="og:title" content="Formatos médicos por WhatsApp: cómo funciona | Sorta">
+  <meta property="og:description" content="Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.">
+  <meta property="og:image" content="https://mx.getsorta.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sorta México — Automatización de formatos médicos para consultorios">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formatos médicos por WhatsApp: cómo funciona | Sorta">
+  <meta name="twitter:description" content="Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.">
+  <meta name="twitter:image" content="https://mx.getsorta.io/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Sorta México — Automatización de formatos médicos">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mx.getsorta.io/#organization",
+      "name": "Sorta",
+      "url": "https://mx.getsorta.io/",
+      "logo": "https://mx.getsorta.io/assets/sorta-logo.svg",
+      "description": "Automatización de formatos médicos para clínicas y consultorios en México.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/getsorta"
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Emiliano Rodríguez",
+          "jobTitle": "Director ejecutivo y cofundador"
+        },
+        {
+          "@type": "Person",
+          "name": "Ian Mendoza",
+          "jobTitle": "Director de tecnología y cofundador"
+        },
+        {
+          "@type": "Person",
+          "name": "Lembit Venegas Kupper",
+          "jobTitle": "Director de marketing y cofundador"
+        }
+      ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Dorian Acosta",
+          "jobTitle": "Líder de vinculación y operaciones clínicas"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Atención a consultorios",
+        "email": "hola@getsorta.io",
+        "availableLanguage": [
+          "es-MX"
+        ],
+        "areaServed": "MX",
+        "url": "https://mx.getsorta.io/contacto"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mx.getsorta.io/#website",
+      "name": "Sorta México",
+      "alternateName": "Sorta",
+      "url": "https://mx.getsorta.io/",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://mx.getsorta.io/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mx.getsorta.io/como-funciona#webpage",
+      "url": "https://mx.getsorta.io/como-funciona",
+      "name": "Formatos médicos por WhatsApp: cómo funciona | Sorta",
+      "description": "Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.",
+      "inLanguage": "es-MX",
+      "isPartOf": {
+        "@id": "https://mx.getsorta.io/#website"
+      },
+      "publisher": {
+        "@id": "https://mx.getsorta.io/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://mx.getsorta.io/#service"
+      },
+      "breadcrumb": {
+        "@id": "https://mx.getsorta.io/como-funciona#breadcrumb"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://mx.getsorta.io/#service",
+      "name": "Automatización de formatos médicos para consultorios",
+      "serviceType": "Automatización de papeleo clínico",
+      "description": "Preparación de los formatos existentes del consultorio a partir de una sola captura, con revisión humana antes de firmar o archivar.",
+      "provider": {
+        "@id": "https://mx.getsorta.io/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "url": "https://mx.getsorta.io/como-funciona"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mx.getsorta.io/como-funciona#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mx.getsorta.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cómo funciona",
+          "item": "https://mx.getsorta.io/como-funciona"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="/" aria-label="Sorta — inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a>
-    <nav class="site-nav" aria-label="Navegación principal">
-      <a href="/como-funciona" aria-current="page">Cómo funciona</a>
-      <a href="/seguridad">Seguridad</a>
-      <a href="/preguntas-frecuentes">Preguntas</a>
-      <a href="/nosotros">Quién lo hace</a>
-      <a class="language-link" href="https://getsorta.io/" lang="en" hreflang="en-US" aria-label="View the United States site in English"><span aria-hidden="true">🇺🇸</span> EN</a>
+<body class="interior" data-page-type="product">
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 10h8m-8 4h5"/></symbol>
+    <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Zm0 0v6h6M8 13h8m-8 4h5"/></symbol>
+    <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 4v3"/></symbol>
+  </defs></svg>
+
+  <div class="announcement"><span class="status-dot"></span> Papeleo clínico, con menos vueltas. <a href="/#proceso">Conoce Sorta <span aria-hidden="true">↗</span></a></div>
+  <header class="header wrap">
+    <a href="/" class="brand" aria-label="Sorta México, inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="navigation" class="navigation" aria-label="Navegación principal">
+      <a href="/#producto">Producto</a><a href="/como-funciona">Cómo funciona</a><a href="/seguridad">Seguridad</a><a href="/recursos">Recursos</a>
     </nav>
-    <a class="button button--small" href="/contacto">Solicita acceso</a>
+    <div class="header-actions"><a class="language" href="https://getsorta.io/" lang="en" hreflang="en-US">EN <span aria-hidden="true">↗</span></a><a class="button button-small" href="/contacto" data-track="primary_cta">Solicita acceso <svg><use href="#arrow"/></svg></a></div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main" id="contenido">
+    <nav class="page-breadcrumbs wrap" aria-label="Migas de pan"><a href="/">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Cómo funciona</span></nav>
     <section class="page-hero" aria-labelledby="page-title">
       <div class="page-hero__copy">
         <p class="section-label">Cómo funciona</p>
@@ -150,33 +293,10 @@
       <p class="section-label">Pruébalo con tus formatos</p>
       <h2 id="cta-title">Muéstranos una visita real. <em>Nosotros empezamos por ahí.</em></h2>
       <p>Una conversación breve por WhatsApp para entender cómo trabaja tu recepción hoy.</p>
-      <a class="button" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">Platicar por WhatsApp</a>
+      <a class="button" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer" data-track="primary_cta">Platicar por WhatsApp</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__top">
-      <div class="site-footer__brand">
-        <img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22">
-        <p>La capa de papeleo para consultorios independientes en México.</p>
-      </div>
-      <div class="site-footer__col">
-        <p>Producto</p>
-        <nav aria-label="Producto"><a href="/como-funciona">Cómo funciona</a><a href="/seguridad">Seguridad</a><a href="/preguntas-frecuentes">Preguntas</a></nav>
-      </div>
-      <div class="site-footer__col">
-        <p>Compañía</p>
-        <nav aria-label="Compañía"><a href="/nosotros">Quién lo hace</a><a href="/recursos">Recursos</a><a href="/contacto">Contacto</a></nav>
-      </div>
-      <div class="site-footer__col">
-        <p>Síguenos</p>
-        <nav aria-label="Redes sociales"><a href="https://www.linkedin.com/company/getsorta" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://getsorta.io/" lang="en" hreflang="en-US">🇺🇸 English site</a></nav>
-      </div>
-    </div>
-    <div class="site-footer__bottom">
-      <small>© 2026 Sorta</small>
-      <nav aria-label="Navegación legal del pie"><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a><a href="/contacto">Contacto</a></nav>
-    </div>
-  </footer>
+  <footer class="footer wrap"><div class="footer-top"><div class="footer-brand"><a href="/" aria-label="Sorta México, inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a><p>La capa de papeleo para clínicas<br>y consultorios independientes en México.</p><span class="footer-location"><span class="status-dot"></span> Hecho para tu día a día.</span></div><div><h2>Producto</h2><a href="/como-funciona">Cómo funciona</a><a href="/seguridad">Seguridad</a><a href="/preguntas-frecuentes">Preguntas frecuentes</a></div><div><h2>Sorta</h2><a href="/nosotros">Quién lo hace</a><a href="/recursos">Recursos para clínicas</a><a href="/contacto">Contacto</a></div><div><h2>Conversemos</h2><a href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://www.linkedin.com/company/getsorta" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://getsorta.io/" lang="en" hreflang="en-US">English site ↗</a></div></div><div class="footer-bottom"><span>© 2026 Sorta. Todos los derechos reservados.</span><nav aria-label="Información legal"><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a><button type="button" data-cookie-preferences>Cookies</button></nav></div></footer>
 </body>
 </html>
