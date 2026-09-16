@@ -39,7 +39,7 @@ document.querySelectorAll('.screenshot-button').forEach(button => {
       ? 'Interfaz real del producto · Historial de mensajes ficticio para mostrar el flujo de recepción'
       : button.dataset.image === 'calendar'
         ? 'Agenda semanal · Interfaz en español · Datos ficticios'
-        : 'Cuenta demo · Interfaz en inglés';
+        : 'Interfaz de Sorta presentada en español · Datos ficticios';
     dialog.showModal();
     document.body.classList.add('dialog-open');
   });
