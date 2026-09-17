@@ -90,7 +90,7 @@ class MexicoSEO(unittest.TestCase):
                     self.assertIn('Equipo de Sorta</a>', html)
                 if info['type'] == 'collection':
                     collection = next(n for n in nodes if n['@type'] == 'CollectionPage')
-                    self.assertEqual(len(collection['mainEntity']['itemListElement']), 4)
+                    self.assertEqual({item['url'] for item in collection['mainEntity']['itemListElement']}, {BASE + info['path'] for info in PAGES.values() if info['type'] == 'article'})
                 self.assertNotIn('LocalBusiness', kinds)
                 self.assertNotIn('MedicalClinic', kinds)
 

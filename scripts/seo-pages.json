@@ -5,7 +5,7 @@
     "type": "home",
     "title": "Automatización de formatos médicos en México | Sorta",
     "description": "Automatiza los formatos médicos de tu clínica o consultorio en México. Captura datos una vez por WhatsApp y recibe tus PDFs listos para revisar y firmar.",
-    "modified": "2026-09-15",
+    "modified": "2026-09-16",
     "alternates": {
       "es-MX": "https://mx.getsorta.io/",
       "en-US": "https://getsorta.io/",
@@ -18,7 +18,7 @@
     "type": "product",
     "title": "Formatos médicos por WhatsApp: cómo funciona | Sorta",
     "description": "Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.",
-    "modified": "2026-09-15"
+    "modified": "2026-09-16"
   },
   "contacto.html": {
     "path": "/contacto",
@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Guías para digitalizar tu consultorio en México | Sorta",
     "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-15"
+    "modified": "2026-09-16"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -143,10 +143,19 @@
   },
   "producto/formatos-medicos.html": {
     "label": "Formatos médicos digitales",
-    "title": "Formatos médicos digitales para consultorios | Sorta México",
-    "description": "Prepara los formatos médicos de tu consultorio con Sorta. Organiza plantillas, captura datos del paciente y revisa los documentos de cada visita.",
+    "title": "Llenado automático de formatos médicos | Sorta México",
+    "description": "Captura una vez y llena los campos compartidos de tus formatos médicos con Sorta. Sincroniza los documentos de la visita y revisa tus PDFs antes de firmar.",
     "path": "/producto/formatos-medicos",
     "type": "product",
+    "modified": "2026-09-16"
+  },
+  "recursos/llenado-formatos-nom-004.html": {
+    "path": "/recursos/llenado-formatos-nom-004",
+    "label": "Llenado de formatos y NOM-004",
+    "type": "article",
+    "title": "Llenado de formatos médicos y NOM-004 | Sorta México",
+    "description": "Cómo ayuda el llenado automático a mantener datos consistentes en formatos médicos. Conoce el alcance de la NOM-004, la revisión profesional y la privacidad.",
+    "published": "2026-09-16",
     "modified": "2026-09-16"
   }
 }
