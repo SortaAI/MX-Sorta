@@ -157,5 +157,13 @@
     "description": "Cómo ayuda el llenado automático a mantener datos consistentes en formatos médicos. Conoce el alcance de la NOM-004, la revisión profesional y la privacidad.",
     "published": "2026-09-16",
     "modified": "2026-09-16"
+  },
+  "precios.html": {
+    "path": "/precios",
+    "label": "Precios",
+    "type": "pricing",
+    "title": "Precios de Sorta México | Piloto gratuito con acceso completo",
+    "description": "Solicita un piloto gratuito de Sorta para tu clínica en México, con acceso a toda la aplicación. Los precios de los planes de pago aún no están definidos.",
+    "modified": "2026-09-16"
   }
 }
