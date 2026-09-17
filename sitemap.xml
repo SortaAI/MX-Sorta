@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mx.getsorta.io/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/como-funciona</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/contacto</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos/reducir-papeleo-consultorio</loc>
@@ -43,5 +43,21 @@
   <url>
     <loc>https://mx.getsorta.io/recursos/checklist-formatos-consultorio</loc>
     <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/producto/agenda</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/producto/whatsapp</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/producto/formatos-medicos</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/recursos/llenado-formatos-nom-004</loc>
+    <lastmod>2026-09-16</lastmod>
   </url>
 </urlset>

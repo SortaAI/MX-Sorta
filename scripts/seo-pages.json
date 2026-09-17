@@ -1,16 +1,161 @@
 {
-  "index.html": {"path":"/","label":"Inicio","type":"home","title":"Automatización de formatos médicos en México | Sorta","description":"Automatiza los formatos médicos de tu clínica o consultorio en México. Captura datos una vez por WhatsApp y recibe tus PDFs listos para revisar y firmar.","modified":"2026-09-15","alternates":{"es-MX":"https://mx.getsorta.io/","en-US":"https://getsorta.io/","x-default":"https://getsorta.io/"}},
-  "como-funciona.html": {"path":"/como-funciona","label":"Cómo funciona","type":"product","title":"Formatos médicos por WhatsApp: cómo funciona | Sorta","description":"Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.","modified":"2026-09-15"},
-  "contacto.html": {"path":"/contacto","label":"Contacto","type":"contact","title":"Automatiza tu consultorio en México | Contacto Sorta","description":"Cuéntanos cómo llenan los formatos en tu clínica o consultorio en México. Revisa con el equipo de Sorta tu flujo de recepción y las opciones de automatización.","modified":"2026-09-15"},
-  "nosotros.html": {"path":"/nosotros","label":"Quiénes somos","type":"about","title":"Equipo de Sorta | Automatización para clínicas en México","description":"Conoce al equipo de Sorta, que desarrolla automatización de formatos médicos para consultorios en México desde El Paso, Ciudad Juárez y Ciudad de México.","modified":"2026-09-15"},
-  "preguntas-frecuentes.html": {"path":"/preguntas-frecuentes","label":"Preguntas frecuentes","type":"faq","title":"Preguntas sobre formatos médicos digitales | Sorta México","description":"Resuelve tus dudas sobre Sorta: formatos médicos existentes, captura por WhatsApp, revisión de PDFs, datos del paciente y cómo empezar en tu consultorio.","modified":"2026-09-15"},
-  "seguridad.html": {"path":"/seguridad","label":"Seguridad","type":"security","title":"Seguridad de tus formatos médicos | Sorta México","description":"Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.","modified":"2026-09-15"},
-  "recursos.html": {"path":"/recursos","label":"Recursos","type":"collection","title":"Guías para digitalizar tu consultorio en México | Sorta","description":"Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.","modified":"2026-09-15"},
-  "privacidad.html": {"path":"/privacidad","label":"Privacidad","type":"legal","title":"Aviso de Privacidad | Sorta México","description":"Consulta el aviso de privacidad de Sorta México y la información sobre el tratamiento de datos, cookies y opciones de analítica del sitio.","indexable":false,"alternates":{"es-MX":"https://mx.getsorta.io/privacidad","en-US":"https://getsorta.io/privacy","x-default":"https://getsorta.io/privacy"}},
-  "terminos.html": {"path":"/terminos","label":"Términos","type":"legal","title":"Términos de Servicio | Sorta México","description":"Consulta los términos de servicio de Sorta México y el alcance de la automatización de formatos y documentos para consultorios.","indexable":false},
-  "recursos/reducir-papeleo-consultorio.html": {"path":"/recursos/reducir-papeleo-consultorio","label":"Reducir papeleo en recepción","type":"article","title":"Cómo reducir el papeleo en tu consultorio | Sorta México","description":"Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.","published":"2026-08-19","modified":"2026-09-15"},
-  "recursos/digitalizar-formatos-medicos.html": {"path":"/recursos/digitalizar-formatos-medicos","label":"Digitalizar formatos médicos","type":"article","title":"Digitalizar formatos médicos sin cambiar de sistema | Sorta","description":"Aprende a digitalizar los formatos médicos de tu consultorio en México: conserva tus PDFs, identifica datos compartidos y prueba una captura única por visita.","published":"2026-08-19","modified":"2026-09-15"},
-  "recursos/automatizar-formatos-medicos-whatsapp.html": {"path":"/recursos/automatizar-formatos-medicos-whatsapp","label":"Formatos médicos por WhatsApp","type":"article","title":"Formatos médicos por WhatsApp para consultorios | Sorta","description":"Cómo automatizar formatos médicos por WhatsApp en un consultorio de México: prepara tus PDFs, confirma datos una vez y revisa el paquete antes de firmar.","published":"2026-09-15","modified":"2026-09-15"},
-  "recursos/checklist-formatos-consultorio.html": {"path":"/recursos/checklist-formatos-consultorio","label":"Checklist para digitalizar formatos","type":"article","title":"Checklist para digitalizar formatos de consultorio | Sorta","description":"Prepara los formatos de tu clínica para digitalizarlos: inventario, versiones, campos compartidos y prueba con datos ficticios. Descarga la checklist de recepción.","published":"2026-09-15","modified":"2026-09-15"},
-  "404.html": {"path":"/404","label":"Página no encontrada","type":"error","title":"Página no encontrada | Sorta México","description":"La página que buscas no está disponible. Visita Sorta México para conocer la automatización de formatos médicos o consulta nuestras guías para consultorios.","indexable":false}
+  "index.html": {
+    "path": "/",
+    "label": "Inicio",
+    "type": "home",
+    "title": "Automatización de formatos médicos en México | Sorta",
+    "description": "Automatiza los formatos médicos de tu clínica o consultorio en México. Captura datos una vez por WhatsApp y recibe tus PDFs listos para revisar y firmar.",
+    "modified": "2026-09-16",
+    "alternates": {
+      "es-MX": "https://mx.getsorta.io/",
+      "en-US": "https://getsorta.io/",
+      "x-default": "https://getsorta.io/"
+    }
+  },
+  "como-funciona.html": {
+    "path": "/como-funciona",
+    "label": "Cómo funciona",
+    "type": "product",
+    "title": "Formatos médicos por WhatsApp: cómo funciona | Sorta",
+    "description": "Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.",
+    "modified": "2026-09-16"
+  },
+  "contacto.html": {
+    "path": "/contacto",
+    "label": "Contacto",
+    "type": "contact",
+    "title": "Automatiza tu consultorio en México | Contacto Sorta",
+    "description": "Cuéntanos cómo llenan los formatos en tu clínica o consultorio en México. Revisa con el equipo de Sorta tu flujo de recepción y las opciones de automatización.",
+    "modified": "2026-09-15"
+  },
+  "nosotros.html": {
+    "path": "/nosotros",
+    "label": "Quiénes somos",
+    "type": "about",
+    "title": "Equipo de Sorta | Automatización para clínicas en México",
+    "description": "Conoce al equipo de Sorta, que desarrolla automatización de formatos médicos para consultorios en México desde El Paso, Ciudad Juárez y Ciudad de México.",
+    "modified": "2026-09-15"
+  },
+  "preguntas-frecuentes.html": {
+    "path": "/preguntas-frecuentes",
+    "label": "Preguntas frecuentes",
+    "type": "faq",
+    "title": "Preguntas sobre formatos médicos digitales | Sorta México",
+    "description": "Resuelve tus dudas sobre Sorta: formatos médicos existentes, captura por WhatsApp, revisión de PDFs, datos del paciente y cómo empezar en tu consultorio.",
+    "modified": "2026-09-15"
+  },
+  "seguridad.html": {
+    "path": "/seguridad",
+    "label": "Seguridad",
+    "type": "security",
+    "title": "Seguridad de tus formatos médicos | Sorta México",
+    "description": "Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.",
+    "modified": "2026-09-15"
+  },
+  "recursos.html": {
+    "path": "/recursos",
+    "label": "Recursos",
+    "type": "collection",
+    "title": "Guías para digitalizar tu consultorio en México | Sorta",
+    "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
+    "modified": "2026-09-16"
+  },
+  "privacidad.html": {
+    "path": "/privacidad",
+    "label": "Privacidad",
+    "type": "legal",
+    "title": "Aviso de Privacidad | Sorta México",
+    "description": "Consulta el aviso de privacidad de Sorta México y la información sobre el tratamiento de datos, cookies y opciones de analítica del sitio.",
+    "indexable": false,
+    "alternates": {
+      "es-MX": "https://mx.getsorta.io/privacidad",
+      "en-US": "https://getsorta.io/privacy",
+      "x-default": "https://getsorta.io/privacy"
+    }
+  },
+  "terminos.html": {
+    "path": "/terminos",
+    "label": "Términos",
+    "type": "legal",
+    "title": "Términos de Servicio | Sorta México",
+    "description": "Consulta los términos de servicio de Sorta México y el alcance de la automatización de formatos y documentos para consultorios.",
+    "indexable": false
+  },
+  "recursos/reducir-papeleo-consultorio.html": {
+    "path": "/recursos/reducir-papeleo-consultorio",
+    "label": "Reducir papeleo en recepción",
+    "type": "article",
+    "title": "Cómo reducir el papeleo en tu consultorio | Sorta México",
+    "description": "Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.",
+    "published": "2026-08-19",
+    "modified": "2026-09-15"
+  },
+  "recursos/digitalizar-formatos-medicos.html": {
+    "path": "/recursos/digitalizar-formatos-medicos",
+    "label": "Digitalizar formatos médicos",
+    "type": "article",
+    "title": "Digitalizar formatos médicos sin cambiar de sistema | Sorta",
+    "description": "Aprende a digitalizar los formatos médicos de tu consultorio en México: conserva tus PDFs, identifica datos compartidos y prueba una captura única por visita.",
+    "published": "2026-08-19",
+    "modified": "2026-09-15"
+  },
+  "recursos/automatizar-formatos-medicos-whatsapp.html": {
+    "path": "/recursos/automatizar-formatos-medicos-whatsapp",
+    "label": "Formatos médicos por WhatsApp",
+    "type": "article",
+    "title": "Formatos médicos por WhatsApp para consultorios | Sorta",
+    "description": "Cómo automatizar formatos médicos por WhatsApp en un consultorio de México: prepara tus PDFs, confirma datos una vez y revisa el paquete antes de firmar.",
+    "published": "2026-09-15",
+    "modified": "2026-09-15"
+  },
+  "recursos/checklist-formatos-consultorio.html": {
+    "path": "/recursos/checklist-formatos-consultorio",
+    "label": "Checklist para digitalizar formatos",
+    "type": "article",
+    "title": "Checklist para digitalizar formatos de consultorio | Sorta",
+    "description": "Prepara los formatos de tu clínica para digitalizarlos: inventario, versiones, campos compartidos y prueba con datos ficticios. Descarga la checklist de recepción.",
+    "published": "2026-09-15",
+    "modified": "2026-09-15"
+  },
+  "404.html": {
+    "path": "/404",
+    "label": "Página no encontrada",
+    "type": "error",
+    "title": "Página no encontrada | Sorta México",
+    "description": "La página que buscas no está disponible. Visita Sorta México para conocer la automatización de formatos médicos o consulta nuestras guías para consultorios.",
+    "indexable": false
+  },
+  "producto/agenda.html": {
+    "label": "Agenda para consultorios",
+    "title": "Agenda para consultorios en México | Sorta",
+    "description": "Organiza las citas de tu consultorio con Sorta: vistas de día, semana y mes, solicitudes por confirmar y espacios disponibles para recepción.",
+    "path": "/producto/agenda",
+    "type": "product",
+    "modified": "2026-09-16"
+  },
+  "producto/whatsapp.html": {
+    "label": "WhatsApp para clínicas",
+    "title": "WhatsApp para clínicas y consultorios en México | Sorta",
+    "description": "Reúne conversaciones de WhatsApp, solicitudes de citas y envío de formatos en Sorta. Dale seguimiento a cada paciente desde la recepción de tu clínica.",
+    "path": "/producto/whatsapp",
+    "type": "product",
+    "modified": "2026-09-16"
+  },
+  "producto/formatos-medicos.html": {
+    "label": "Formatos médicos digitales",
+    "title": "Llenado automático de formatos médicos | Sorta México",
+    "description": "Captura una vez y llena los campos compartidos de tus formatos médicos con Sorta. Sincroniza los documentos de la visita y revisa tus PDFs antes de firmar.",
+    "path": "/producto/formatos-medicos",
+    "type": "product",
+    "modified": "2026-09-16"
+  },
+  "recursos/llenado-formatos-nom-004.html": {
+    "path": "/recursos/llenado-formatos-nom-004",
+    "label": "Llenado de formatos y NOM-004",
+    "type": "article",
+    "title": "Llenado de formatos médicos y NOM-004 | Sorta México",
+    "description": "Cómo ayuda el llenado automático a mantener datos consistentes en formatos médicos. Conoce el alcance de la NOM-004, la revisión profesional y la privacidad.",
+    "published": "2026-09-16",
+    "modified": "2026-09-16"
+  }
 }
