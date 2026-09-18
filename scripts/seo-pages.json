@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Guías para digitalizar tu consultorio en México | Sorta",
     "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-16"
+    "modified": "2026-09-17"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -153,10 +153,10 @@
     "path": "/recursos/llenado-formatos-nom-004",
     "label": "Llenado de formatos y NOM-004",
     "type": "article",
-    "title": "Llenado de formatos médicos y NOM-004 | Sorta México",
-    "description": "Cómo ayuda el llenado automático a mantener datos consistentes en formatos médicos. Conoce el alcance de la NOM-004, la revisión profesional y la privacidad.",
+    "title": "NOM-004 y formatos médicos: guía y checklist | Sorta",
+    "description": "Revisa tus formatos médicos con una checklist descargable de puntos de la NOM-004. Identificación, notas, revisión profesional y alcance del llenado automático.",
     "published": "2026-09-16",
-    "modified": "2026-09-16"
+    "modified": "2026-09-17"
   },
   "precios.html": {
     "path": "/precios",
@@ -165,5 +165,32 @@
     "title": "Precios de Sorta México | Piloto gratuito con acceso completo",
     "description": "Solicita un piloto gratuito de Sorta para tu clínica en México, con acceso a toda la aplicación. Los precios de los planes de pago aún no están definidos.",
     "modified": "2026-09-16"
+  },
+  "recursos/mensajes-confirmar-citas-whatsapp.html": {
+    "path": "/recursos/mensajes-confirmar-citas-whatsapp",
+    "label": "8 mensajes para confirmar y reagendar citas médicas por WhatsApp",
+    "type": "article",
+    "title": "Mensajes para confirmar citas médicas por WhatsApp | Sorta",
+    "description": "Copia y adapta ocho mensajes de WhatsApp para confirmar, recordar, cancelar o reagendar citas médicas. Ejemplos claros para la recepción de tu consultorio.",
+    "published": "2026-09-17",
+    "modified": "2026-09-17"
+  },
+  "recursos/ficha-identificacion-paciente.html": {
+    "path": "/recursos/ficha-identificacion-paciente",
+    "label": "Ficha de identificación del paciente: formato en Word y PDF",
+    "type": "article",
+    "title": "Ficha de identificación del paciente: Word y PDF | Sorta",
+    "description": "Descarga una ficha de identificación del paciente en Word y PDF. Incluye campos administrativos, un ejemplo ficticio y pasos para revisar los datos en recepción.",
+    "published": "2026-09-17",
+    "modified": "2026-09-17"
+  },
+  "recursos/agenda-citas-medicas-excel.html": {
+    "path": "/recursos/agenda-citas-medicas-excel",
+    "label": "Agenda de citas médicas en Excel: plantilla gratis para recepción",
+    "type": "article",
+    "title": "Agenda de citas médicas en Excel: plantilla gratis | Sorta",
+    "description": "Descarga una agenda de citas médicas en Excel con estados, filtros y duración de citas. Incluye instrucciones y un ejemplo ficticio para tu consultorio.",
+    "published": "2026-09-17",
+    "modified": "2026-09-17"
   }
 }
