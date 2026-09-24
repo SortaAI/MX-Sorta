@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Guías para digitalizar tu consultorio en México | Sorta",
     "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-17"
+    "modified": "2026-09-24"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -88,7 +88,7 @@
     "title": "Cómo reducir el papeleo en tu consultorio | Sorta México",
     "description": "Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.",
     "published": "2026-08-19",
-    "modified": "2026-09-15"
+    "modified": "2026-09-24"
   },
   "recursos/digitalizar-formatos-medicos.html": {
     "path": "/recursos/digitalizar-formatos-medicos",
@@ -97,7 +97,7 @@
     "title": "Digitalizar formatos médicos sin cambiar de sistema | Sorta",
     "description": "Aprende a digitalizar los formatos médicos de tu consultorio en México: conserva tus PDFs, identifica datos compartidos y prueba una captura única por visita.",
     "published": "2026-08-19",
-    "modified": "2026-09-15"
+    "modified": "2026-09-24"
   },
   "recursos/automatizar-formatos-medicos-whatsapp.html": {
     "path": "/recursos/automatizar-formatos-medicos-whatsapp",
@@ -182,7 +182,7 @@
     "title": "Ficha de identificación del paciente: Word y PDF | Sorta",
     "description": "Descarga una ficha de identificación del paciente en Word y PDF. Incluye campos administrativos, un ejemplo ficticio y pasos para revisar los datos en recepción.",
     "published": "2026-09-17",
-    "modified": "2026-09-17"
+    "modified": "2026-09-24"
   },
   "recursos/agenda-citas-medicas-excel.html": {
     "path": "/recursos/agenda-citas-medicas-excel",

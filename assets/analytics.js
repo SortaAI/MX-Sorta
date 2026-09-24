@@ -4,6 +4,7 @@
   var started = false;
   var formStarted = false;
   var leadRecorded = false;
+  var demoRecorded = false;
   var observer;
   var timer;
   var visibleSeconds = 0;
@@ -22,6 +23,7 @@
     if (typeof window.clarity === 'function') window.clarity('event', name);
   }
   function placement(el) {
+    if (el.dataset.placement) return el.dataset.placement;
     if (el.closest('.header')) return 'header';
     if (el.closest('.footer')) return 'footer';
     if (el.closest('.hero')) return 'hero';
@@ -45,7 +47,8 @@
     else if (url.protocol === 'mailto:') track('email_click', { placement: where });
     else if (url.origin === location.origin && url.pathname === '/contacto') track('contact_click', { placement: where });
     else if (url.origin === location.origin && url.pathname.startsWith('/recursos/')) track('resource_click', { resource_path: url.pathname, placement: where });
-    if (el.hasAttribute('download')) track('resource_download', { resource_path: url.pathname });
+    if (el.hasAttribute('download')) track('resource_download', { resource_path: url.pathname, placement: where, file_format: url.pathname.split('.').pop() });
+    if (location.pathname.startsWith('/recursos/') && url.origin === location.origin && url.pathname.startsWith('/producto/')) track('resource_product_click', { destination_path: url.pathname, placement: where });
     if (/^https?:$/.test(url.protocol) && url.hostname !== location.hostname) track('outbound_click', { destination_host: url.hostname, placement: where });
   });
   document.addEventListener('focusin', function (event) {
@@ -62,6 +65,11 @@
     if (leadRecorded) return;
     leadRecorded = true;
     track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: 'free_pilot' });
+  });
+  document.addEventListener('sorta:autofill-completed', function () {
+    if (demoRecorded || !allowed() || !window.__sortaAnalyticsLoaded) return;
+    demoRecorded = true;
+    track('autofill_demo_complete', { demo_id: 'configured_forms', document_count: 3 });
   });
   document.addEventListener('toggle', function (event) {
     if (event.target.matches('.faq-list details') && event.target.open) {

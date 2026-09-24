@@ -56,6 +56,7 @@ class MexicoSEO(unittest.TestCase):
                     alternates = page.find('link', rel='alternate')
                     self.assertTrue(any(x.get('hreflang') == 'es-MX' and x['href'] == BASE+info['path'] for x in alternates))
                 self.assertEqual(len(page.find('script', src='/assets/cookie-consent.js')), 1)
+                self.assertIn('/assets/cookie-consent.js', html.split('</head>')[0])
                 self.assertEqual(len(page.find('script', src='/assets/analytics.js')), 1)
                 self.assertEqual(len(page.find('button', **{'data-cookie-preferences':None})), 1)
                 self.assertNotIn('cdn.vercel-insights.com', html)

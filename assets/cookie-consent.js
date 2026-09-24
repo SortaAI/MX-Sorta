@@ -1,8 +1,8 @@
-/** Shared US tracking projects, explicitly scoped to the Mexico marketing site. */
+/** Dedicated Mexico GA4 stream; existing Clarity project. Consent required. */
 (function () {
   'use strict';
   var KEY = 'sorta_cookie_consent';
-  var GA_ID = 'G-ZPS6GNGPXD';
+  var GA_ID = 'G-4J0QLJT1N0';
   var CLARITY_ID = 'wor9i7cm6t';
   var production = location.hostname === 'mx.getsorta.io';
   var consent = null;
@@ -10,7 +10,18 @@
   try { consent = localStorage.getItem(KEY); } catch (_) {}
 
   function cleanURL(value) {
-    try { var url = new URL(value); return /^https?:$/.test(url.protocol) ? url.origin + url.pathname : ''; }
+    try {
+      var url = new URL(value);
+      if (!/^https?:$/.test(url.protocol)) return '';
+      // Only approved static campaign tokens; never forward arbitrary URL values.
+      var approved = { utm_source: ['linkedin'], utm_medium: ['organic_social'], utm_campaign: ['mx_week_2'], utm_content: ['post_2_ficha', 'post_3_whatsapp', 'founder_post_2', 'founder_post_3'] };
+      var safe = new URL(url.origin + url.pathname);
+      Object.keys(approved).forEach(function (key) {
+        var token = url.searchParams.get(key);
+        if (approved[key].indexOf(token) !== -1) safe.searchParams.set(key, token);
+      });
+      return safe.href;
+    }
     catch (_) { return ''; }
   }
 
@@ -28,7 +39,8 @@
     window.gtag('set', { site_market: 'MX', site_locale: 'es-MX' });
     window.gtag('config', GA_ID, {
       send_page_view: false,
-      cookie_domain: location.hostname,
+      // Share the GA cookie with getsorta.io and its subdomains.
+      cookie_domain: 'auto',
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       page_location: cleanURL(location.href),
