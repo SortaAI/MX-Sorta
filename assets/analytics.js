@@ -3,6 +3,7 @@
   'use strict';
   var started = false;
   var formStarted = false;
+  var leadRecorded = false;
   var observer;
   var timer;
   var visibleSeconds = 0;
@@ -57,6 +58,11 @@
     // An attempt is not a delivered inquiry. Do not emit generate_lead here.
     track('contact_form_submit', { form_id: 'clinic_contact', delivery_status: 'unverified' });
   }, true);
+  document.addEventListener('sorta:contact-delivered', function () {
+    if (leadRecorded) return;
+    leadRecorded = true;
+    track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: 'free_pilot' });
+  });
   document.addEventListener('toggle', function (event) {
     if (event.target.matches('.faq-list details') && event.target.open) {
       var items = Array.from(event.target.parentElement.querySelectorAll('details'));

@@ -25,6 +25,7 @@ const errors = [];
         calls.push(route.request().url());
         return route.fulfill({status:200,contentType:'application/javascript',body:'/* analytics test stub */'});
       }
+      if (url.hostname === 'formspree.io') return route.fulfill({status:500,body:'{}'});
       return route.fulfill({status:200,body:''});
     });
     const page = await context.newPage();
@@ -104,8 +105,44 @@ const errors = [];
   assert.equal(e.filter(x=>x[1]==='generate_lead').length,0);
   for(const value of ['PRIVATE-NAME','5551234567','PRIVATE-FORM-TEXT'])assert(!JSON.stringify(e).includes(value));
   assert.equal(await f.page.locator('[data-clarity-mask=true]').count(),1);
+  await f.page.locator('#contact-error').waitFor({state:'visible'});
+  assert.equal(await f.page.locator('input[name=nombre]').inputValue(),'PRIVATE-NAME');
+  let deliveries=0;
+  await f.page.route('https://formspree.io/f/mvzvyrge',async route=>{
+    deliveries++;
+    await route.fulfill({status:200,contentType:'application/json',body:'{"ok":true}'});
+  });
+  await f.page.locator('form button[type=submit]').focus();
+  await f.page.keyboard.press('Enter');
+  await f.page.locator('#contact-success').waitFor({state:'visible'});
+  assert.equal(await f.page.locator('#contact-success').evaluate(el=>el===document.activeElement),true);
+  assert.equal(await f.page.locator('form').isVisible(),false);
+  assert.equal(deliveries,1);
+  e=await events(f.page);
+  assert.equal(e.filter(x=>x[1]==='generate_lead').length,1);
+  for(const value of ['PRIVATE-NAME','5551234567','PRIVATE-FORM-TEXT'])assert(!JSON.stringify(e).includes(value));
   await f.context.close();
-  console.log('PASS returning consent, masked contact form, no form values or fabricated lead events.');
+  console.log('PASS failed delivery, keyboard retry, confirmed lead, focus and no form values in analytics.');
+
+  for (const width of [1440,390]) {
+    f=await fixture(origin,'denied');
+    await f.page.setViewportSize({width,height:1000});
+    await f.page.emulateMedia({reducedMotion:'reduce'});
+    for(const slug of ['contacto','precios']) {
+      await f.page.goto(origin+'/'+slug,{waitUntil:'networkidle'});
+      assert(await f.page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      await f.page.screenshot({path:'/private/tmp/pilot-'+slug+'-'+width+'.png',fullPage:true});
+    }
+    await f.page.goto(origin+'/contacto');
+    await f.page.route('https://formspree.io/f/mvzvyrge',route=>route.fulfill({status:200,body:'{}'}));
+    await f.page.locator('input[name=nombre]').fill('Test');
+    await f.page.locator('input[name=whatsapp]').fill('5551234567');
+    await f.page.locator('form button[type=submit]').click();
+    await f.page.locator('#contact-success').waitFor({state:'visible'});
+    assert.deepEqual(await events(f.page),[]);
+    await f.context.close();
+  }
+  console.log('PASS desktop/mobile layout, reduced motion, successful submission without analytics consent.');
 
   // Local development never pollutes the production analytics projects.
   f=await fixture('http://localhost:8090','granted');
