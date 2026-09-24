@@ -14,7 +14,10 @@ for (const demo of document.querySelectorAll('[data-autofill-demo]')) {
       ? 'Datos compartidos llenados en 3 documentos. Revisa la información y completa el contenido clínico y las firmas pendientes.'
       : 'Los campos compartidos están listos para llenar.';
   }
-  fill.addEventListener('click', () => render(true));
+  fill.addEventListener('click', () => {
+    render(true);
+    document.dispatchEvent(new Event('sorta:autofill-completed'));
+  });
   reset.addEventListener('click', () => {
     render(false);
     fill.focus();

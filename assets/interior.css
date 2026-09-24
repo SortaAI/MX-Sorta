@@ -338,3 +338,5 @@
 .agenda-caption { display:block; padding:0 20px 14px; color:var(--muted); font-size:9px; }
 @media (max-width: 900px) { .agenda-section { grid-template-columns:1fr; gap:35px; padding-block:80px; } }
 @media (max-width: 600px) { .agenda-preview__body { grid-template-columns:34px minmax(150px,1fr); } .agenda-queue { grid-column:1 / -1; grid-template-columns:repeat(2,1fr); padding:12px 0 0; } .agenda-queue > strong, .agenda-queue > small { grid-column:1 / -1; } .agenda-queue > div:nth-of-type(3) { display:none; } }
+
+.interior .resource-card--featured{background:#e8ecff;border-color:#bbc8f4;grid-column:1 / -1}.interior .resource-card--featured h2{max-width:760px}
