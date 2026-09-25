@@ -6,7 +6,7 @@
   </url>
   <url>
     <loc>https://mx.getsorta.io/como-funciona</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/contacto</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos/reducir-papeleo-consultorio</loc>
@@ -46,11 +46,11 @@
   </url>
   <url>
     <loc>https://mx.getsorta.io/producto/agenda</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/producto/whatsapp</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/producto/formatos-medicos</loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos/mensajes-confirmar-citas-whatsapp</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://mx.getsorta.io/recursos/ficha-identificacion-paciente</loc>
@@ -75,5 +75,13 @@
   <url>
     <loc>https://mx.getsorta.io/recursos/agenda-citas-medicas-excel</loc>
     <lastmod>2026-09-17</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/recursos/checklist-recepcion-clinica</loc>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://mx.getsorta.io/soluciones/recepcion-clinicas</loc>
+    <lastmod>2026-09-25</lastmod>
   </url>
 </urlset>

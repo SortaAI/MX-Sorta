@@ -18,7 +18,7 @@
     "type": "product",
     "title": "Formatos médicos por WhatsApp: cómo funciona | Sorta",
     "description": "Conoce cómo Sorta prepara los formatos médicos de tu consultorio: una captura por WhatsApp, tus PDFs de siempre y revisión del equipo antes de firmar.",
-    "modified": "2026-09-16"
+    "modified": "2026-09-25"
   },
   "contacto.html": {
     "path": "/contacto",
@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Guías para digitalizar tu consultorio en México | Sorta",
     "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-24"
+    "modified": "2026-09-25"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -131,7 +131,7 @@
     "description": "Organiza las citas de tu consultorio con Sorta: vistas de día, semana y mes, solicitudes por confirmar y espacios disponibles para recepción.",
     "path": "/producto/agenda",
     "type": "product",
-    "modified": "2026-09-16"
+    "modified": "2026-09-25"
   },
   "producto/whatsapp.html": {
     "label": "WhatsApp para clínicas",
@@ -139,7 +139,7 @@
     "description": "Reúne conversaciones de WhatsApp, solicitudes de citas y envío de formatos en Sorta. Dale seguimiento a cada paciente desde la recepción de tu clínica.",
     "path": "/producto/whatsapp",
     "type": "product",
-    "modified": "2026-09-16"
+    "modified": "2026-09-25"
   },
   "producto/formatos-medicos.html": {
     "label": "Formatos médicos digitales",
@@ -173,7 +173,7 @@
     "title": "Mensajes para confirmar citas médicas por WhatsApp | Sorta",
     "description": "Copia y adapta ocho mensajes de WhatsApp para confirmar, recordar, cancelar o reagendar citas médicas. Ejemplos claros para la recepción de tu consultorio.",
     "published": "2026-09-17",
-    "modified": "2026-09-17"
+    "modified": "2026-09-25"
   },
   "recursos/ficha-identificacion-paciente.html": {
     "path": "/recursos/ficha-identificacion-paciente",
@@ -192,5 +192,22 @@
     "description": "Descarga una agenda de citas médicas en Excel con estados, filtros y duración de citas. Incluye instrucciones y un ejemplo ficticio para tu consultorio.",
     "published": "2026-09-17",
     "modified": "2026-09-17"
+  },
+  "recursos/checklist-recepcion-clinica.html": {
+    "path": "/recursos/checklist-recepcion-clinica",
+    "label": "Checklist de recepción para clínicas",
+    "type": "article",
+    "title": "Checklist de recepción para clínicas: PDF gratis | Sorta",
+    "description": "Organiza apertura, llegada de pacientes, documentos y entrega de turno. Descarga una checklist administrativa de recepción para clínicas, gratis en PDF.",
+    "published": "2026-09-25",
+    "modified": "2026-09-25"
+  },
+  "soluciones/recepcion-clinicas.html": {
+    "path": "/soluciones/recepcion-clinicas",
+    "label": "Sorta para recepción de clínicas",
+    "type": "product",
+    "title": "Software para recepción de clínicas en México | Sorta",
+    "description": "Conecta WhatsApp, agenda y preparación de formatos en el flujo de recepción de tu clínica. Conoce Sorta y solicita un piloto gratuito con acceso completo.",
+    "modified": "2026-09-25"
   }
 }

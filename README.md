@@ -8,6 +8,7 @@ https://mx.getsorta.io. No build command or output-directory override is needed.
 
 - Root HTML files: homepage and core marketing pages.
 - `producto/`: agenda, WhatsApp and document autofill pages.
+- `soluciones/`: complete reception workflow for clinic teams.
 - `recursos/`: practical guides and downloadable-resource pages.
 - `assets/`: production CSS/JS, brand assets, Spanish product screenshots,
   team photos and public downloads.
@@ -15,7 +16,7 @@ https://mx.getsorta.io. No build command or output-directory override is needed.
 - `tests/`: static SEO/link tests and browser behavior checks.
 - `docs/`: technical maintenance notes.
 
-All 22 pages share `assets/site.css` and the consent-based analytics loader.
+All 24 pages share `assets/site.css` and the consent-based analytics loader.
 `assets/interior.css` handles secondary layouts; feature-specific files are
 loaded only by relevant pages. `assets/site.js` handles navigation and
 `assets/homepage/homepage.js` handles the homepage tabs and image viewer.
