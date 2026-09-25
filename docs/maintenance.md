@@ -13,7 +13,7 @@ and update the image dimensions in the article if needed.
 
 ## Analytics
 
-`assets/cookie-consent.js` owns the sole GA4 loader (G-6V5Y3JP1VJ) and the existing
+`assets/cookie-consent.js` owns the sole GA4 loader (G-4J0QLJT1N0) and the existing
 Clarity project. Only production and consented visits load analytics. Do not add
 inline gtag snippets to individual pages. `assets/analytics.js` never reads form
 values; successful Formspree acceptance triggers `generate_lead`.
