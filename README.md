@@ -22,7 +22,7 @@ loaded only by relevant pages. `assets/site.js` handles navigation and
 `assets/homepage/homepage.js` handles the homepage tabs and image viewer.
 Headers and footers are static HTML; update them consistently across pages.
 
-GA4 uses the dedicated Mexico stream **G-4J0QLJT1N0** after analytics consent.
+GA4 uses the dedicated Mexico stream **G-6V5Y3JP1VJ** after analytics consent.
 The contact flow uses Formspree and counts leads only on successful delivery.
 
 ## Checks

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var KEY = 'sorta_cookie_consent';
-  var GA_ID = 'G-4J0QLJT1N0';
+  var GA_ID = 'G-6V5Y3JP1VJ';
   var CLARITY_ID = 'wor9i7cm6t';
   var production = location.hostname === 'mx.getsorta.io';
   var consent = null;
