@@ -55,7 +55,7 @@ for filename, info in PAGES.items():
     html = path.read_text()
     url = BASE + info['path']
     html = re.sub(r'<body([^>]*)>', lambda m: '<body' + re.sub(r'\sdata-page-type="[^"]*"', '', m[1]) + f' data-page-type="{info["type"]}">', html, count=1)
-    # The same project IDs as the US site, with one loader and event adapter.
+    # One consent-based Mexico analytics loader and event adapter.
     html = re.sub(r'\s*<script[^>]+src="https://cdn\.vercel-insights\.com/[^\"]+"[^>]*></script>', '', html)
     html = re.sub(r'\s*<script src="/assets/analytics.js" defer></script>', '', html)
     html = html.replace('<script src="/assets/cookie-consent.js" defer></script>', '<script src="/assets/cookie-consent.js" defer></script>\n  <script src="/assets/analytics.js" defer></script>')
