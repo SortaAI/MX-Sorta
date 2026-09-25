@@ -1,9 +1,9 @@
-/** Dedicated Mexico GA4 stream; existing Clarity project. Consent required. */
+/** Dedicated Mexico GA4 stream; dedicated Mexico Clarity project. Consent required. */
 (function () {
   'use strict';
   var KEY = 'sorta_cookie_consent';
   var GA_ID = 'G-4J0QLJT1N0';
-  var CLARITY_ID = 'wor9i7cm6t';
+  var CLARITY_ID = 'ynwi202zd9';
   var production = location.hostname === 'mx.getsorta.io';
   var consent = null;
   var returnFocus = null;
