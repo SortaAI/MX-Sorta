@@ -207,6 +207,12 @@ const errors = [];
   await f.page.locator('[data-autofill-fill]').click();
   assert.equal((await events(f.page)).filter(x=>x[1]==='autofill_demo_complete').length,1);
   await f.context.close();
+  for (const content of ['post_4_buyers','post_5_excel','founder_walkthrough']) {
+    f=await fixture(origin,'granted');
+    await f.page.goto(origin+'/recursos/elegir-software-clinica?utm_source=linkedin&utm_medium=organic_social&utm_campaign=mx_week_2&utm_content='+content);
+    assert((await events(f.page)).find(x=>x[1]==='page_view')[2].page_location.endsWith('utm_content='+content));
+    await f.context.close();
+  }
   console.log('PASS campaign allowlist, resource funnel, demo completion, consent and deduplication.');
   assert.deepEqual(errors,[]);
   console.log('PASS foreground engagement and browser errors. No external analytics events sent.');

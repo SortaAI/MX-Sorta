@@ -191,7 +191,7 @@
     "title": "Agenda de citas médicas en Excel: plantilla gratis | Sorta",
     "description": "Descarga una agenda de citas médicas en Excel con estados, filtros y duración de citas. Incluye instrucciones y un ejemplo ficticio para tu consultorio.",
     "published": "2026-09-17",
-    "modified": "2026-09-17"
+    "modified": "2026-09-25"
   },
   "recursos/checklist-recepcion-clinica.html": {
     "path": "/recursos/checklist-recepcion-clinica",
@@ -208,6 +208,15 @@
     "type": "product",
     "title": "Software para recepción de clínicas en México | Sorta",
     "description": "Conecta WhatsApp, agenda y preparación de formatos en el flujo de recepción de tu clínica. Conoce Sorta y solicita un piloto gratuito con acceso completo.",
+    "modified": "2026-09-25"
+  },
+  "recursos/elegir-software-clinica.html": {
+    "path": "/recursos/elegir-software-clinica",
+    "label": "Cómo elegir software para una clínica",
+    "type": "article",
+    "title": "Cómo elegir software para una clínica: guía y checklist | Sorta",
+    "description": "Evalúa software para tu clínica con una visita ficticia, preguntas concretas y una hoja de comparación gratuita. Revisa configuración, costos, acceso y soporte.",
+    "published": "2026-09-25",
     "modified": "2026-09-25"
   }
 }
