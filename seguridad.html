@@ -3,70 +3,238 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
-  <meta name="description" content="Conoce cómo Sorta procesa y organiza los datos y documentos clínicos de consultorios en México, además de los límites claros del producto.">
-  <meta name="robots" content="index, follow"><meta name="theme-color" content="#000054">
-  <title>Seguridad de datos clínicos | Sorta México</title>
+  <script src="/assets/cookie-consent.js" defer></script>
+  <script src="/assets/analytics.js" defer></script><meta name="theme-color" content="#000054">
   <link rel="icon" href="/assets/sorta-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/interior.css">
+  <script src="/assets/site.js" defer></script>
+  <title>Seguridad de tus formatos médicos | Sorta México</title>
+  <meta name="description" content="Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://mx.getsorta.io/seguridad">
   <link rel="alternate" hreflang="es-MX" href="https://mx.getsorta.io/seguridad">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Sorta México"><meta property="og:locale" content="es_MX">
-  <meta property="og:url" content="https://mx.getsorta.io/seguridad"><meta property="og:title" content="Seguridad de datos clínicos | Sorta México"><meta property="og:description" content="Qué procesa Sorta, qué queda asociado a cada visita y qué responsabilidades conserva el consultorio.">
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Seguridad de datos clínicos | Sorta México"><meta name="twitter:description" content="Datos, documentos y límites explicados sin letra pequeña.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/home-preview.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sorta México">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:url" content="https://mx.getsorta.io/seguridad">
+  <meta property="og:title" content="Seguridad de tus formatos médicos | Sorta México">
+  <meta property="og:description" content="Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.">
+  <meta property="og:image" content="https://mx.getsorta.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sorta México — Automatización de formatos médicos para consultorios">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Seguridad de tus formatos médicos | Sorta México">
+  <meta name="twitter:description" content="Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.">
+  <meta name="twitter:image" content="https://mx.getsorta.io/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Sorta México — Automatización de formatos médicos">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mx.getsorta.io/#organization",
+      "name": "Sorta",
+      "url": "https://mx.getsorta.io/",
+      "logo": "https://mx.getsorta.io/assets/sorta-logo.svg",
+      "description": "Automatización de formatos médicos para clínicas y consultorios en México.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/getsorta"
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Emiliano Rodríguez",
+          "jobTitle": "Director ejecutivo y cofundador"
+        },
+        {
+          "@type": "Person",
+          "name": "Ian Mendoza",
+          "jobTitle": "Director de tecnología y cofundador"
+        },
+        {
+          "@type": "Person",
+          "name": "Lembit Venegas Kupper",
+          "jobTitle": "Director de marketing y cofundador"
+        }
+      ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Dorian Acosta",
+          "jobTitle": "Líder de vinculación y operaciones clínicas"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Atención a consultorios",
+        "email": "hola@getsorta.io",
+        "availableLanguage": [
+          "es-MX"
+        ],
+        "areaServed": "MX",
+        "url": "https://mx.getsorta.io/contacto"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mx.getsorta.io/#website",
+      "name": "Sorta México",
+      "alternateName": "Sorta",
+      "url": "https://mx.getsorta.io/",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@id": "https://mx.getsorta.io/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mx.getsorta.io/seguridad#webpage",
+      "url": "https://mx.getsorta.io/seguridad",
+      "name": "Seguridad de tus formatos médicos | Sorta México",
+      "description": "Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.",
+      "inLanguage": "es-MX",
+      "isPartOf": {
+        "@id": "https://mx.getsorta.io/#website"
+      },
+      "publisher": {
+        "@id": "https://mx.getsorta.io/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://mx.getsorta.io/seguridad#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mx.getsorta.io/seguridad#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mx.getsorta.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Seguridad",
+          "item": "https://mx.getsorta.io/seguridad"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="/" aria-label="Sorta — inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a>
-    <nav class="site-nav" aria-label="Navegación principal">
-      <a href="/como-funciona">Cómo funciona</a><a href="/seguridad" aria-current="page">Seguridad</a><a href="/preguntas-frecuentes">Preguntas</a><a href="/nosotros">Quién lo hace</a>
-      <a class="language-link" href="https://getsorta.io/" lang="en" hreflang="en-US" aria-label="View the United States site in English"><span aria-hidden="true">🇺🇸</span> EN</a>
+<body class="interior" data-page-type="security">
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 10h8m-8 4h5"/></symbol>
+    <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Zm0 0v6h6M8 13h8m-8 4h5"/></symbol>
+    <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 4v3"/></symbol>
+  </defs></svg>
+
+  <div class="announcement"><span class="status-dot"></span> Papeleo clínico, con menos vueltas. <a href="/#proceso">Conoce Sorta <span aria-hidden="true">↗</span></a></div>
+  <header class="header wrap">
+    <a href="/" class="brand" aria-label="Sorta México, inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="navigation" class="navigation" aria-label="Navegación principal">
+      <div class="features-nav"><button class="features-toggle" type="button" aria-expanded="false" aria-controls="features-menu">Funciones <span aria-hidden="true">⌄</span></button><div class="features-menu" id="features-menu" hidden><div class="features-menu-intro"><span class="eyebrow">TU RECEPCIÓN, CON SORTA</span><strong>Todo listo para<br><em>la siguiente visita.</em></strong><a href="/como-funciona">Conoce el flujo completo ↗</a></div><div class="features-menu-links"><a href="/producto/agenda"><span class="feature-menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18M8 15h2M14 15h2"/></svg></span><span><strong>Agenda para consultorios</strong><small>Citas, solicitudes y espacios disponibles.</small></span><span aria-hidden="true">↗</span></a><a href="/producto/whatsapp"><span class="feature-menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9H13a8.5 8.5 0 0 1 8 8v.5Z"/><path d="M8 10h8M8 14h5"/></svg></span><span><strong>WhatsApp para clínicas</strong><small>Conversaciones que reciben seguimiento.</small></span><span aria-hidden="true">↗</span></a><a href="/producto/formatos-medicos"><span class="feature-menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><span><strong>Llenado automático</strong><small>Una captura para tus formatos configurados.</small></span><span aria-hidden="true">↗</span></a></div></div></div>
+      <a href="/como-funciona">Cómo funciona</a><a href="/seguridad">Seguridad</a><a href="/precios">Precios</a><a href="/nosotros">Quién lo hace</a>
     </nav>
-    <a class="button button--small" href="/contacto">Solicita acceso</a>
+    <div class="header-actions"><a class="language" href="https://getsorta.io/" lang="en" hreflang="en-US">EN <span aria-hidden="true">↗</span></a><a class="button button-small" href="/contacto" data-track="primary_cta">Piloto gratuito <svg><use href="#arrow"/></svg></a></div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main" id="contenido">
+    <nav class="page-breadcrumbs wrap" aria-label="Migas de pan"><a href="/">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Seguridad</span></nav>
     <section class="page-hero" aria-labelledby="page-title">
       <div class="page-hero__copy">
         <p class="section-label">Seguridad y registros</p>
         <h1 id="page-title">Los datos del paciente <em>no son nuestros.</em></h1>
         <p class="page-hero__lead">Sorta usa la información que recibe para preparar y organizar el papeleo del consultorio. Explicamos qué se procesa, qué queda registrado y dónde termina el alcance del producto.</p>
       </div>
-      <aside class="page-hero__aside"><p class="section-label">Principio de producto</p><strong>La confianza empieza diciendo exactamente qué hacemos.</strong><p>También implica decir con claridad lo que Sorta todavía no es.</p></aside>
+      <aside class="page-hero__aside">
+        <div class="floater page-hero__badge">
+          <div class="floater__icon floater__icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.97-3.3 8.5-8 9-4.7-.5-8-4.03-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div><strong>Sin venta a terceros</strong><span>Nunca, con fines comerciales</span></div>
+        </div>
+        <p class="section-label">Principio de producto</p><strong>La confianza empieza diciendo exactamente qué hacemos.</strong><p>También implica decir con claridad lo que Sorta todavía no es.</p>
+      </aside>
     </section>
 
     <section class="content-section--tint" aria-labelledby="ledger-title">
       <div class="content-section__heading"><p class="section-label">Punto por punto</p><h2 id="ledger-title">Qué ocurre con la información <em>durante una visita.</em></h2></div>
       <div class="ledger">
-        <article class="ledger-row"><p class="ledger-row__label">Entrada</p><h3>Recepción envía los datos necesarios.</h3><span>La información llega por el canal acordado, incluido WhatsApp cuando ese es el flujo del consultorio.</span></article>
-        <article class="ledger-row"><p class="ledger-row__label">Proceso</p><h3>Los datos llenan los formatos configurados.</h3><span>Sorta los coloca en los documentos que el consultorio proporcionó para preparar el paquete de la visita.</span></article>
-        <article class="ledger-row"><p class="ledger-row__label">Registro</p><h3>El paquete queda asociado a esa visita.</h3><span>La versión terminada se identifica con fecha y hora para conservar qué documento se preparó en ese momento.</span></article>
-        <article class="ledger-row"><p class="ledger-row__label">Propiedad</p><h3>La información pertenece al consultorio.</h3><span>Sorta no la vende ni la utiliza para publicidad de terceros.</span></article>
+        <article class="ledger-row">
+          <div class="ledger-row__head"><div class="ledger-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><p class="ledger-row__label">Entrada</p></div>
+          <h3>Recepción envía los datos necesarios.</h3><span>La información llega por el canal acordado, incluido WhatsApp cuando ese es el flujo del consultorio.</span>
+        </article>
+        <article class="ledger-row">
+          <div class="ledger-row__head"><div class="ledger-row__icon ledger-row__icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div><p class="ledger-row__label">Proceso</p></div>
+          <h3>Los datos llenan los formatos configurados.</h3><span>Sorta los coloca en los documentos que el consultorio proporcionó para preparar el paquete de la visita.</span>
+        </article>
+        <article class="ledger-row">
+          <div class="ledger-row__head"><div class="ledger-row__icon ledger-row__icon--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div><p class="ledger-row__label">Registro</p></div>
+          <h3>El paquete queda asociado a esa visita.</h3><span>La versión terminada se identifica con fecha y hora para conservar qué documento se preparó en ese momento.</span>
+        </article>
+        <article class="ledger-row">
+          <div class="ledger-row__head"><div class="ledger-row__icon ledger-row__icon--rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.97-3.3 8.5-8 9-4.7-.5-8-4.03-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><p class="ledger-row__label">Propiedad</p></div>
+          <h3>La información pertenece al consultorio.</h3><span>Sorta no la vende ni la utiliza para publicidad de terceros.</span>
+        </article>
+        <article class="ledger-row">
+          <div class="ledger-row__head"><div class="ledger-row__icon ledger-row__icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div><p class="ledger-row__label">WhatsApp</p></div>
+          <h3>La conversación sigue las reglas del consultorio.</h3><span>El texto de una conversación transferida a una persona se conserva durante el periodo configurado, de 30 a 3,650 días. Las conversaciones sin resolver no se eliminan automáticamente y una solicitud del paciente puede activar su borrado.</span>
+        </article>
       </div>
     </section>
 
     <section class="split-section" aria-labelledby="limits-title">
       <div class="split-section__copy"><p class="section-label">Sin letra pequeña</p><h2 id="limits-title">Papeleo digital no significa <em>prometerlo todo.</em></h2><p>Sorta organiza documentos alrededor de la visita. El consultorio sigue siendo responsable de revisar el paquete, firmar cuando corresponda y decidir cómo integrarlo a su operación clínica.</p></div>
-      <aside class="boundary-box">
-        <h3>Sorta no sustituye:</h3>
-        <ul><li>El expediente clínico electrónico del consultorio</li><li>La agenda o los recordatorios de citas</li><li>El criterio clínico o la revisión humana</li><li>Las responsabilidades legales del prestador de salud</li></ul>
+      <aside class="boundary-box boundary-box--rose">
+        <div class="feature-card__icon feature-card__icon--rose" style="margin-bottom:18px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg></div>
+          <h3>Sorta no sustituye:</h3>
+          <ul><li>El expediente clínico electrónico del consultorio</li><li>El criterio clínico o la revisión humana</li><li>Las responsabilidades legales del prestador de salud</li></ul>
       </aside>
     </section>
 
     <section class="content-section content-section--tight" aria-labelledby="questions-title">
       <div class="content-section__heading"><p class="section-label">Preguntas que sí importan</p><h2 id="questions-title">Antes de usar Sorta, <em>pregunta esto.</em></h2></div>
       <div class="feature-grid">
-        <article class="feature-card"><p class="feature-card__tag">01</p><h3>¿Qué datos necesita mi flujo?</h3><p>Revisamos los campos de tus formatos y evitamos pedir información que no haga falta para prepararlos.</p></article>
-        <article class="feature-card"><p class="feature-card__tag">02</p><h3>¿Quién puede ver los documentos?</h3><p>El acceso y las responsabilidades se definen con el consultorio antes de trabajar con visitas reales.</p></article>
-        <article class="feature-card"><p class="feature-card__tag">03</p><h3>¿Qué ocurre si algo cambia?</h3><p>Te explicamos el proceso de corrección, resguardo y salida de información aplicable a tu implementación.</p></article>
+        <article class="feature-card feature-card--blue">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <p class="feature-card__tag">01</p><h3>¿Qué datos necesita mi flujo?</h3><p>Revisamos los campos de tus formatos y evitamos pedir información que no haga falta para prepararlos.</p>
+        </article>
+        <article class="feature-card feature-card--teal">
+          <div class="feature-card__icon feature-card__icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <p class="feature-card__tag">02</p><h3>¿Quién puede ver los documentos?</h3><p>El acceso y las responsabilidades se definen con el consultorio antes de trabajar con visitas reales.</p>
+        </article>
+        <article class="feature-card feature-card--amber">
+          <div class="feature-card__icon feature-card__icon--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></div>
+          <p class="feature-card__tag">03</p><h3>¿Qué ocurre si algo cambia?</h3><p>Te explicamos el proceso de corrección, resguardo y salida de información aplicable a tu implementación.</p>
+        </article>
       </div>
     </section>
 
-    <section class="cta-panel" aria-labelledby="cta-title"><div><p class="section-label">Pregúntanos directo</p><h2 id="cta-title">Si no podemos sostener una respuesta, <em>te lo decimos así.</em></h2><p>Cuéntanos tu caso por WhatsApp y revisamos contigo el flujo, los datos y los límites.</p></div><a class="button button--light" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">Hablar con nosotros</a></section>
+    <section class="cta-panel" aria-labelledby="cta-title">
+      <p class="section-label">Pregúntanos directo</p>
+      <h2 id="cta-title">Si no podemos sostener una respuesta, <em>te lo decimos así.</em></h2>
+      <p>Cuéntanos tu caso por WhatsApp y revisamos contigo el flujo, los datos y los límites.</p>
+      <a class="button" href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer" data-track="primary_cta">Hablar con nosotros</a>
+    </section>
   </main>
 
-  <footer class="site-footer"><img src="/assets/sorta-logo.svg" alt="Sorta" width="80" height="22"><p>La capa de papeleo para consultorios independientes.</p><nav aria-label="Navegación del pie"><a href="/">Inicio</a><a href="/como-funciona">Cómo funciona</a><a href="/preguntas-frecuentes">Preguntas</a><a href="/nosotros">Quién lo hace</a></nav><small>© 2026 Sorta</small></footer>
+  <footer class="footer wrap"><div class="footer-top"><div class="footer-brand"><a href="/" aria-label="Sorta México, inicio"><img src="/assets/sorta-logo-horizontal.svg" alt="Sorta" width="1087" height="358"></a><p>La capa de papeleo para clínicas<br>y consultorios independientes en México.</p><span class="footer-location"><span class="status-dot"></span> Hecho para tu día a día.</span></div><div><h2>Producto</h2><a href="/precios">Precios · Piloto gratuito</a><a href="/producto/agenda">Agenda para consultorios</a><a href="/producto/whatsapp">WhatsApp para clínicas</a><a href="/producto/formatos-medicos">Formatos médicos digitales</a><a href="/como-funciona">Cómo funciona</a><a href="/seguridad">Seguridad</a><a href="/preguntas-frecuentes">Preguntas frecuentes</a></div><div><h2>Sorta</h2><a href="/nosotros">Quién lo hace</a><a href="/recursos">Recursos para clínicas</a><a href="/contacto">Contacto</a></div><div><h2>Conversemos</h2><a href="https://wa.me/message/3JRJUFH6UNNLA1" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://www.linkedin.com/company/getsorta" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://getsorta.io/" lang="en" hreflang="en-US">English site ↗</a></div></div><div class="footer-bottom"><span>© 2026 Sorta. Todos los derechos reservados.</span><nav aria-label="Información legal"><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a><button type="button" data-cookie-preferences>Cookies</button></nav></div></footer>
 </body>
 </html>

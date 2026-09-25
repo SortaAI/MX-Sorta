@@ -1,4 +1,9 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/homepagePreview", "destination": "/", "permanent": true },
+    { "source": "/home-preview", "destination": "/", "permanent": true }
+  ]
 }
