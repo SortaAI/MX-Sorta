@@ -1,0 +1,53 @@
+SORTA MÉXICO — CHECKLIST PARA DIGITALIZAR FORMATOS DEL CONSULTORIO
+https://mx.getsorta.io/recursos/checklist-formatos-consultorio
+
+Lista operativa para preparar una prueba. No es una lista de documentos
+obligatorios ni un formato clínico. Completa sin datos de pacientes.
+
+Tipo de visita que vamos a probar: ________________________________
+Persona responsable de la prueba: _________________________________
+Fecha de revisión: ________________________________________________
+
+1. INVENTARIO
+[ ] Reunimos todos los formatos de una visita habitual.
+[ ] Tenemos los archivos originales en blanco.
+[ ] Identificamos qué persona completa, revisa o firma cada documento.
+
+Formato: __________________  Versión: _____________________________
+Cuándo se utiliza: ________________________________________________
+Responsable de revisión: __________________________________________
+Dónde queda al terminar: __________________________________________
+(Repetir por cada formato.)
+
+2. VERSIONES
+[ ] Confirmamos con la persona responsable que el contenido está vigente.
+[ ] Las páginas están completas y son legibles.
+[ ] El logo, los campos y el orden del documento son correctos.
+[ ] Apartamos las versiones antiguas para evitar confusiones.
+
+3. CAPTURA
+[ ] Marcamos los datos que aparecen en más de un documento.
+[ ] Acordamos un significado común para cada campo compartido.
+[ ] Distinguimos datos reutilizables de los que se confirman en cada visita.
+[ ] Definimos qué hacer si falta un dato o hay una corrección.
+
+4. RESPONSABLES Y RESGUARDO
+[ ] Asignamos quién revisa el paquete antes de firmar, imprimir o archivar.
+[ ] Definimos quién puede acceder a los documentos.
+[ ] Acordamos dónde guardar el paquete y cómo reconocer la versión final.
+[ ] Si usamos WhatsApp, definimos el canal y los datos que manejará.
+
+5. PRUEBA CON DATOS FICTICIOS
+[ ] Capturamos una vez y revisamos todos los documentos elegidos.
+[ ] Probamos nombres largos, acentos y campos vacíos.
+[ ] Corregimos un dato y verificamos todos los formatos afectados.
+[ ] Revisamos la impresión, el orden de las páginas y las firmas pendientes.
+[ ] Otra persona de recepción pudo repetir el flujo.
+[ ] Localizamos el paquete final después de terminar la prueba.
+
+Dudas o ajustes antes de continuar:
+_________________________________________________________________
+_________________________________________________________________
+
+Conoce el proceso: https://mx.getsorta.io/como-funciona
+Contacto: https://mx.getsorta.io/contacto

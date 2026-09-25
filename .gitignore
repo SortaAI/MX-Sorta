@@ -1,2 +1,8 @@
 .DS_Store
-
+.claude/
+.codex/
+output/
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
