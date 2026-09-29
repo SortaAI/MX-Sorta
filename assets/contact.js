@@ -5,6 +5,12 @@
   const button = form.querySelector('button[type="submit"]');
   const error = document.getElementById('contact-error');
   const success = document.getElementById('contact-success');
+  const params = new URLSearchParams(location.search);
+  const topics = ['ficha', 'agenda_excel', 'mensajes_whatsapp'];
+  const interest = form.elements.interes;
+  if (['demo', 'piloto'].includes(params.get('interes'))) interest.value = params.get('interes');
+  const source = topics.includes(params.get('recurso')) ? params.get('recurso') : 'directo';
+  form.elements.recurso_origen.value = source;
   let submitting = false;
   form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -19,7 +25,7 @@
         method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }
       });
       if (!response.ok) throw new Error('Submission failed');
-      document.dispatchEvent(new Event('sorta:contact-delivered'));
+      document.dispatchEvent(new CustomEvent('sorta:contact-delivered', {detail: {offer: interest.value === 'piloto' ? 'free_pilot' : 'demo', resource: source}}));
       form.hidden = true;
       success.hidden = false;
       success.focus();
@@ -28,7 +34,7 @@
     } finally {
       submitting = false;
       button.disabled = false;
-      button.textContent = 'Solicitar piloto gratuito';
+      button.textContent = 'Enviar solicitud';
       form.removeAttribute('aria-busy');
     }
   });

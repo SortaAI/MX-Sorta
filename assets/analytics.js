@@ -61,10 +61,13 @@
     // An attempt is not a delivered inquiry. Do not emit generate_lead here.
     track('contact_form_submit', { form_id: 'clinic_contact', delivery_status: 'unverified' });
   }, true);
-  document.addEventListener('sorta:contact-delivered', function () {
+  document.addEventListener('sorta:contact-delivered', function (event) {
     if (leadRecorded) return;
     leadRecorded = true;
-    track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: 'free_pilot' });
+    track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: event.detail && event.detail.offer === 'demo' ? 'demo' : 'free_pilot', resource: event.detail && ['ficha', 'agenda_excel', 'mensajes_whatsapp'].indexOf(event.detail.resource) !== -1 ? event.detail.resource : 'directo' });
+  });
+  document.addEventListener('sorta:message-copied', function (event) {
+    if (event.detail && /^mensaje-[1-8]$/.test(event.detail.example)) track('resource_message_copy', { example_id: event.detail.example });
   });
   document.addEventListener('sorta:autofill-completed', function () {
     if (demoRecorded || !allowed() || !window.__sortaAnalyticsLoaded) return;

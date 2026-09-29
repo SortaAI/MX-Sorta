@@ -24,9 +24,9 @@
     "path": "/contacto",
     "label": "Contacto",
     "type": "contact",
-    "title": "Solicita tu piloto gratuito para clínicas | Sorta México",
-    "description": "Prueba Sorta con acceso a toda la aplicación durante el piloto gratuito. Cuéntanos de tu clínica en México y coordinemos los siguientes pasos.",
-    "modified": "2026-09-15"
+    "title": "Agenda una demo o solicita un piloto gratuito | Sorta México",
+    "description": "Conoce Sorta en una demo para tu clínica en México. Revisa formatos, WhatsApp y agenda; si encaja con tu operación, conversemos sobre un piloto gratuito.",
+    "modified": "2026-09-29"
   },
   "nosotros.html": {
     "path": "/nosotros",
@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Guías para digitalizar tu consultorio en México | Sorta",
     "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-25"
+    "modified": "2026-09-29"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -173,7 +173,7 @@
     "title": "Mensajes para confirmar citas médicas por WhatsApp | Sorta",
     "description": "Copia y adapta ocho mensajes de WhatsApp para confirmar, recordar, cancelar o reagendar citas médicas. Ejemplos claros para la recepción de tu consultorio.",
     "published": "2026-09-17",
-    "modified": "2026-09-25"
+    "modified": "2026-09-29"
   },
   "recursos/ficha-identificacion-paciente.html": {
     "path": "/recursos/ficha-identificacion-paciente",
@@ -182,7 +182,7 @@
     "title": "Ficha de identificación del paciente: Word y PDF | Sorta",
     "description": "Descarga una ficha de identificación del paciente en Word y PDF. Incluye campos administrativos, un ejemplo ficticio y pasos para revisar los datos en recepción.",
     "published": "2026-09-17",
-    "modified": "2026-09-24"
+    "modified": "2026-09-29"
   },
   "recursos/agenda-citas-medicas-excel.html": {
     "path": "/recursos/agenda-citas-medicas-excel",
@@ -191,7 +191,7 @@
     "title": "Agenda de citas médicas en Excel: plantilla gratis | Sorta",
     "description": "Descarga una agenda de citas médicas en Excel con estados, filtros y duración de citas. Incluye instrucciones y un ejemplo ficticio para tu consultorio.",
     "published": "2026-09-17",
-    "modified": "2026-09-25"
+    "modified": "2026-09-29"
   },
   "recursos/checklist-recepcion-clinica.html": {
     "path": "/recursos/checklist-recepcion-clinica",

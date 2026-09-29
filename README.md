@@ -44,3 +44,10 @@ editable sources, growth plans and their fonts/assets live there too. They are
 not deployed with this website. The Desktop folder has its own editing guide.
 
 Keep local tool settings, generated previews and dependency folders out of Git.
+
+### Resource conversion and deployment checks
+
+- Resource demo links use `/contacto?interes=demo&recurso=...`; allowed resource tokens are `ficha`, `agenda_excel`, and `mensajes_whatsapp`. Unknown values become `directo`.
+- Accepted inquiries emit `generate_lead` with `offer=demo` or `offer=free_pilot`. A successful clipboard action emits `resource_message_copy` with the static example ID. Analytics requires consent and never includes message or form contents.
+- Run `python3 scripts/check-deployment.py` after deployment to check the live sitemap, canonicals, internal destinations, and downloadable files. Use `--base https://your-preview-host` for a preview deployment; canonical URLs should still point to production.
+- Run `python3 -m unittest discover -s tests -p 'test_seo.py'`, `node tests/resources.cjs`, and `node tests/analytics.cjs` locally. Browser tests require Playwright (or `PLAYWRIGHT_MODULE`) and Chrome; external form submissions and analytics calls are mocked.
