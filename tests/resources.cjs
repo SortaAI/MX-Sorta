@@ -22,7 +22,10 @@ for(const route of ['/', '/producto/whatsapp', '/preguntas-frecuentes', '/produc
  assert(!body.includes('Sin instalar otra aplicación para el flujo por WhatsApp'));
  if(route==='/producto/whatsapp'){
   assert(body.includes('no todas las conversaciones del bot'));
-  assert(body.includes('esta modalidad no incluye coexistencia con la app'));
+  assert(body.includes('Con Coexistencia, una cuenta elegible'));
+  assert(body.includes('validando esta modalidad con un número real'));
+  assert(body.includes('no importa el historial anterior ni la lista de contactos'));
+  assert(!body.includes('esta modalidad no incluye coexistencia con la app'));
  }
  await page.screenshot({path:'/private/tmp/corrected-'+(route.replaceAll('/','-')||'home')+'-'+width+'.png',fullPage:true});
 }
