@@ -61,10 +61,13 @@
     // An attempt is not a delivered inquiry. Do not emit generate_lead here.
     track('contact_form_submit', { form_id: 'clinic_contact', delivery_status: 'unverified' });
   }, true);
-  document.addEventListener('sorta:contact-delivered', function () {
+  document.addEventListener('sorta:contact-delivered', function (event) {
     if (leadRecorded) return;
     leadRecorded = true;
-    track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: 'free_pilot' });
+    track('generate_lead', { form_id: 'clinic_contact', delivery_status: 'accepted', offer: event.detail && event.detail.offer === 'demo' ? 'demo' : 'free_pilot', resource: event.detail && ['ficha', 'agenda_excel', 'mensajes_whatsapp', 'walkthrough', 'comparacion', 'teleconsulta'].indexOf(event.detail.resource) !== -1 ? event.detail.resource : 'directo' });
+  });
+  document.addEventListener('sorta:message-copied', function (event) {
+    if (event.detail && /^(mensaje-[1-8]|mensaje-teleconsulta)$/.test(event.detail.example)) track('resource_message_copy', { example_id: event.detail.example });
   });
   document.addEventListener('sorta:autofill-completed', function () {
     if (demoRecorded || !allowed() || !window.__sortaAnalyticsLoaded) return;
@@ -72,6 +75,9 @@
     track('autofill_demo_complete', { demo_id: 'configured_forms', document_count: 3 });
   });
   document.addEventListener('toggle', function (event) {
+    if (event.target.matches('.walkthrough-step') && event.target.open && /^paso-(solicitud|agenda|captura|formatos|revision)$/.test(event.target.id)) {
+      track('workflow_step_open', { step: event.target.id });
+    }
     if (event.target.matches('.faq-list details') && event.target.open) {
       var items = Array.from(event.target.parentElement.querySelectorAll('details'));
       track('faq_open', { question_number: items.indexOf(event.target) + 1 });

@@ -14,7 +14,7 @@
       var url = new URL(value);
       if (!/^https?:$/.test(url.protocol)) return '';
       // Only approved static campaign tokens; never forward arbitrary URL values.
-      var approved = { utm_source: ['linkedin'], utm_medium: ['organic_social'], utm_campaign: ['mx_week_2'], utm_content: ['post_2_ficha', 'post_3_whatsapp', 'founder_post_2', 'founder_post_3'] };
+      var approved = { utm_source: ['linkedin'], utm_medium: ['organic_social'], utm_campaign: ['mx_week_2'], utm_content: ['post_2_ficha', 'post_3_whatsapp', 'founder_post_2', 'founder_post_3', 'post_4_buyers', 'post_5_excel', 'founder_walkthrough'] };
       var safe = new URL(url.origin + url.pathname);
       Object.keys(approved).forEach(function (key) {
         var token = url.searchParams.get(key);

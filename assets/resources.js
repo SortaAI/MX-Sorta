@@ -7,6 +7,7 @@ for (const button of document.querySelectorAll('[data-copy-target]')) {
       await navigator.clipboard.writeText(source.textContent);
       status.textContent = 'Mensaje copiado. Sustituye los datos entre corchetes antes de enviarlo.';
       button.textContent = 'Copiado ✓';
+      document.dispatchEvent(new CustomEvent('sorta:message-copied', { detail: { example: button.dataset.copyTarget } }));
     } catch {
       const range = document.createRange();
       range.selectNodeContents(source);

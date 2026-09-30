@@ -16,7 +16,7 @@ https://mx.getsorta.io. No build command or output-directory override is needed.
 - `tests/`: static SEO/link tests and browser behavior checks.
 - `docs/`: technical maintenance notes.
 
-All 24 pages share `assets/site.css` and the consent-based analytics loader.
+All 25 pages share `assets/site.css` and the consent-based analytics loader.
 `assets/interior.css` handles secondary layouts; feature-specific files are
 loaded only by relevant pages. `assets/site.js` handles navigation and
 `assets/homepage/homepage.js` handles the homepage tabs and image viewer.
@@ -44,3 +44,17 @@ editable sources, growth plans and their fonts/assets live there too. They are
 not deployed with this website. The Desktop folder has its own editing guide.
 
 Keep local tool settings, generated previews and dependency folders out of Git.
+
+### Resource conversion and deployment checks
+
+- Resource demo links use `/contacto?interes=demo&recurso=...`; allowed resource tokens are `ficha`, `agenda_excel`, `mensajes_whatsapp`, `walkthrough`, `comparacion`, and `teleconsulta`. Unknown values become `directo`.
+- Accepted inquiries emit `generate_lead` with `offer=demo` or `offer=free_pilot`. A successful clipboard action emits `resource_message_copy` with the static example ID. Analytics requires consent and never includes message or form contents.
+- Run `python3 scripts/check-deployment.py` after deployment to check the live sitemap, canonicals, internal destinations, and downloadable files. Use `--base https://your-preview-host` for a preview deployment; canonical URLs should still point to production.
+- Run `python3 -m unittest discover -s tests -p 'test_seo.py'`, `node tests/resources.cjs`, and `node tests/analytics.cjs` locally. Browser tests require Playwright (or `PLAYWRIGHT_MODULE`) and Chrome; external form submissions and analytics calls are mocked.
+
+### Clinic tools and product scope
+
+- Rebuild the handover workbook and administrative teleconsultation PDF with `python3 scripts/build-clinic-tools.py` (requires openpyxl and reportlab). Examples are fictional; these downloads are not clinical protocols.
+- The walkthrough uses native details controls and consent-based `workflow_step_open` events with static step IDs.
+- Competitor comparisons cite public vendor documentation and must be rechecked before changing claims or prices.
+- WhatsApp copy distinguishes eligible Coexistence connections from migration. Coexistence remains pending real-number validation. Messages contains human handoffs, routine appointment requests appear in Agenda, and historical chats/contact lists are not imported. Phone replies are intended to mirror only into open human-handoff transcripts. Do not promise a complete mirrored inbox or universal eligibility.
