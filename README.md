@@ -47,7 +47,14 @@ Keep local tool settings, generated previews and dependency folders out of Git.
 
 ### Resource conversion and deployment checks
 
-- Resource demo links use `/contacto?interes=demo&recurso=...`; allowed resource tokens are `ficha`, `agenda_excel`, and `mensajes_whatsapp`. Unknown values become `directo`.
+- Resource demo links use `/contacto?interes=demo&recurso=...`; allowed resource tokens are `ficha`, `agenda_excel`, `mensajes_whatsapp`, `walkthrough`, `comparacion`, and `teleconsulta`. Unknown values become `directo`.
 - Accepted inquiries emit `generate_lead` with `offer=demo` or `offer=free_pilot`. A successful clipboard action emits `resource_message_copy` with the static example ID. Analytics requires consent and never includes message or form contents.
 - Run `python3 scripts/check-deployment.py` after deployment to check the live sitemap, canonicals, internal destinations, and downloadable files. Use `--base https://your-preview-host` for a preview deployment; canonical URLs should still point to production.
 - Run `python3 -m unittest discover -s tests -p 'test_seo.py'`, `node tests/resources.cjs`, and `node tests/analytics.cjs` locally. Browser tests require Playwright (or `PLAYWRIGHT_MODULE`) and Chrome; external form submissions and analytics calls are mocked.
+
+### Clinic tools and product scope
+
+- Rebuild the handover workbook and administrative teleconsultation PDF with `python3 scripts/build-clinic-tools.py` (requires openpyxl and reportlab). Examples are fictional; these downloads are not clinical protocols.
+- The walkthrough uses native details controls and consent-based `workflow_step_open` events with static step IDs.
+- Competitor comparisons cite public vendor documentation and must be rechecked before changing claims or prices.
+- WhatsApp copy describes Sorta’s current migration flow: staff reply in Sorta; Messages contains human handoffs, and routine appointment requests appear in Agenda. Do not describe it as a complete inbox or promise WhatsApp Business app coexistence. Coexistence exists in other supported provider setups; this is a product limitation, not a universal Meta restriction.

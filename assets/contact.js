@@ -6,7 +6,7 @@
   const error = document.getElementById('contact-error');
   const success = document.getElementById('contact-success');
   const params = new URLSearchParams(location.search);
-  const topics = ['ficha', 'agenda_excel', 'mensajes_whatsapp'];
+  const topics = ['ficha', 'agenda_excel', 'mensajes_whatsapp', 'walkthrough', 'comparacion', 'teleconsulta'];
   const interest = form.elements.interes;
   if (['demo', 'piloto'].includes(params.get('interes'))) interest.value = params.get('interes');
   const source = topics.includes(params.get('recurso')) ? params.get('recurso') : 'directo';

@@ -19,3 +19,16 @@
 .resource-tools .resource-card--featured { grid-column: auto; }
 .resource-tools .resource-card { min-width: 0; }
 @media(max-width:600px) { .resource-workflow,.agenda-file-preview { padding: 16px; }.article-body { min-width: 0; } }
+.walkthrough { max-width: 1220px; margin: auto; }
+.walkthrough-step { border-top: 1px solid var(--line); padding: 16px 0; }
+.walkthrough-step:last-child { border-bottom: 1px solid var(--line); }
+.walkthrough-step summary { cursor: pointer; padding: 16px 4px; font-size: clamp(18px,2.5vw,26px); font-weight: 600; }
+.walkthrough-number { color: #007d74; margin-right: 18px; font-size: 16px; }
+.walkthrough-detail { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: 32px; padding: 18px 0 32px; align-items: start; }
+.walkthrough-detail dt { font-weight: 700; margin-top: 16px; }.walkthrough-detail dd { margin: 6px 0 20px; line-height: 1.65; }
+.walkthrough-detail figure { margin: 0; min-width: 0; }.walkthrough-detail img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 14px; }
+.walkthrough-detail figcaption { font-size: 12px; color: var(--muted); margin-top: 12px; }
+.walkthrough-checks { padding-left: 22px; line-height: 1.8; }
+.vendor-comparison { min-width: 760px !important; }.vendor-comparison td { vertical-align: top; min-width: 180px; }.vendor-comparison caption { text-align: left; margin-bottom: 12px; }
+.comparison-sources { padding-left: 24px; overflow-wrap: anywhere; }
+@media(max-width:760px) { .walkthrough-detail { grid-template-columns: 1fr; gap: 20px; }.walkthrough-step summary { line-height: 1.45; } }
