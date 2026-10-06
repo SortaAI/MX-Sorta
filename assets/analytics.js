@@ -75,7 +75,7 @@
     track('autofill_demo_complete', { demo_id: 'configured_forms', document_count: 3 });
   });
   document.addEventListener('toggle', function (event) {
-    if (event.target.matches('.walkthrough-step') && event.target.open && /^paso-(solicitud|agenda|captura|formatos|revision)$/.test(event.target.id)) {
+    if (event.target.matches('.walkthrough-step') && event.target.open && /^paso-(solicitud|agenda|captura|formatos|revision|firma)$/.test(event.target.id)) {
       track('workflow_step_open', { step: event.target.id });
     }
     if (event.target.matches('.faq-list details') && event.target.open) {

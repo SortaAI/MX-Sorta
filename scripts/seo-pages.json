@@ -4,8 +4,8 @@
     "label": "Inicio",
     "type": "home",
     "title": "Automatización de formatos médicos en México | Sorta",
-    "description": "Automatiza los formatos médicos de tu clínica en México. Captura datos una vez en el formulario y revisa tus documentos configurados en Sorta.",
-    "modified": "2026-09-29",
+    "description": "Automatiza los formatos médicos de tu clínica en México: captura una vez, revisa tus documentos y firma con nombre y cédula verificada. Agenda y WhatsApp incluidos.",
+    "modified": "2026-10-06",
     "alternates": {
       "es-MX": "https://mx.getsorta.io/",
       "en-US": "https://getsorta.io/",
@@ -17,8 +17,8 @@
     "label": "Cómo funciona",
     "type": "product",
     "title": "Cómo funciona Sorta: WhatsApp, agenda y formatos | Sorta",
-    "description": "Explora una visita paso a paso con capturas de Sorta: conversaciones, agenda, captura de datos y revisión de formatos configurados para tu clínica.",
-    "modified": "2026-09-29"
+    "description": "Explora una visita de seis pasos con Sorta: WhatsApp, agenda, captura, formatos configurados, revisión del equipo y firma del doctor con bloqueo del paquete.",
+    "modified": "2026-10-06"
   },
   "contacto.html": {
     "path": "/contacto",
@@ -26,7 +26,7 @@
     "type": "contact",
     "title": "Agenda una demo o solicita un piloto gratuito | Sorta México",
     "description": "Conoce Sorta en una demo para tu clínica en México. Revisa formatos, WhatsApp y agenda; si encaja con tu operación, conversemos sobre un piloto gratuito.",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "nosotros.html": {
     "path": "/nosotros",
@@ -34,23 +34,23 @@
     "type": "about",
     "title": "Equipo de Sorta | Automatización para clínicas en México",
     "description": "Conoce al equipo de Sorta, que desarrolla automatización de formatos médicos para consultorios en México desde El Paso, Ciudad Juárez y Ciudad de México.",
-    "modified": "2026-09-15"
+    "modified": "2026-10-06"
   },
   "preguntas-frecuentes.html": {
     "path": "/preguntas-frecuentes",
     "label": "Preguntas frecuentes",
     "type": "faq",
     "title": "Preguntas sobre formatos médicos digitales | Sorta México",
-    "description": "Resuelve dudas sobre Sorta: captura de datos, formatos, agenda y atención humana por WhatsApp. Conoce qué cambia para recepción al conectar su número.",
-    "modified": "2026-09-29"
+    "description": "Resuelve dudas sobre Sorta: formatos, firma y bloqueo de documentos, agenda con lista de espera, equipo con usuarios propios y atención humana por WhatsApp.",
+    "modified": "2026-10-06"
   },
   "seguridad.html": {
     "path": "/seguridad",
     "label": "Seguridad",
     "type": "security",
     "title": "Seguridad de tus formatos médicos | Sorta México",
-    "description": "Conoce el alcance de Sorta para preparar y organizar formatos médicos: datos del consultorio, revisión humana, acceso a documentos y registro de cada visita.",
-    "modified": "2026-09-15"
+    "description": "Qué hace Sorta con los datos de tu consultorio: usuarios por persona, revisión humana, paquetes firmados con huella digital, historial de accesos y límites claros.",
+    "modified": "2026-10-06"
   },
   "recursos.html": {
     "path": "/recursos",
@@ -88,7 +88,7 @@
     "title": "Cómo reducir el papeleo en tu consultorio | Sorta México",
     "description": "Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.",
     "published": "2026-08-19",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "recursos/digitalizar-formatos-medicos.html": {
     "path": "/recursos/digitalizar-formatos-medicos",
@@ -97,7 +97,7 @@
     "title": "Digitalizar formatos médicos sin cambiar de sistema | Sorta",
     "description": "Aprende a digitalizar los formatos médicos de tu consultorio en México: conserva tus PDFs, identifica datos compartidos y prueba una captura única por visita.",
     "published": "2026-08-19",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "recursos/automatizar-formatos-medicos-whatsapp.html": {
     "path": "/recursos/automatizar-formatos-medicos-whatsapp",
@@ -128,26 +128,34 @@
   "producto/agenda.html": {
     "label": "Agenda para consultorios",
     "title": "Agenda para consultorios en México | Sorta",
-    "description": "Organiza las citas de tu consultorio con Sorta: vistas de día, semana y mes, solicitudes por confirmar y espacios disponibles para recepción.",
+    "description": "Organiza las citas de tu consultorio con Sorta: día, semana y mes, solicitudes por confirmar y una lista de espera para ofrecer por WhatsApp los huecos que se liberan.",
     "path": "/producto/agenda",
     "type": "product",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "producto/whatsapp.html": {
     "label": "WhatsApp para clínicas",
     "title": "WhatsApp para clínicas y consultorios en México | Sorta",
-    "description": "Solicitudes de citas en Agenda y conversaciones derivadas a atención humana en Mensajes. Conoce qué cambia al conectar el WhatsApp de tu clínica a Sorta.",
+    "description": "Solicitudes de citas en Agenda y conversaciones derivadas a Mensajes. Cómo conectar el WhatsApp de tu clínica a Sorta y qué mensajes revisa Meta.",
     "path": "/producto/whatsapp",
     "type": "product",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "producto/formatos-medicos.html": {
     "label": "Formatos médicos digitales",
     "title": "Llenado automático de formatos médicos | Sorta México",
-    "description": "Captura una vez y llena los campos compartidos de tus formatos médicos con Sorta. Sincroniza los documentos de la visita y revisa tus PDFs antes de firmar.",
+    "description": "Captura una vez y llena tus formatos médicos con Sorta. Biblioteca de formatos, vista previa en vivo y firma con cédula verificada para tu consultorio en México.",
     "path": "/producto/formatos-medicos",
     "type": "product",
-    "modified": "2026-09-16"
+    "modified": "2026-10-06"
+  },
+  "producto/documentos-firmados.html": {
+    "label": "Documentos firmados",
+    "title": "Documentos firmados y bloqueados para consultorios | Sorta",
+    "description": "Firma documentos médicos con nombre y cédula verificada, bloquéalos con una huella digital y comprueba que nada cambió. Notas posteriores y paquete de evidencia.",
+    "path": "/producto/documentos-firmados",
+    "type": "product",
+    "modified": "2026-10-06"
   },
   "recursos/llenado-formatos-nom-004.html": {
     "path": "/recursos/llenado-formatos-nom-004",
@@ -156,15 +164,15 @@
     "title": "NOM-004 y formatos médicos: guía y checklist | Sorta",
     "description": "Revisa tus formatos médicos con una checklist descargable de puntos de la NOM-004. Identificación, notas, revisión profesional y alcance del llenado automático.",
     "published": "2026-09-16",
-    "modified": "2026-09-17"
+    "modified": "2026-10-06"
   },
   "precios.html": {
     "path": "/precios",
     "label": "Precios",
     "type": "pricing",
     "title": "Precios de Sorta México | Piloto gratuito con acceso completo",
-    "description": "Solicita un piloto gratuito de Sorta para tu clínica en México, con acceso a toda la aplicación. Los precios de los planes de pago aún no están definidos.",
-    "modified": "2026-09-16"
+    "description": "Solicita un piloto gratuito de Sorta para tu clínica en México, con acceso a toda la aplicación: formatos, firma, agenda, WhatsApp y equipo. Planes de pago aún sin definir.",
+    "modified": "2026-10-06"
   },
   "recursos/mensajes-confirmar-citas-whatsapp.html": {
     "path": "/recursos/mensajes-confirmar-citas-whatsapp",
@@ -207,8 +215,8 @@
     "label": "Sorta para recepción de clínicas",
     "type": "product",
     "title": "Software para recepción de clínicas en México | Sorta",
-    "description": "Conecta WhatsApp, agenda y preparación de formatos en el flujo de recepción de tu clínica. Conoce Sorta y solicita un piloto gratuito con acceso completo.",
-    "modified": "2026-09-29"
+    "description": "Conecta WhatsApp, agenda, formatos y firma del doctor en el flujo de recepción de tu clínica. Conoce Sorta y solicita un piloto gratuito con acceso completo.",
+    "modified": "2026-10-06"
   },
   "recursos/elegir-software-clinica.html": {
     "path": "/recursos/elegir-software-clinica",

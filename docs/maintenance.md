@@ -36,3 +36,7 @@ Before removing assets, check references in HTML (including data-image/srcset),
 CSS, JS and generators. Fonts/images used only by marketing exports belong in
 the separate Desktop marketing library. Preserve required dependencies when
 moving editable marketing sources.
+
+### Documentos firmados (producto/documentos-firmados)
+
+The page describes the product's sign-and-lock feature: a verified clinician signs with their own login and password, the packet is locked with a SHA-256 fingerprint chained to the clinic's previous record, notas posteriores are signed corrections, and an evidence package can be verified offline. Keep claims limited to that. Today it is **not** an e.firma/FEA signature, does not include timestamps from an accredited provider (PSC), is not a NOM-004/NOM-024 certification and does not replace the clinic's expediente. Before changing the wording, check the product behaviour in the app (Settings → Equipo, Documentos → Firmar y bloquear). Do not state where data is hosted until the hosting location is decided.

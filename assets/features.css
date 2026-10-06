@@ -7,3 +7,4 @@
 .feature-section h2 { font-size: clamp(30px, 4vw, 48px); line-height: 1.15; margin: 0 0 24px; }
 .feature-section p { line-height: 1.7; margin-bottom: 18px; }
 .feature-section a { text-decoration: underline; text-underline-offset: 3px; }
+
