@@ -9,7 +9,7 @@ Reviewed backend `600efff` and frontend `d65ec31`, plus the pending WhatsApp saf
 - Signed notes preserve the original. Authenticated verification checks the packet and its existing notes.
 - Clinic-scoped access checks, individual users, deactivation and activity history.
 - PDF/evidence exports, including original PDFs and instructions for checking their hashes.
-- 50 isolated library tests passed, including signature rejection, tenant isolation, changed PDF/answer detection, notes, evidence and audit failure rollback. Team and template tests: 53 passed, one PostgreSQL-only skip. PostgreSQL trigger coverage must be assessed separately; SQLite captures do not demonstrate database trigger enforcement.
+- 50 isolated library tests passed, including signature rejection, tenant isolation, changed PDF/answer detection, notes, evidence and audit failure rollback. Team and template tests: 53 passed, one PostgreSQL-only skip. CI subsequently passed 284 backend tests (9 skips), all 50 library tests and 83 PostgreSQL tests including sealed-record append-only coverage: https://github.com/SortaAI/SortaAI/actions/runs/37539375466. SQLite screenshots themselves do not demonstrate production database trigger enforcement.
 
 ## Remaining gaps, in priority order
 
