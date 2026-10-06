@@ -152,7 +152,7 @@
   "producto/documentos-firmados.html": {
     "label": "Documentos firmados",
     "title": "Documentos firmados y bloqueados para consultorios | Sorta",
-    "description": "Firma documentos médicos con nombre y cédula verificada, bloquéalos con una huella digital y comprueba que nada cambió. Notas posteriores y paquete de evidencia.",
+    "description": "Firma documentos médicos con nombre y cédula verificada, bloquéalos con una huella digital y verifica si cambiaron. Notas posteriores y paquete de evidencia.",
     "path": "/producto/documentos-firmados",
     "type": "product",
     "modified": "2026-10-06"
