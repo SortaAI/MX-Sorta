@@ -56,3 +56,26 @@
 
 .seal-facts--files li{grid-template-columns:200px 1fr}.seal-facts--files code{overflow-wrap:anywhere}
 @media(max-width:700px){.seal-facts--files li{grid-template-columns:1fr}}
+
+/* Real product captures on the signed-documents page. */
+.record-highlights{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;padding:0;margin:30px 0 0;list-style:none;font-size:12px;color:var(--muted)}
+.record-highlights li::before{content:"✓";color:#15803d;margin-right:8px}
+.record-shot{margin:0;min-width:0;background:#edf1fa;border:1px solid #dce4f6;border-radius:16px;padding:18px 18px 0}
+.record-shot a{display:block;border-radius:10px;overflow:hidden;background:#fff;outline-offset:5px}
+.record-shot a:hover{box-shadow:0 8px 28px -18px #00005480}
+.record-shot img{display:block;width:100%;height:auto}
+.record-shot--hero{max-width:960px;margin:0 auto 60px;padding:24px 24px 0;box-shadow:0 24px 60px -40px #00005466}
+.feature-page .record-shot figcaption{font-size:11px;line-height:1.6;padding:15px 4px}
+.record-shot figcaption span{display:block;color:var(--navy)}
+.record-detail{grid-template-columns:.8fr 1.2fr;gap:48px}
+.record-detail p+p{margin-top:16px}
+.record-export{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:56px;background:#eef2fc;border-radius:18px;margin-block:40px 70px}
+.record-export h2{font-size:clamp(32px,3.3vw,45px)}
+.record-export p,.record-scope{font-size:14px;line-height:1.8;color:var(--muted)}
+.record-export-list{display:grid;gap:16px}
+.record-export-list article{background:#fff;padding:28px;border:1px solid #dce4f6;border-radius:12px}
+.record-export-list h3{font-size:20px;margin-bottom:10px}
+.record-export-list p{margin:0}
+.record-export-list .feature-number{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--blue);margin-bottom:14px}
+@media(max-width:900px){.record-detail{grid-template-columns:1fr;gap:28px}.record-export{gap:30px;padding:32px}}
+@media(max-width:700px){.record-shot--hero{padding:10px 10px 0;margin-bottom:35px}.record-highlights{gap:8px 14px;font-size:11px}.record-export{grid-template-columns:1fr;padding:24px;margin-block:25px 40px}.record-export-list article{padding:22px}.feature-page .record-shot figcaption{font-size:10px}}

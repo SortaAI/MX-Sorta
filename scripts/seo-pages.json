@@ -151,8 +151,8 @@
   },
   "producto/documentos-firmados.html": {
     "label": "Documentos firmados",
-    "title": "Documentos firmados y bloqueados para consultorios | Sorta",
-    "description": "Firma documentos médicos con nombre y cédula verificada, bloquéalos con una huella digital y comprueba que nada cambió. Notas posteriores y paquete de evidencia.",
+    "title": "Firma y conservación de documentos médicos | Sorta",
+    "description": "Firma y conserva los documentos de cada visita. Consulta el original, verifica su integridad y agrega notas firmadas con un historial claro para tu clínica.",
     "path": "/producto/documentos-firmados",
     "type": "product",
     "modified": "2026-10-06"
