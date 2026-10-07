@@ -123,7 +123,7 @@ for filename, info in PAGES.items():
                        'datePublished': info['published'], 'dateModified': info['modified'],
                        'author': {'@type': 'Organization', 'name': 'Equipo de Sorta', 'url': BASE + '/nosotros'},
                        'publisher': {'@id': org['@id']}, 'image': [OG],
-                       'about': {'@type': 'Thing', 'name': 'Automatización de formatos médicos en consultorios de México'}}
+                       'about': {'@type': 'Thing', 'name': info.get('topic', 'Automatización de formatos médicos en consultorios de México')}}
             graph.append(article)
             page['mainEntity'] = {'@id': article['@id']}
         if info['type'] == 'collection':
