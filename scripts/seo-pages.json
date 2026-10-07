@@ -56,9 +56,9 @@
     "path": "/recursos",
     "label": "Recursos",
     "type": "collection",
-    "title": "Guías para digitalizar tu consultorio en México | Sorta",
-    "description": "Guías para clínicas en México: reduce el papeleo en recepción, digitaliza tus formatos médicos y prepara un flujo por WhatsApp. Incluye checklist descargable.",
-    "modified": "2026-09-29"
+    "title": "Plantillas gratis para consultorios: Word, Excel y PDF | Sorta",
+    "description": "Descarga una ficha de identificación en Word y PDF, una agenda médica en Excel y checklists. Copia mensajes de WhatsApp para citas. Recursos gratis, sin registro.",
+    "modified": "2026-10-06"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -106,16 +106,16 @@
     "title": "Formatos médicos por WhatsApp para consultorios | Sorta",
     "description": "Cómo automatizar formatos médicos por WhatsApp en un consultorio de México: prepara tus PDFs, confirma datos una vez y revisa el paquete antes de firmar.",
     "published": "2026-09-15",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "recursos/checklist-formatos-consultorio.html": {
     "path": "/recursos/checklist-formatos-consultorio",
     "label": "Checklist para digitalizar formatos",
     "type": "article",
     "title": "Checklist para digitalizar formatos de consultorio | Sorta",
-    "description": "Prepara los formatos de tu clínica para digitalizarlos: inventario, versiones, campos compartidos y prueba con datos ficticios. Descarga la checklist de recepción.",
+    "description": "Checklist para digitalizar formatos de consultorio: inventario, versiones, campos compartidos, responsables y prueba. Descarga gratis la lista en texto.",
     "published": "2026-09-15",
-    "modified": "2026-09-15"
+    "modified": "2026-10-06"
   },
   "404.html": {
     "path": "/404",
@@ -178,28 +178,31 @@
     "path": "/recursos/mensajes-confirmar-citas-whatsapp",
     "label": "8 mensajes para confirmar y reagendar citas médicas por WhatsApp",
     "type": "article",
-    "title": "Mensajes para confirmar citas médicas por WhatsApp | Sorta",
-    "description": "Copia y adapta ocho mensajes de WhatsApp para confirmar, recordar, cancelar o reagendar citas médicas. Ejemplos claros para la recepción de tu consultorio.",
+    "title": "8 mensajes para confirmar citas médicas por WhatsApp | Sorta",
+    "description": "Copia 8 mensajes para confirmar, recordar, cancelar y reagendar citas médicas por WhatsApp. Ejemplos gratis para adaptar con fecha, hora y respuesta del paciente.",
     "published": "2026-09-17",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06",
+    "topic": "Mensajes para confirmar citas médicas por WhatsApp"
   },
   "recursos/ficha-identificacion-paciente.html": {
     "path": "/recursos/ficha-identificacion-paciente",
     "label": "Ficha de identificación del paciente: formato en Word y PDF",
     "type": "article",
-    "title": "Ficha de identificación del paciente: Word y PDF | Sorta",
-    "description": "Descarga una ficha de identificación del paciente en Word y PDF. Incluye campos administrativos, un ejemplo ficticio y pasos para revisar los datos en recepción.",
+    "title": "Ficha de identificación del paciente: Word y PDF gratis | Sorta",
+    "description": "Descarga gratis una ficha de identificación del paciente en Word editable y PDF para imprimir. Sin registro, con campos y ejemplo de llenado ficticio.",
     "published": "2026-09-17",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06",
+    "topic": "Ficha de identificación del paciente"
   },
   "recursos/agenda-citas-medicas-excel.html": {
     "path": "/recursos/agenda-citas-medicas-excel",
     "label": "Agenda de citas médicas en Excel: plantilla gratis para recepción",
     "type": "article",
     "title": "Agenda de citas médicas en Excel: plantilla gratis | Sorta",
-    "description": "Descarga una agenda de citas médicas en Excel con estados, filtros y duración de citas. Incluye instrucciones y un ejemplo ficticio para tu consultorio.",
+    "description": "Descarga gratis una agenda de citas médicas en Excel: 200 filas, estados, filtros y duración automática. Sin macros ni registro, con ejemplo e instrucciones.",
     "published": "2026-09-17",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06",
+    "topic": "Agenda de citas médicas en Excel"
   },
   "recursos/checklist-recepcion-clinica.html": {
     "path": "/recursos/checklist-recepcion-clinica",
@@ -208,7 +211,7 @@
     "title": "Checklist de recepción y bitácora de pendientes | Sorta",
     "description": "Descarga una checklist PDF y una bitácora Excel para recepción: tareas, responsables, estados y entrega de turno con ejemplos ficticios.",
     "published": "2026-09-25",
-    "modified": "2026-09-29"
+    "modified": "2026-10-06"
   },
   "soluciones/recepcion-clinicas.html": {
     "path": "/soluciones/recepcion-clinicas",

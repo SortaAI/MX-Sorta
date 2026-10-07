@@ -17,10 +17,24 @@
     var values = Object.assign({
       site_market: 'MX', site_locale: 'es-MX',
       page_type: document.body.dataset.pageType || 'page',
+      resource_id: resourceId(),
       page_path: location.pathname.replace(/\.html$/, '')
     }, params || {});
     if (typeof window.gtag === 'function') window.gtag('event', name, values);
     if (typeof window.clarity === 'function') window.clarity('event', name);
+  }
+  // Static identifiers only: never infer event properties from user-entered text.
+  function resourceId() {
+    var pages = {
+      '/recursos/ficha-identificacion-paciente': 'ficha',
+      '/recursos/agenda-citas-medicas-excel': 'agenda_excel',
+      '/recursos/mensajes-confirmar-citas-whatsapp': 'mensajes_whatsapp',
+      '/recursos/checklist-recepcion-clinica': 'checklist_recepcion',
+      '/recursos/checklist-formatos-consultorio': 'checklist_formatos',
+      '/recursos/llenado-formatos-nom-004': 'nom_004',
+      '/recursos/automatizar-formatos-medicos-whatsapp': 'formatos_whatsapp'
+    };
+    return pages[location.pathname.replace(/\.html$/, '')] || 'none';
   }
   function placement(el) {
     if (el.dataset.placement) return el.dataset.placement;

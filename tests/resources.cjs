@@ -4,8 +4,16 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const root=path.resolve(__dirname,'..');
 const http=require('node:http');
 const server=http.createServer((req,res)=>{let file=new URL(req.url,'http://localhost').pathname.slice(1)||'index.html';if(!path.extname(file))file+='.html';const resolved=path.join(root,file);if(!fs.existsSync(resolved)){res.writeHead(404);res.end('missing');return;}const types={'.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.pdf':'application/pdf','.docx':'application/vnd.openxmlformats-officedocument.wordprocessingml.document','.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'};res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');if(file.startsWith('assets/downloads/'))res.setHeader('Content-Disposition','attachment; filename="'+path.basename(file)+'"');fs.createReadStream(resolved).pipe(res);});
-const slugs=['mensajes-confirmar-citas-whatsapp','ficha-identificacion-paciente','agenda-citas-medicas-excel','llenado-formatos-nom-004','checklist-recepcion-clinica','elegir-software-clinica','checklist-teleconsulta'];
+const slugs=['mensajes-confirmar-citas-whatsapp','ficha-identificacion-paciente','agenda-citas-medicas-excel','llenado-formatos-nom-004','checklist-recepcion-clinica','elegir-software-clinica','checklist-teleconsulta','checklist-formatos-consultorio','automatizar-formatos-medicos-whatsapp'];
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port;const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'chrome',headless:true});try{for(const width of [1440,390]){const context=await browser.newContext({viewport:{width,height:1000}});await context.route('**/*',route=>{const u=new URL(route.request().url());if(u.origin!==origin)return route.abort();return route.continue();});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{window.copiedExample=text}}}));for(const slug of slugs){await page.goto(origin+'/recursos/'+slug);assert.equal(await page.locator('h1').count(),1);await page.evaluate(()=>Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode()})));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));for(const link of await page.locator('.article-toc a').all()){const id=await link.getAttribute('href');assert.equal(await page.locator(id).count(),1);}for(const link of await page.locator('a[download]').all()){const href=await link.getAttribute('href');const downloadPromise=page.waitForEvent('download');await link.click();const download=await downloadPromise;assert.equal(download.suggestedFilename(),path.basename(href));assert.equal(await download.failure(),null);}
+if(['ficha-identificacion-paciente','agenda-citas-medicas-excel','mensajes-confirmar-citas-whatsapp'].includes(slug)){
+ const primary=page.locator('.resource-hero-actions a');const target=await primary.getAttribute('href');assert.equal(await page.locator(target).count(),1);
+ await primary.focus();await page.keyboard.press('Enter');assert.equal(new URL(page.url()).hash,target);
+ const demo=page.locator('.resource-next-step a[href^="/contacto"]');assert.equal(await demo.count(),1);
+ await demo.click();await page.waitForURL('**/contacto?**');assert.equal(await page.locator('[name="interes"]').inputValue(),'demo');
+ assert.equal(await page.locator('[name="recurso_origen"]').inputValue(),{'ficha-identificacion-paciente':'ficha','agenda-citas-medicas-excel':'agenda_excel','mensajes-confirmar-citas-whatsapp':'mensajes_whatsapp'}[slug]);
+ await page.goto(origin+'/recursos/'+slug);
+}
 if(slug==='ficha-identificacion-paciente'){
 const preview=page.locator('.resource-download--preview img');assert.equal(await preview.count(),1);assert(await preview.evaluate(img=>img.naturalWidth>0));assert.match(await preview.getAttribute('alt'),/ficha descargable/);
 const demoLink=page.locator('[data-track="ficha_autofill_demo"]');await demoLink.focus();assert(await demoLink.evaluate(el=>el===document.activeElement));await page.keyboard.press('Enter');await page.waitForURL('**/producto/formatos-medicos#autofill-demo-title');assert.equal(await page.locator('[data-autofill-fill]').count(),1);await page.goto(origin+'/recursos/'+slug);
@@ -30,7 +38,7 @@ for(const route of ['/', '/producto/whatsapp', '/preguntas-frecuentes', '/produc
  await page.screenshot({path:'/private/tmp/corrected-'+(route.replaceAll('/','-')||'home')+'-'+width+'.png',fullPage:true});
 }
 await page.goto(origin+'/como-funciona');
-assert.equal(await page.locator('.walkthrough-step').count(),5);
+assert.equal(await page.locator('.walkthrough-step').count(),6);
 for(const item of await page.locator('.walkthrough-step').all()){
  const summary=item.locator('summary');await summary.focus();
  if(!await item.evaluate(e=>e.open))await page.keyboard.press('Enter');
