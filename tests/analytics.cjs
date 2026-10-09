@@ -10,7 +10,7 @@ const errors = [];
   const browser = await chromium.launch({channel: process.env.BROWSER_CHANNEL || 'chrome', headless: true});
   async function fixture(host = origin, stored) {
     const context = await browser.newContext({viewport:{width:1440,height:1000}});
-    if (stored) await context.addInitScript(value => localStorage.setItem('sorta_cookie_consent',value),stored);
+    if (stored) await context.addInitScript(value => localStorage.setItem('sorta_cookie_consent_v2',value),stored);
     const calls = [];
     await context.route('**/*', async route => {
       const url = new URL(route.request().url());
@@ -21,7 +21,7 @@ const errors = [];
         return route.fulfill({path:file});
       }
       // Real analytics endpoints are NEVER contacted by this test.
-      if (/googletagmanager\.com|clarity\.ms/.test(url.hostname)) {
+      if (/googletagmanager\.com|clarity\.ms|r2\.leadsy\.ai/.test(url.hostname)) {
         calls.push(route.request().url());
         return route.fulfill({status:200,contentType:'application/javascript',body:'/* analytics test stub */'});
       }
@@ -43,6 +43,14 @@ const errors = [];
     await page.waitForFunction(()=>window.__sortaAnalyticsLoaded);
   }
 
+  // Analytics-only consent from the previous notice cannot authorize Leadsy.
+  const legacy = await fixture();
+  await legacy.page.addInitScript(() => localStorage.setItem("sorta_cookie_consent", "granted"));
+  await legacy.page.goto(origin, {waitUntil:"networkidle"});
+  assert.equal(legacy.calls.length, 0);
+  assert.equal(await legacy.page.locator("#sorta-cookie-banner").count(), 1);
+  await legacy.context.close();
+
   // Consent unknown: no analytics requests, even when a CTA is clicked.
   let f = await fixture();
   await f.page.goto(origin+'/?email=private@example.com&phone=5555555555',{waitUntil:'networkidle'});
@@ -54,7 +62,7 @@ const errors = [];
   assert.equal(f.calls.length,0);
   assert.equal(await f.page.locator('#sorta-cookie-banner').count(),0);
 
-  // Late acceptance starts both tags once, preserves market, and redacts URL queries.
+  // Late acceptance starts all tags once, preserves market, and redacts URL queries.
   await f.page.locator('[data-cookie-preferences]').click();
   await accept(f.page);
   await f.page.waitForFunction(()=>Array.from(window.dataLayer||[]).some(x=>x[1]==='section_view'));
@@ -68,6 +76,8 @@ const errors = [];
   assert.equal(f.calls.filter(u=>u.includes('clarity.ms/tag/ynwi202zd9')).length,1);
   assert.equal(f.calls.filter(u=>u.includes('clarity.ms/tag/')).length,1);
   assert(!f.calls.some(u=>u.includes('wor9i7cm6t')));
+  assert.equal(await f.page.locator('head #vtag-ai-js[data-pid="185mxUmlNNFknPdZ7"][data-version="062024"]').count(),1);
+  assert.equal(f.calls.filter(u=>u.includes('r2.leadsy.ai/tag.js')).length,1);
   let e = await events(f.page);
   assert.equal(e.filter(x=>x[1]==='page_view').length,1);
   assert.equal(e.find(x=>x[1]==='page_view')[2].page_location,origin+'/');
@@ -89,20 +99,20 @@ const errors = [];
 
   // Reaccepting cannot double-load tags or pageviews; revoking reloads without them.
   await f.page.locator('[data-cookie-preferences]').click();await accept(f.page);
-  assert.equal(f.calls.length,2);
+  assert.equal(f.calls.length,3);
   assert.equal((await events(f.page)).filter(x=>x[1]==='page_view').length,1);
   await f.page.locator('[data-cookie-preferences]').click();
   await Promise.all([f.page.waitForNavigation({waitUntil:'networkidle'}),f.page.getByRole('button',{name:'Solo esenciales',exact:true}).click()]);
-  assert.equal(f.calls.length,2);
+  assert.equal(f.calls.length,3);
   assert.equal(await f.page.evaluate(()=>typeof window.gtag),'undefined');
-  assert.equal(await f.page.evaluate(()=>localStorage.getItem('sorta_cookie_consent')),'denied');
+  assert.equal(await f.page.evaluate(()=>localStorage.getItem('sorta_cookie_consent_v2')),'denied');
   await f.context.close();
   console.log('PASS consent gating, late acceptance, project IDs, deduplication, market labels, CTA/product events, sanitized URLs, revocation.');
 
   // Returning visitors; form attempts are tracked without values or false delivered leads.
   f = await fixture(origin,'granted');
   await f.page.goto(origin+'/contacto',{waitUntil:'networkidle'});
-  assert.equal(f.calls.length,2);
+  assert.equal(f.calls.length,3);
   await f.page.locator('input[name=nombre]').fill('PRIVATE-NAME');
   await f.page.locator('input[name=whatsapp]').fill('5551234567');
   await f.page.locator('textarea[name=detalle]').fill('PRIVATE-FORM-TEXT');

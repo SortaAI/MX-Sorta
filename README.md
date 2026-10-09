@@ -23,6 +23,11 @@ loaded only by relevant pages. `assets/site.js` handles navigation and
 Headers and footers are static HTML; update them consistently across pages.
 
 GA4 uses the dedicated Mexico stream **G-4J0QLJT1N0** after analytics consent.
+Leadsy project `185mxUmlNNFknPdZ7` loads through that shared loader only on
+`mx.getsorta.io`, after optional-tracking consent. Consent key
+`sorta_cookie_consent_v2` requests a fresh choice from visitors who accepted the
+previous analytics-only notice. The provider dashboard must confirm reception;
+script insertion alone is not proof of a recorded visit.
 The contact flow uses Formspree and counts leads only on successful delivery.
 
 ## Checks
