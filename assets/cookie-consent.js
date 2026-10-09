@@ -1,7 +1,8 @@
-/** Dedicated Mexico GA4 stream; dedicated Mexico Clarity project. Consent required. */
+/** Mexico-only GA4, Clarity and Leadsy. Consent required before any tag loads. */
 (function () {
   'use strict';
-  var KEY = 'sorta_cookie_consent';
+  // v2 discloses Leadsy; do not reuse consent collected for analytics alone.
+  var KEY = 'sorta_cookie_consent_v2';
   var GA_ID = 'G-4J0QLJT1N0';
   var CLARITY_ID = 'ynwi202zd9';
   var production = location.hostname === 'mx.getsorta.io';
@@ -68,6 +69,16 @@
     clarity.async = true;
     clarity.src = 'https://www.clarity.ms/tag/' + CLARITY_ID;
     document.head.appendChild(clarity);
+    // Use the supplied provider tag once, only on the consented Mexico site.
+    if (!document.getElementById('vtag-ai-js')) {
+      var leadsy = document.createElement('script');
+      leadsy.id = 'vtag-ai-js';
+      leadsy.async = true;
+      leadsy.src = 'https://r2.leadsy.ai/tag.js';
+      leadsy.setAttribute('data-pid', '185mxUmlNNFknPdZ7');
+      leadsy.setAttribute('data-version', '062024');
+      document.head.appendChild(leadsy);
+    }
     document.dispatchEvent(new Event('sorta:analytics-ready'));
   }
 
@@ -111,7 +122,7 @@
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-label', 'Preferencias de cookies');
     el.setAttribute('aria-describedby', 'sorta-cookie-description');
-    el.innerHTML = '<p id="sorta-cookie-description" class="cookie-banner__text">Usamos Google Analytics y Microsoft Clarity para entender cómo se usa el sitio. Puedes aceptar las cookies de analítica o continuar solo con las esenciales. <a href="/privacidad#cookies">Leer más</a>.</p>' +
+    el.innerHTML = '<p id="sorta-cookie-description" class="cookie-banner__text">Usamos Google Analytics y Microsoft Clarity para medir el uso del sitio, y Leadsy para identificar visitas empresariales con fines comerciales. Puedes aceptar estas tecnologías opcionales o continuar solo con las esenciales. <a href="/privacidad#cookies">Leer más</a>.</p>' +
       '<div class="cookie-banner__actions"><button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-cookie-action="decline">Solo esenciales</button>' +
       '<button type="button" class="cookie-banner__btn cookie-banner__btn--primary" data-cookie-action="accept">Aceptar</button></div>';
     document.body.appendChild(el);
