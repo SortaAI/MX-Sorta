@@ -26,6 +26,8 @@
   // Static identifiers only: never infer event properties from user-entered text.
   function resourceId() {
     var pages = {
+      '/recursos/cubrir-cancelaciones-citas-medicas': 'cancelaciones_citas',
+      '/recursos/seguridad-software-medico-nube': 'seguridad_software',
       '/recursos/asistente-virtual-consultorios': 'asistente_virtual',
       '/recursos/preconsulta-digital': 'preconsulta_digital',
       '/recursos/ficha-identificacion-paciente': 'ficha',

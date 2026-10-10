@@ -1,0 +1,31 @@
+Evaluación de una demo de recepción
+Sorta · Guía editable · 9 de octubre de 2026
+
+Usa datos ficticios. No anotes información de pacientes en esta hoja.
+
+1. Horario ocupado: no se confirma una cita incompatible.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+2. Solicitud de atención humana: aparece un pendiente localizable.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+3. Contacto incorrecto: se puede corregir antes del envío.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+4. Fallo de entrega: error visible y alternativa para continuar.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+5. Dos reservas simultáneas: una sola ocupa el horario.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+6. Adelanto de cita: la original se conserva si falla el cambio.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+Esta hoja organiza una revisión; no acredita cumplimiento ni certificación.
+https://mx.getsorta.io/recursos
