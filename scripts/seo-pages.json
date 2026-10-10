@@ -56,8 +56,8 @@
     "path": "/recursos",
     "label": "Recursos",
     "type": "collection",
-    "title": "Plantillas gratis para consultorios: Word, Excel y PDF | Sorta",
-    "description": "Descarga una ficha de identificación en Word y PDF, una agenda médica en Excel y checklists. Copia mensajes de WhatsApp para citas. Recursos gratis, sin registro.",
+    "title": "Blog y recursos para clínicas en México | Sorta",
+    "description": "Guías de recepción, agenda, WhatsApp, documentos y seguridad para clínicas en México. Plantillas gratuitas en Word, Excel y PDF, organizadas por tema.",
     "modified": "2026-10-09"
   },
   "privacidad.html": {
@@ -228,7 +228,7 @@
     "title": "Doctoralia, Nimbo y Sorta: cómo elegir software para tu clínica",
     "description": "Compara funciones documentadas de Doctoralia, Nimbo y Sorta. Descarga una hoja de evaluación y revisa agenda, formatos, configuración y límites.",
     "published": "2026-09-25",
-    "modified": "2026-09-29"
+    "modified": "2026-10-09"
   },
   "recursos/checklist-teleconsulta.html": {
     "path": "/recursos/checklist-teleconsulta",
@@ -258,5 +258,25 @@
     "published": "2026-10-09",
     "modified": "2026-10-09",
     "topic": "Preparación antes de la cita"
+  },
+  "recursos/cubrir-cancelaciones-citas-medicas.html": {
+    "path": "/recursos/cubrir-cancelaciones-citas-medicas",
+    "label": "Cómo cubrir cancelaciones de citas con una lista de espera por WhatsApp",
+    "type": "article",
+    "title": "Lista de espera para citas médicas: cubre cancelaciones | Sorta",
+    "description": "Organiza una lista de espera para citas médicas: autorización, horarios, ofertas por WhatsApp y confirmación. Incluye un mensaje para adaptar y métricas.",
+    "published": "2026-10-09",
+    "modified": "2026-10-09",
+    "topic": "Agenda y recepción"
+  },
+  "recursos/seguridad-software-medico-nube.html": {
+    "path": "/recursos/seguridad-software-medico-nube",
+    "label": "Software médico en la nube: qué pedir antes de subir datos de pacientes",
+    "type": "article",
+    "title": "Seguridad del software médico en la nube: checklist | Sorta",
+    "description": "Evalúa accesos, enlaces de pacientes, respaldos, exportación y registros de un software médico en la nube. Checklist práctica para clínicas en México.",
+    "published": "2026-10-09",
+    "modified": "2026-10-09",
+    "topic": "Evaluar software"
   }
 }

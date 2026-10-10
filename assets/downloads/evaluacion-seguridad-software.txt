@@ -1,0 +1,39 @@
+Evaluación de software médico en la nube
+Sorta · Guía editable · 9 de octubre de 2026
+
+Usa datos ficticios. No anotes información de pacientes en esta hoja.
+
+1. Usuarios individuales, permisos y revocación de sesiones.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+2. Separación entre clínicas comprobada con datos ficticios.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+3. Enlaces: alcance, vencimiento, reemplazo y edición.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+4. Documento firmado: original y aclaraciones distinguibles.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+5. Respaldo: frecuencia, alcance y evidencia de restauración.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+6. Proveedores, ubicación, uso de IA y responsabilidades documentados.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+7. Incidentes: contacto y procedimiento de notificación.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+8. Exportación: documento completo y salida masiva explicada.
+Resultado/evidencia: ____________________
+Responsable y siguiente paso: ____________________
+
+Esta hoja organiza una revisión; no acredita cumplimiento ni certificación.
+https://mx.getsorta.io/recursos
