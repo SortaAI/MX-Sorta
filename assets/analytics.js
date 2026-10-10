@@ -26,6 +26,8 @@
   // Static identifiers only: never infer event properties from user-entered text.
   function resourceId() {
     var pages = {
+      '/recursos/asistente-virtual-consultorios': 'asistente_virtual',
+      '/recursos/preconsulta-digital': 'preconsulta_digital',
       '/recursos/ficha-identificacion-paciente': 'ficha',
       '/recursos/agenda-citas-medicas-excel': 'agenda_excel',
       '/recursos/mensajes-confirmar-citas-whatsapp': 'mensajes_whatsapp',
