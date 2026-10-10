@@ -43,3 +43,9 @@
 .resource-summary p{margin-bottom:14px}
 .resource-download[id],.message-example blockquote[id]{scroll-margin-top:110px}
 @media(max-width:700px){.resource-next-step,.resource-summary{padding:20px}.resource-hero-actions{align-items:flex-start;flex-direction:column}.resource-hero-actions .button{white-space:normal;text-align:center}}
+
+
+/* Product evidence inside editorial guides. */
+.guide-product-image{margin:32px 0;max-width:100%}
+.guide-product-image img{display:block;width:100%;height:auto;border:1px solid #dfe3ef;border-radius:16px}
+.guide-product-image figcaption{margin-top:10px;font-size:12px;line-height:1.6;color:#66708c}

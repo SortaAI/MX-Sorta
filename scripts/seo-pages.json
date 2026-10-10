@@ -5,7 +5,7 @@
     "type": "home",
     "title": "Automatización de formatos médicos en México | Sorta",
     "description": "Automatiza los formatos médicos de tu clínica en México: captura una vez, revisa tus documentos y firma con nombre y cédula verificada. Agenda y WhatsApp incluidos.",
-    "modified": "2026-10-06",
+    "modified": "2026-10-09",
     "alternates": {
       "es-MX": "https://mx.getsorta.io/",
       "en-US": "https://getsorta.io/",
@@ -50,7 +50,7 @@
     "type": "security",
     "title": "Seguridad de tus formatos médicos | Sorta México",
     "description": "Qué hace Sorta con los datos de tu consultorio: usuarios por persona, revisión humana, paquetes firmados con huella digital, historial de accesos y límites claros.",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "recursos.html": {
     "path": "/recursos",
@@ -58,7 +58,7 @@
     "type": "collection",
     "title": "Plantillas gratis para consultorios: Word, Excel y PDF | Sorta",
     "description": "Descarga una ficha de identificación en Word y PDF, una agenda médica en Excel y checklists. Copia mensajes de WhatsApp para citas. Recursos gratis, sin registro.",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "privacidad.html": {
     "path": "/privacidad",
@@ -131,7 +131,7 @@
     "description": "Organiza las citas de tu consultorio con Sorta: día, semana y mes, solicitudes por confirmar y una lista de espera para ofrecer por WhatsApp los huecos que se liberan.",
     "path": "/producto/agenda",
     "type": "product",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "producto/whatsapp.html": {
     "label": "WhatsApp para clínicas",
@@ -139,7 +139,7 @@
     "description": "Solicitudes de citas en Agenda y conversaciones derivadas a Mensajes. Cómo conectar el WhatsApp de tu clínica a Sorta y qué mensajes revisa Meta.",
     "path": "/producto/whatsapp",
     "type": "product",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "producto/formatos-medicos.html": {
     "label": "Formatos médicos digitales",
@@ -147,7 +147,7 @@
     "description": "Captura una vez y llena tus formatos médicos con Sorta. Biblioteca de formatos, vista previa en vivo y firma con cédula verificada para tu consultorio en México.",
     "path": "/producto/formatos-medicos",
     "type": "product",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "producto/documentos-firmados.html": {
     "label": "Documentos firmados",
@@ -155,7 +155,7 @@
     "description": "Firma y conserva los documentos de cada visita. Consulta el original, verifica su integridad y agrega notas firmadas con un historial claro para tu clínica.",
     "path": "/producto/documentos-firmados",
     "type": "product",
-    "modified": "2026-10-06"
+    "modified": "2026-10-09"
   },
   "recursos/llenado-formatos-nom-004.html": {
     "path": "/recursos/llenado-formatos-nom-004",
@@ -238,5 +238,25 @@
     "description": "Prepara citas en línea con una checklist administrativa gratuita en PDF: horario, conexión, formularios y seguimiento de pendientes para recepción.",
     "published": "2026-09-29",
     "modified": "2026-09-29"
+  },
+  "recursos/asistente-virtual-consultorios.html": {
+    "path": "/recursos/asistente-virtual-consultorios",
+    "label": "Asistente virtual para consultorios: qué automatizar y cuándo debe intervenir recepción",
+    "type": "article",
+    "title": "Asistente virtual para consultorios: qué automatizar | Sorta",
+    "description": "Evalúa un asistente virtual para tu consultorio: citas, documentos y atención humana. Incluye una checklist para probar el flujo antes de contratar.",
+    "published": "2026-10-09",
+    "modified": "2026-10-09",
+    "topic": "Automatización de recepción"
+  },
+  "recursos/preconsulta-digital.html": {
+    "path": "/recursos/preconsulta-digital",
+    "label": "Preconsulta digital: qué puede completar el paciente antes de llegar",
+    "type": "article",
+    "title": "Preconsulta digital: prepara documentos antes de la cita | Sorta",
+    "description": "Organiza la preparación antes de la consulta: documentos seleccionados, enlace al paciente, revisión y datos compartidos. Guía práctica para recepción en México.",
+    "published": "2026-10-09",
+    "modified": "2026-10-09",
+    "topic": "Preparación antes de la cita"
   }
 }
