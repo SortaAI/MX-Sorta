@@ -18,6 +18,7 @@
       site_market: 'MX', site_locale: 'es-MX',
       page_type: document.body.dataset.pageType || 'page',
       resource_id: resourceId(),
+      source_resource: sourceResource(),
       page_path: location.pathname.replace(/\.html$/, '')
     }, params || {});
     if (typeof window.gtag === 'function') window.gtag('event', name, values);
@@ -39,6 +40,10 @@
       '/recursos/automatizar-formatos-medicos-whatsapp': 'formatos_whatsapp'
     };
     return pages[location.pathname.replace(/\.html$/, '')] || 'none';
+  }
+  function sourceResource() {
+    var source = new URLSearchParams(location.search).get('recurso');
+    return ['ficha', 'agenda_excel', 'mensajes_whatsapp', 'walkthrough', 'comparacion', 'teleconsulta'].indexOf(source) !== -1 ? source : 'none';
   }
   function placement(el) {
     if (el.dataset.placement) return el.dataset.placement;
