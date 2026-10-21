@@ -40,3 +40,15 @@ moving editable marketing sources.
 ### Documentos firmados (producto/documentos-firmados)
 
 The page describes the product's sign-and-lock feature: a verified clinician signs with their own login and password, the packet is locked with a SHA-256 fingerprint chained to the clinic's previous record, notas posteriores are signed corrections, and an evidence package can be verified offline. Keep claims limited to that. Today it is **not** an e.firma/FEA signature, does not include timestamps from an accredited provider (PSC), is not a NOM-004/NOM-024 certification and does not replace the clinic's expediente. Before changing the wording, check the product behaviour in the app (Settings → Equipo, Documentos → Firmar y bloquear). Do not state where data is hosted until the hosting location is decided.
+
+## Founder-place counter
+
+`assets/founder-availability.js` is the single source for the homepage and pricing
+availability bar. `confirmed: 0` was confirmed by the founder on 21 October 2026.
+Update `confirmed` and `verifiedOn` together and deploy after confirming a place.
+Count agreed clinic places, not app logins, demos, inquiries or analytics users.
+The public wording is confirmed places, not currently active clinics. This is a
+manually updated snapshot; it is not connected to the product database. At capacity,
+the bar offers contact about a future cohort. Without JavaScript it shows only the
+10-place program capacity and asks visitors to check availability. No countdown or
+fabricated activity is used.
