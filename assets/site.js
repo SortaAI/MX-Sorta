@@ -57,3 +57,21 @@ if (featuresToggle && featuresMenu) {
   });
   featuresMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeFeatures()));
 }
+
+// Carry only an approved editorial source through product/pricing to contact.
+// No cookies, storage, form values or extra analytics events are needed.
+(() => {
+  const allowed = ['ficha', 'agenda_excel', 'mensajes_whatsapp', 'walkthrough', 'comparacion', 'teleconsulta'];
+  const source = new URLSearchParams(location.search).get('recurso');
+  const current = location.pathname.replace(/\.html$/, '');
+  if (!allowed.includes(source) || !(current.startsWith('/producto/') || current === '/precios')) return;
+  document.querySelectorAll('a[href]').forEach(link => {
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin) return;
+    const path = url.pathname.replace(/\.html$/, '');
+    if (!(path.startsWith('/producto/') || path === '/precios' || path === '/contacto')) return;
+    url.searchParams.set('recurso', source);
+    if (path === '/contacto' && !url.searchParams.has('interes')) url.searchParams.set('interes', current === '/precios' ? 'piloto' : 'demo');
+    link.setAttribute('href', url.pathname + url.search + url.hash);
+  });
+})();

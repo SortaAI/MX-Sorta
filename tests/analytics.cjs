@@ -267,6 +267,27 @@ const errors = [];
   await f.page.goto(origin+'/contacto?interes=bad&recurso=private@example.com');
   assert.equal(await f.page.locator('[name="recurso_origen"]').inputValue(),'directo');
   await f.context.close();
+  // Editorial source survives product/pricing navigation without storage or consent.
+  for (const consent of ['granted', 'denied']) {
+    f=await fixture(origin,consent);
+    await f.page.goto(origin+'/producto/agenda?recurso=agenda_excel');
+    const contact=f.page.locator('a[href*="/contacto"]').first();
+    assert((await contact.getAttribute('href')).includes('recurso=agenda_excel'));
+    if (consent === 'denied') assert.equal((await events(f.page)).length,0);
+    await contact.click();
+    if (consent === 'granted') assert.equal((await events(f.page)).find(x=>x[1]==='contact_click')[2].source_resource,'agenda_excel');
+    await f.page.goto(new URL(await contact.getAttribute('href'),origin).href);
+    assert.equal(await f.page.locator('[name="recurso_origen"]').inputValue(),'agenda_excel');
+    await f.page.goto(origin+'/precios?recurso=ficha');
+    const pilot=f.page.locator('a[href*="/contacto"][href*="interes=piloto"]').first();
+    assert((await pilot.getAttribute('href')).includes('recurso=ficha'));
+    await f.page.goto(new URL(await pilot.getAttribute('href'),origin).href);
+    assert.equal(await f.page.locator('[name="recurso_origen"]').inputValue(),'ficha');
+    await f.page.goto(origin+'/producto/agenda?recurso=private@example.com');
+    assert(!(await f.page.locator('a[href*="/contacto"]').first().getAttribute('href')).includes('private'));
+    assert(!JSON.stringify(await events(f.page)).includes('private@example.com'));
+    await f.context.close();
+  }
   console.log('PASS campaign allowlist, resource funnel, demo completion, consent and deduplication.');
   assert.deepEqual(errors,[]);
   console.log('PASS foreground engagement and browser errors. No external analytics events sent.');
