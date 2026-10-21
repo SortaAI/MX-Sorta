@@ -5,7 +5,7 @@
     "type": "home",
     "title": "Automatización de formatos médicos en México | Sorta",
     "description": "Automatiza los formatos médicos de tu clínica en México: captura una vez, revisa tus documentos y firma con nombre y cédula verificada. Agenda y WhatsApp incluidos.",
-    "modified": "2026-10-09",
+    "modified": "2026-10-21",
     "alternates": {
       "es-MX": "https://mx.getsorta.io/",
       "en-US": "https://getsorta.io/",
@@ -18,15 +18,15 @@
     "type": "product",
     "title": "Cómo funciona Sorta: WhatsApp, agenda y formatos | Sorta",
     "description": "Explora una visita de seis pasos con Sorta: WhatsApp, agenda, captura, formatos configurados, revisión del equipo y firma del doctor con bloqueo del paquete.",
-    "modified": "2026-10-06"
+    "modified": "2026-10-21"
   },
   "contacto.html": {
     "path": "/contacto",
     "label": "Contacto",
     "type": "contact",
-    "title": "Agenda una demo o solicita un piloto gratuito | Sorta México",
-    "description": "Conoce Sorta en una demo para tu clínica en México. Revisa formatos, WhatsApp y agenda; si encaja con tu operación, conversemos sobre un piloto gratuito.",
-    "modified": "2026-10-06"
+    "title": "Agenda una demo o solicita tu lugar fundador | Sorta México",
+    "description": "Conoce Sorta para tu clínica en México. Agenda una demo o solicita uno de los 10 lugares de Clínicas fundadoras: 30 días sin costo y acceso completo.",
+    "modified": "2026-10-21"
   },
   "nosotros.html": {
     "path": "/nosotros",
@@ -34,7 +34,7 @@
     "type": "about",
     "title": "Equipo de Sorta | Automatización para clínicas en México",
     "description": "Conoce al equipo de Sorta, que desarrolla automatización de formatos médicos para consultorios en México desde El Paso, Ciudad Juárez y Ciudad de México.",
-    "modified": "2026-10-06"
+    "modified": "2026-10-21"
   },
   "preguntas-frecuentes.html": {
     "path": "/preguntas-frecuentes",
@@ -42,15 +42,15 @@
     "type": "faq",
     "title": "Preguntas sobre formatos médicos digitales | Sorta México",
     "description": "Resuelve dudas sobre Sorta: formatos, firma y bloqueo de documentos, agenda con lista de espera, equipo con usuarios propios y atención humana por WhatsApp.",
-    "modified": "2026-10-06"
+    "modified": "2026-10-21"
   },
   "seguridad.html": {
     "path": "/seguridad",
     "label": "Seguridad",
     "type": "security",
     "title": "Seguridad de tus formatos médicos | Sorta México",
-    "description": "Qué hace Sorta con los datos de tu consultorio: usuarios por persona, revisión humana, paquetes firmados con huella digital, historial de accesos y límites claros.",
-    "modified": "2026-10-09"
+    "description": "Qué hace Sorta con los datos de tu consultorio: usuarios por persona, revisión humana, paquetes firmados con sello digital, historial de accesos y límites claros.",
+    "modified": "2026-10-21"
   },
   "recursos.html": {
     "path": "/recursos",
@@ -155,7 +155,7 @@
     "description": "Firma y conserva los documentos de cada visita. Consulta el original, verifica su integridad y agrega notas firmadas con un historial claro para tu clínica.",
     "path": "/producto/documentos-firmados",
     "type": "product",
-    "modified": "2026-10-09"
+    "modified": "2026-10-21"
   },
   "recursos/llenado-formatos-nom-004.html": {
     "path": "/recursos/llenado-formatos-nom-004",
@@ -170,9 +170,9 @@
     "path": "/precios",
     "label": "Precios",
     "type": "pricing",
-    "title": "Precios de Sorta México | Piloto gratuito con acceso completo",
-    "description": "Solicita un piloto gratuito de Sorta para tu clínica en México, con acceso a toda la aplicación: formatos, firma, agenda, WhatsApp y equipo. Planes de pago aún sin definir.",
-    "modified": "2026-10-06"
+    "title": "Clínicas fundadoras de Sorta México | 30 días sin costo",
+    "description": "10 lugares para clínicas fundadoras en México. Prueba toda la aplicación durante 30 días sin costo y conserva tu precio fundador una vez definido.",
+    "modified": "2026-10-21"
   },
   "recursos/mensajes-confirmar-citas-whatsapp.html": {
     "path": "/recursos/mensajes-confirmar-citas-whatsapp",
@@ -218,8 +218,8 @@
     "label": "Sorta para recepción de clínicas",
     "type": "product",
     "title": "Software para recepción de clínicas en México | Sorta",
-    "description": "Conecta WhatsApp, agenda, formatos y firma del doctor en el flujo de recepción de tu clínica. Conoce Sorta y solicita un piloto gratuito con acceso completo.",
-    "modified": "2026-10-06"
+    "description": "Conecta WhatsApp, agenda, formatos y firma del doctor en el flujo de recepción de tu clínica. Conoce Sorta y solicita un lugar como clínica fundadora: 30 días sin costo.",
+    "modified": "2026-10-21"
   },
   "recursos/elegir-software-clinica.html": {
     "path": "/recursos/elegir-software-clinica",
